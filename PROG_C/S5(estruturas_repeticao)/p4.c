@@ -1,4 +1,4 @@
-// Estruturas de repetição, for, while, do..while.
+// Estrutura de repetição FOR
 
 /* Utilizado o FOR
     Faça um progama no qual receba e some 5 numeros inteiros e apresente a soma no final.
