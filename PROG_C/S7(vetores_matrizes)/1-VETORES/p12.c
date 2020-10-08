@@ -1,5 +1,5 @@
 /*
-
+    VETORES PARTE 1
 */
 
 #include <stdio.h>
@@ -30,15 +30,6 @@ int main(){
     for (int i = 0 ; i < 26; i++){
         printf("%d == %c\n",letras[i],letras[i]);
     }
-
-
-    //vetores de inteiros
-    int numeros[10];
-
-    //vetores e reais
-    float valores[5];
-
-
 
 
     //entrada_dados
