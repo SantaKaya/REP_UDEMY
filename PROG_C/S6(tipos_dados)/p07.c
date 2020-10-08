@@ -19,7 +19,7 @@ int main(){
 
     //real
     float nota1,nota2; // 23.4,1.23,...9999999
-    float media; //23.4, 1.23,....9999999999999
+    double media; //23.4, 1.23,....9999999999999
 
     //entrada_dados
     printf("Qual a primeira nota?\n");
@@ -32,7 +32,7 @@ int main(){
     media = (nota1 + nota2)/2;
 
     //saida_dados
-    printf("Sua media eh: \n%.2f",media);
+    printf("Sua media eh: \n%.2lf",media);
 
 
     return 0;
