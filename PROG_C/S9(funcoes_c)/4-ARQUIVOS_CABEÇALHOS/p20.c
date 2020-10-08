@@ -28,10 +28,10 @@ int main(){
 
     //p_d//
     ret_s = soma(n1,n2);
-    printf("A soma de %d com %d eh %d", n1, n2, ret_s);
+    printf("A soma de %d com %d eh: %d\n", n1, n2, ret_s);
 
     ret_m = mult(n1,n2);
-    printf("A multiplicacao de %d com %d eh %d", n1, n2, ret_m);
+    printf("A multiplicacao de %d com %d eh: %d", n1, n2, ret_m);
 
     //s_d//
 

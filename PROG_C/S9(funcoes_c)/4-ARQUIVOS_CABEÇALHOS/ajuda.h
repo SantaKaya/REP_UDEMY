@@ -1,20 +1,10 @@
 // Codigo de implementação de funções
 #include <stdio.h>
 #include <stdlib.h>
-/////////////////////////////////mensagem////////////////////////////////////////
+#include "ajuda.c"
 
-void mensagem(){
-    printf("Bem vindo...\n");
-}
+void mensagem();
 
-/////////////////////OPERAÇÕES/////////////////////////////////////////////////
+int soma(int num1, int num2);
 
-//soma//
-int soma(int num1, int num2){
-    return num1 + num2;
-}
-
-//multiplicação//
-int mult(int num1, int num2){
-    return num1 * num2;
-}
+int mult(int num1, int num2);
