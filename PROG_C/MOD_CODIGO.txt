@@ -5,7 +5,7 @@
 #include <stdio.h>
 #include <stdio.h>
 
-int main(){
+int main(){//inicio_main
     printf("\n");
 
 
@@ -26,5 +26,6 @@ int main(){
     //processamento_dados
     //saida_dados
     printf("\n");
+    printf("\n");
     return 0;
-}
+}//fim_main
