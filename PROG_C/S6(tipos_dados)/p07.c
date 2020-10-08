@@ -22,17 +22,17 @@ int main(){
     float media; //23.4, 1.23,....9999999999999
 
     //entrada_dados
-    printf("Qual a primeira nota?");
+    printf("Qual a primeira nota?\n");
     scanf("%f",&nota1);
 
-    printf("Qual a segunda nota?");
+    printf("Qual a segunda nota?\n");
     scanf("%f",&nota2);
 
     //processamento_dados
     media = (nota1 + nota2)/2;
 
     //saida_dados
-    printf("Sua media eh: %.2f",media);
+    printf("Sua media eh: \n%.2f",media);
 
 
     return 0;
