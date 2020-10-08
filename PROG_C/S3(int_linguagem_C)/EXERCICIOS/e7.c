@@ -1,6 +1,6 @@
 /*
-    Leia uma temperatura em graus Celcius e apresete-a convertida
-    em graus Fahrenheit.
+    Leia uma temperatura em graus Fahrenheits e apresete-a convertida
+    em graus Celsius.
     A formula de conversão é:
         C = 5.0*(F-32.0)/9.0 , sendo F a temperatura em Fahrenheint 
         e C a temperatura em celcius.
