@@ -5,7 +5,8 @@
 
 #include <stdio.h>
 #include <stdio.h>
-#include "ajuda.h" //biblioteca criada
+#include "ajuda.h"
+
 
 
 
