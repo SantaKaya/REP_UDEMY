@@ -6,7 +6,7 @@
 #include <stdio.h>
 
 int main(){
-    printf("\n);
+    printf("\n");
 
     //declarando_variaveis
 
@@ -17,6 +17,6 @@ int main(){
     //saida_dados
 
 
-    printf("\n);
+    printf("\n");
     return 0;
 }
