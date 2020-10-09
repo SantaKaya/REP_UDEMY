@@ -14,9 +14,7 @@ int main(){
     }else{
         printf("Nao achei o arquivo!");
     }
-
-
+    
     fclose(arq);
-
     return 0;
 }
