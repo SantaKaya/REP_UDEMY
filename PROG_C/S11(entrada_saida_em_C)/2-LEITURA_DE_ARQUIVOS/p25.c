@@ -5,7 +5,7 @@ int main(){
     FILE *arq;
     char c;
 
-    arq = fopen("Xarquivo.txt","r");
+    arq = fopen("arquivo.txt","r");
     
     if(arq){//sempre importante fazer essa verificação.
         while((c = getc(arq)) != EOF){// EOF = AND OF FILE
