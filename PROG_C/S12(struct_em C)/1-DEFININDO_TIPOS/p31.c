@@ -6,11 +6,11 @@ struct st_aluno{
     char nome[100];
     char curso[50];
     int ano_nascimento;
-};
+}aluno1;
 
 int main(){
 
-    struct st_aluno aluno1;
+    
 
     printf("Informe a matricula do aluno:\n");
     fgets(aluno1.matricula,10,stdin);
