@@ -16,7 +16,7 @@ int soma(int num1, int num2){
 }
 
 void proximo_char(char caractere){
-    pritnf("%c", caractere + 1);
+    printf("%c", caractere + 1);
 }
 
 
