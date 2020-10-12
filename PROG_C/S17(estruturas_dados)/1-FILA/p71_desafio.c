@@ -2,9 +2,9 @@
 #include <stdlib.h>
 
 
-#define TAMFILA 10
+#define TAMFILA 11
 
-int fila[TAMFILA] = {0,0,0,0,0,0,0,0,0,0};
+int fila[TAMFILA] = {0,0,0,0,0,0,0,0,0,0,0};
 int head = 0;//proximo a ser atendido
 int tail = 0;// ultimo da fila
 
@@ -47,7 +47,7 @@ int main(){//inicio_main
             break;
         
         default:
-            printf("Opcao Invalida!\n");
+            printf("Progama Encerrado!\n");
         }
 
 
@@ -63,14 +63,16 @@ int main(){//inicio_main
 ////////////////////////////////LISTAR_ELEMENTOS////////////////////////////////////////////
 void lista_elementos(){
     printf("\n========================FILA ATUAL ===================\n");
+    if(-1 != tail){
     for (int i = 0; i < TAMFILA; i++){
         printf("-");
         printf("|%d|", fila[i]);
         printf("-");
-    }
+        }   
     printf("\nHead: %d\n", head);
     printf("\nTail: %d", tail);
     printf("\n======================================================\n\n");
+    }
 };
 
 ////////////////////////////////ADICIONAR_ELEMENTOS/////////////////////////////////////////
@@ -79,7 +81,7 @@ void enqueue(){
     int val;
 
     if(tail < TAMFILA){//varificando se a fila esta cheia
-        printf("Informe o elemento para adicionar na fila:\n");
+        printf("Informe o elemento para adicionar na fila [-1 = sair]:\n");
         scanf("%d", &val);
         fila[tail] = val;
         tail++;
@@ -92,14 +94,26 @@ void enqueue(){
 ///////////////////////////////REMOVER_ELEMENTOS////////////////////////////////////////////
 
 void dequeue(){//temos que fazer uma verificação aqui, ver se o head é menor que o tail
-    if(head < tail){
-        fila[head] = 0;
+    if(-1 != tail){
+        for(int i = 0; i < tail; i++){
+            fila[i] = fila[i + 1];
+        }//end_for
+
+        tail--;
         head++;
+        fila[tail + 1] = 0;
+
+        if(tail && head == 0){
+            printf("Pilha Vazia!")  ;
+            lista_elementos();
+        }//emd_if2
         lista_elementos();
     }else{
-        printf("Fila vazia!\n");
+        printf("\n**A FILA FOI FINALIZADA!**\n");
     }
-};
+    
+}//fim_dequeue
+
 
 ////////////////////////////////LIMPAR_ELEMENTOS////////////////////////////////////////////
 
@@ -109,6 +123,6 @@ void clear(){
     }
     head = 0;
     tail = 0;
-};
-
+    lista_elementos();
+};//fim_clear
 
