@@ -1,12 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/*
 
-*/
-
-#include <stdio.h>
-#include <stdio.h>
 
 int main(){//inicio_main
     printf("\n*******************************************************\n");
@@ -32,3 +27,11 @@ int main(){//inicio_main
     printf("\n");
     return 0;
 }//fim_main
+/********************************ANOTAÇÕES*****************************************
+//declarando_variaveis
+//entrada_dados
+//processamento_dados
+//saida_dados
+
+
+*/
