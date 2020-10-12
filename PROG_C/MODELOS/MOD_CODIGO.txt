@@ -19,10 +19,8 @@ int main(){//inicio_main
 
 
     printf("\n*******************************************************\n");
-    //declarando_variaveis
-    //entrada_dados
-    //processamento_dados
-    //saida_dados
+    free(p);
+    p = NULL;
     printf("\n");
     printf("\n");
     return 0;
