@@ -18,6 +18,9 @@ int main(){//inicio_main
     p = (int*)malloc(qtd * sizeof(int)); // 3 x 4 = 12 bytes -> isso eh colocado no ponteiro e ele aloca todo o espaço necessario.
     // ponteiro ira receber um ponteiro do tipo int e o malloc(quantidade * tamanho em bytes de inteiro.)
 
+    //checagem
+    if(p){
+/*
     for(int i = 0; i < qtd; i++){
         printf("Informe o valor para a posicao %d do vetor:\n",i);
         scanf("%d", &p[i]);
@@ -26,11 +29,17 @@ int main(){//inicio_main
     for( int i = 0 ; i < qtd; i++){
         printf(" *p[%d] = %d\n *Bytes_em_Memoria = %ld\n\n", i, p[i], sizeof(p[i]));
     }
-
-    printf("*Memoria Total p[%d] = %d", qtd, *p);
+*/
+    printf("*Memoria Total p[] = %d bytes", qtd * sizeof(int));
+    }else{
+        printf("**Erro de Alocacao!**");
+    }
 
     printf("\n*******************************************************\n");
     
+    free(p);
+    p = NULL;
+
     printf("\n");
     printf("\n");
     return 0;
