@@ -1,25 +1,19 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 /*
-
+    //time()
+    // https:
 */
 
 #include <stdio.h>
-#include <stdio.h>
+#include <time.h>
+
 
 int main(){//inicio_main
     printf("\n*******************************************************\n");
 
+    time_t segundos;
 
-
-
-
-
-
-
-
-
+    segundos = time(NULL); //recebe o tempo desda hora 0(era unix) ate agora.   
+    printf("Horas desde 1 de janeiro de 1970 = %ld\n", segundos / 3600 );
 
 
 

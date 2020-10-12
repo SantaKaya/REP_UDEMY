@@ -1,27 +1,22 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 /*
-
+    //localtime()
+   
 */
 
 #include <stdio.h>
-#include <stdio.h>
+#include <time.h>
+
 
 int main(){//inicio_main
     printf("\n*******************************************************\n");
 
+    time_t tempobruto;
+    struct tm *info; //tm = time (tipos de dados).
 
+    time(&tempobruto);
 
-
-
-
-
-
-
-
-
-
+    info = localtime(&tempobruto);
+    printf("Data e hora local %s",asctime(info));
 
     printf("\n*******************************************************\n");
     //declarando_variaveis
