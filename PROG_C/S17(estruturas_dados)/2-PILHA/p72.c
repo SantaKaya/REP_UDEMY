@@ -84,7 +84,7 @@ void push(){
         lista_elementos();
     }else{
         printf("Pilha Cheia!\n");
-    }
+        }
 
 }// fim_ push
 
@@ -97,7 +97,7 @@ void pop(){
         lista_elementos(); 
     }else{
         printf("Pilha Vazia! Favor limpe a pilha[4] ou [-1] para sair.");
-    }
+        }
 }
 
 //LIMPANDO PILHA
