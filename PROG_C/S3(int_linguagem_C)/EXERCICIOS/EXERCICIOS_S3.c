@@ -7,6 +7,34 @@
 #define PI 3.14
 ///////////////////////////////variaveis//////////////////////////////////
 
+/*MAIN E47
+int main(){
+    printf("\n*******************************************************\n");
+
+    int num;
+
+    printf("Digite um numero de 1000 a 9999:\n");
+    scanf("%d", &num);///2356
+    printf("\n** NUMERO DIGITADO %d**\n",num);
+
+    int mil = num / 1000;//2
+    printf("%d",mil);
+
+    int cent = (num % 1000) / 100;
+    printf("\n%d",cent);
+
+   int dez = ((num % 1000) % 100) / 10;
+   printf("\n%d",dez);
+    
+    int uni = ((num % 1000) % 100) % 10;
+   printf("\n%d",uni);
+
+
+    printf("\n*******************************************************\n");
+    return 0;
+}
+*/
+
 /*MAIN E46
 int main(){
     printf("\n*******************************************************\n");
