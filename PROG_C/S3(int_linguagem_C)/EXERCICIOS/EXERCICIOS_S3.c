@@ -7,7 +7,25 @@
 #define PI 3.14
 ///////////////////////////////variaveis//////////////////////////////////
 
-//
+//MAIN E44
+int main(){
+    printf("\n*******************************************************\n");
+
+    float alt_deg, alt_usr;
+
+    printf("Digite a altura do degrau e a altura desejada:\n");
+    scanf("%f %f", &alt_deg, &alt_usr);
+
+    float alt_t = alt_usr/alt_deg;
+
+    printf("Quantidade de degraus necessarios : %.2f",alt_t);
+
+
+
+
+    printf("\n*******************************************************\n");
+    return 0;
+}
 
 
 
@@ -591,5 +609,291 @@ int main(){
 
 */
 
+/*MAIN E14
+int main(){//inicio_main
+    printf("\n*******************************************************\n");
+
+    float a = 0;
+
+    printf("Graus:\n");
+    scanf("%f",&a);
+
+    printf("Radianos:%.2f\n", a*PI/180);
 
 
+
+
+    printf("\n*******************************************************\n");
+    printf("\n");
+    printf("\n");
+    return 0;
+}//fim_main
+*/
+
+/*MAIIN E13
+int main(){//inicio_main
+    printf("\n*******************************************************\n");
+
+    float km;
+
+    printf("Digite a distancia em km:\n");
+    scanf("%f",&km);
+
+    printf("A distancia em milhas eh: ¨%.2f", km/(1.61));
+
+    printf("\n*******************************************************\n");
+    printf("\n");
+    printf("\n");
+    return 0;
+}//fim_main
+*/
+
+/*MAIN E12
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+    float ml,kmh;
+
+    printf("Diite sua distancia em milhas:\n");
+    scanf("%f",&ml);
+
+    kmh = 1.61 * ml;
+
+    printf("Distancia em Km/h: %.2f",kmh);
+
+
+
+    return 0;
+}
+*/
+
+/*MAIN E11
+    int main(){
+
+    float ms,kmh;
+    
+    ms_kmh(ms,kmh);
+
+
+    return 0;
+}
+*/
+
+/*MAIN E10
+int main(){
+
+    //declarando_variaveis
+    float kmh,ms;
+
+    //entrada_dados
+    printf("Digite sua velocidade(km/h)");
+    scanf("%f",&kmh);
+
+    //processamento_dados
+    ms = kmh/3.6;
+
+    //saida_dados
+    printf("Sua velocidade em m/s eh: %.3f",ms);
+
+
+    return 0;
+}
+*/
+
+/*MAIN E09
+int main(){
+
+    //declarando_variaveis
+    float kel,cel;
+
+    //entrada_dados
+    printf("Digite sua temperatura em Celcius:\n");
+    scanf("%f",&cel);
+
+    //processamento_dados
+    kel = cel + x;
+
+    //saida_dados
+    printf("Sua temperatura em Kelvin eh:\n %.2f",kel);
+
+
+    return 0;
+}
+*/
+
+/*MAIN E08
+
+#define x 273.15
+
+int main(){
+
+    //declarando_variaveis
+    float cel, kel;
+
+
+    //entrada_dados
+    printf("Digite sua temperatura em Kelvin:\n");
+    scanf("%f",&kel);
+
+    //processamento_dados
+    cel = kel - x;
+
+    //saida_dados
+    printf("Sua temperatura em celcius eh: %.3f",cel);
+
+    return 0;
+}
+*/
+
+/*MAIN E07
+int main(){
+
+    //declarando_variaveis
+    float c,f;
+    
+    //entrada_dados
+    printf("Digite sua temperatura em Fahrenheit:\n");
+    scanf("%f",&f);
+
+    //processamento_dados
+    c = 5*(f - 32)/9;
+
+    //saida_dados
+    printf("Sua temperatura em Celsius eh: %.2f",c);
+
+
+    return 0;
+}
+*/
+
+/*MAIN 06
+int main(){
+
+    //declarando_variaveis
+    float temp, f;
+
+
+    //entrada_dados
+    printf("Digite a temperatura em Celcius:\n");
+    scanf("%f",&temp);
+
+    //processamento_dados
+    f = (temp*9/5) + 32;
+
+    //saida_dados
+    printf("Sua temperatura em Fahrenheit eh: %.2f",f);
+
+
+    return 0;
+}
+*/
+
+/*MAIN 05
+int main(){
+
+    //declarando_variaveis
+    double numero, quintap;
+
+    //entrada_dados
+    printf("Digite o numero real:\n");
+    scanf("%lf",&numero);
+
+    //processamento_dados
+
+    quintap = numero * 1/5;
+
+    //saida_dados
+    printf("A quinta parte do numero %.3lf eh:\n %.3lf \n",numero, quintap);
+
+
+    return 0;
+}
+*/
+
+/*MAIN 04
+    int main(){
+
+    //declarando_variaveis
+    float numero, quadrado;
+
+    //entrada_dados
+    printf("Digite um numero real:\n");
+    scanf("%f",&numero);
+
+    //processamento_dados
+    quadrado = numero*numero;
+    //saida_dados
+    printf("O Quadrado do valor digitado eh: %.4f",quadrado);
+
+
+    return 0;
+}
+*/
+
+/*MAIN 03
+#include <stdio.h>
+
+int main(){
+
+    //declarando_variaveis
+    int valor1, valor2, valor3, i = 0,soma;
+
+    //entrada_dados
+    if (i < 3){
+        printf("Digite 3 valores inteiros:\n");
+        scanf("%d %d %d",&valor1,&valor2,&valor3);
+        i++;
+    }
+
+    //processamento_dados
+    soma = valor1 + valor2 + valor3;
+
+    //saida_dados
+    printf("A soma eh: %d",soma);
+
+
+    return 0;
+}
+*/
+
+/*MAIN 02
+int main(){
+
+    //declaração_variaveis
+    float numero;
+
+    //entrada_dados
+    printf("Digite um numero:\n");
+    scanf("%f",&numero);
+
+    //processamento_dados
+
+    //saida_dados
+    printf("O Numero real digitado foi: %.4f",numero);
+
+
+    return 0;
+}
+*/
+
+/*MAIN 01
+int main(){
+
+    //declaração_variaveis
+    int numero;
+
+    //Entrada_dados
+    printf("Digite um numero:\n");
+    scanf("%d",&numero);
+
+    //Processamento_dados
+
+    //Saida_dados
+    printf("O numero digitado foi: %d",numero);
+
+    return 0;
+}
+
+*/
