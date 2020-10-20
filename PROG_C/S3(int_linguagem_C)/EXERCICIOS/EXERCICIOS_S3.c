@@ -7,7 +7,41 @@
 #define PI 3.14
 ///////////////////////////////variaveis//////////////////////////////////
 
-//MAIN E44
+//MAIN E46
+int main(){
+    printf("\n*******************************************************\n");
+
+
+
+    printf("\n*******************************************************\n");
+    return 0;
+}
+
+
+/*MAIN E45
+int main(){
+    printf("\n*******************************************************\n");
+
+    char let_M, let_m;
+
+    printf("Digite uma letra maiuscula:\n");
+    scanf("%c",&let_M);
+
+    int a = let_M;
+    
+
+    let_m = a + 32;
+
+    printf("A letra digitada %c em minusculo eh : %c", let_M, let_m);
+
+
+
+    printf("\n*******************************************************\n");
+    return 0;
+}
+*/
+
+/*MAIN E44
 int main(){
     printf("\n*******************************************************\n");
 
@@ -20,15 +54,10 @@ int main(){
 
     printf("Quantidade de degraus necessarios : %.2f",alt_t);
 
-
-
-
     printf("\n*******************************************************\n");
     return 0;
 }
-
-
-
+*/
 
 /*MAIN E43
 int main(){
