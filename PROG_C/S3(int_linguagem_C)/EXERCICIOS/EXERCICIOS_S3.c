@@ -7,16 +7,36 @@
 #define PI 3.14
 ///////////////////////////////variaveis//////////////////////////////////
 
-//MAIN E46
+/*MAIN E46
 int main(){
     printf("\n*******************************************************\n");
 
+    int num, cent;
 
+    printf("Digite um numero inteiro de 3 digitos :\n");
+    scanf("%d",&num);
+
+    // PRIEMIRO VALOR
+    cent = num / 100;
+    printf("%d\n",cent);
+  
+    // SEGUNDO VALOR
+    int dez = (num % 100) / 10;
+    printf("%d\n",dez);
+    dez = dez * 10;
+    // TERCEEIRO
+    int uni = (num % 100) % 10;
+    uni = uni * 100;
+    //printf("%d",uni);
+
+    int soma = uni + dez + cent;
+
+    printf("NUMERO = %d\nNUMERO INVERTIDO = %d", num, soma);
 
     printf("\n*******************************************************\n");
     return 0;
 }
-
+*/
 
 /*MAIN E45
 int main(){
