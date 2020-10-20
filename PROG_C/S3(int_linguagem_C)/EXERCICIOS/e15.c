@@ -7,7 +7,76 @@
 #define PI 3.14
 ///////////////////////////////variaveis//////////////////////////////////
 
-//MAIN E40
+//
+
+
+
+
+/*MAIN E43
+int main(){
+    printf("\n*******************************************************\n");
+
+    float valor_t;
+
+    printf("Digite o valor total:\n");
+    scanf("%f",&valor_t);
+
+    float val_desc = valor_t - (valor_t * 0.1);
+    float val_par = valor_t/3;
+    float val_comAV = val_desc * 0.05;
+    float val_comPC = valor_t * 0.05;
+
+    printf("Total + 10%% : R$ = %.2f\n", val_desc);
+    printf("Parcelado 3x : R$ = %.2f\n", val_par);
+    printf("Comissao a vista : R$ %.2f\n", val_comAV);
+    printf("Comissao Parcelada : R$ %.2f\n", val_comPC);
+
+
+    printf("\n*******************************************************\n");
+
+    return 0;
+}
+*/
+
+/*MAIN E42
+int main(){
+    printf("\n*******************************************************\n");
+
+    float sal_b,sal_n;
+
+    float gt = 0.05, imp = 0.07;
+
+    printf("Digite o salario baase:\n");
+    scanf("%f",&sal_b);
+
+    sal_n = (sal_b + (sal_b*gt) - (sal_b*imp));
+
+    printf("Salario a receber R$ = %.2f", sal_n);
+
+    printf("\n*******************************************************\n");
+    return 0;
+}
+*/
+
+/*MAIN E41
+int main(){
+    printf("\n*******************************************************\n");
+
+    float val_ht,horas_t,sal;
+
+    printf("Digite o valor da hora de trabalho e o numero de horas trabalhada no mes:\n");
+    scanf("%f %f", &val_ht, &horas_t);
+
+    sal = (val_ht * horas_t) + (val_ht * horas_t)*0.1;
+
+    printf("Valor a ser pago R$ = %.2f", sal);
+
+    printf("\n*******************************************************\n");
+    return 0;
+}
+*/
+
+/*MAIN E40
 int main(){
     printf("\n*******************************************************\n");
 
@@ -27,8 +96,7 @@ int main(){
     printf("\n*******************************************************\n");
 
 }
-
-
+*/
 
 /*MAIN E39
 int main(){
