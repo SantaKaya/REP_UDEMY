@@ -7,6 +7,37 @@
 #define PI 3.14
 ///////////////////////////////variaveis//////////////////////////////////
 
+
+//MAIN E48
+int main(){
+    printf("\n*******************************************************\n");
+
+    int val_s,horas = 0;
+    
+    printf("Digite um valor em segundos:\n");
+    scanf("%d",&val_s);
+
+    int minutos = val_s / 60 ;
+    printf("%d\n", minutos);
+    if(minutos > 60){
+        minutos = minutos - 60;
+        printf("\nMinutos = %d\n",minutos);
+        horas++;
+    }
+
+    int seg = (val_s % 60);
+    //printf("%d\n",seg);
+    
+
+    printf("%d : %d : %d",horas,minutos,seg);
+
+    printf("\n*******************************************************\n");
+    return 0;
+}
+
+
+
+
 /*MAIN E47
 int main(){
     printf("\n*******************************************************\n");
