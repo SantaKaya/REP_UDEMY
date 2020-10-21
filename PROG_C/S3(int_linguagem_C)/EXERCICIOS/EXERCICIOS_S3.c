@@ -7,6 +7,47 @@
 #define PI 3.14
 ///////////////////////////////variaveis//////////////////////////////////
 
+//MAIN E49
+int main(){
+    printf("\n*******************************************************\n");
+
+    int h,m,s, dur_s, horas;
+
+    printf("Digite o horario de inicio H|M|S:\n");
+    scanf("%d %d %d",&h,&m,&s);
+
+    printf("Digite a duração do experimento em segundos:\n");
+    scanf("%d",&dur_s);
+
+    int minutos = dur_s / 60;
+    if(minutos > 60){
+        minutos = minutos - 60;
+        h = h + 1;
+    }else{
+        m = m + minutos;
+    }
+
+    int segundos = dur_s % 60;
+    if(segundos < 60){
+        s = s + segundos;
+    }else{
+        if(m < 60){
+            m = m + 1;
+            s = 0;
+            }else{
+                h = h + 1;
+                m = 0;
+            }
+        }
+    
+    printf("|%d:%d:%d|",h,m,s );
+
+
+    printf("\n*******************************************************\n");
+    return 0;
+}
+
+
 
 /*MAIN E48
 int main(){
