@@ -7,7 +7,32 @@
 #define PI 3.14
 ///////////////////////////////variaveis//////////////////////////////////
 
-//MAIN E52
+/*MAIN E53
+int main(){
+    printf("\n*******************************************************\n");
+
+    float cpm, lag, p;
+
+    printf("Digite o tamanha do terreno(comprimento X largura):\n");
+    scanf("%f %f", &cpm, &lag);
+
+    printf("\nDigite o preco do metro de tela:\n");
+    scanf("%f", &p);
+
+    float ct = (cpm*lag)*p;
+
+    printf("\nCusto para cercar o terreno R$ = %.2f\n", ct);
+
+
+
+
+    printf("\n*******************************************************\n");
+    return 0;
+}
+*/
+
+
+/*MAIN E52
 int main(){
     printf("\n*******************************************************\n");
 
@@ -39,8 +64,7 @@ int main(){
     printf("\n*******************************************************\n");
     return 0;
 }
-
-
+*/
 
 /*MAIN E51
 int main(){
