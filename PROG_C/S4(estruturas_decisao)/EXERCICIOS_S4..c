@@ -6,6 +6,29 @@
 
 //////////////////////////QUESTOES/////////////////////////////////////////
 
+//MAIN E04
+int main(){
+    printf("\n*******************************************************\n");
+
+    int num;
+
+    printf("Digite um numero:\n");
+    scanf("%d",&num);
+
+    if(num % 2 == 0){
+        printf("O numero %d ao quadrado = %d\n", num, num*num);
+        
+    }else{
+        printf("A raiz quadrada do numero %d = %.2f",num, sqrt(num));
+    }
+
+
+
+    printf("\n*******************************************************\n");
+    return 0;
+}
+
+
 /*MAIN E03
 int main(){
     printf("\n*******************************************************\n");
