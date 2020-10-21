@@ -7,6 +7,41 @@
 #define PI 3.14
 ///////////////////////////////variaveis//////////////////////////////////
 
+//MAIN E52
+int main(){
+    printf("\n*******************************************************\n");
+
+    float A1,A2,A3;
+    float prem;
+
+    printf("Quanto cada apostador investiu? (A1|A2|A3)\n");
+    scanf("%f %f %f", &A1, &A2, &A3);
+
+    printf("Digite o valor do PREMIO:\n");
+    scanf("%f", &prem);
+
+    printf("***Valor premio = %.1f*****\n",prem);
+
+    float total = A1 + A2 + A3;
+
+    float PA1 = (A1/total);
+    float PA2 = (A2/total);
+    float PA3 = (A3/total);
+
+    A1 = prem * PA1;
+    A2 = prem * PA2;
+    A3 = prem * PA3;
+    
+    printf("\nAmigo 1 = %.1f\nAmigo 2 = %.1f\nAmigo 3 = %.1f\n", A1, A2, A3);
+
+
+
+    printf("\n*******************************************************\n");
+    return 0;
+}
+
+
+
 /*MAIN E51
 int main(){
     printf("\n*******************************************************\n");
