@@ -6,6 +6,56 @@
 
 //////////////////////////QUESTOES/////////////////////////////////////////
 
+/*MAIN E07
+int main(){
+    printf("\n*******************************************************\n");
+
+    int n1, n2;
+
+    printf("Digite dois numeros:\n");
+    scanf("%d %d", &n1, &n2);
+
+    if(n1 == n2){
+        printf("Numeros Iguais.\n");
+    }else if(n1 > n2){
+        printf("MAIOR %d", n1);
+    }else{
+        printf("MAIOR %d", n2);
+    }
+
+    printf("\n*******************************************************\n");
+    return 0;
+}
+*/
+
+
+
+
+
+
+
+
+/*MAINE 06
+int main(){
+    printf("\n*******************************************************\n");
+
+    int n1, n2;
+
+    printf("Digite dois numeros:\n");
+    scanf("%d %d", &n1, &n2);
+
+    if(n1 > n2){
+        printf("MAIOR %d\nDiferenca = %d\n", n1, n1-n2);
+    }else{
+        printf("MAIOR %d\nDiferenca = %d\n", n2, n2-n1);
+    }
+
+    printf("\n*******************************************************\n");
+    return 0;
+}
+*/
+
+
 /*MAIN E05
 int main(){
     printf("\n*******************************************************\n");
