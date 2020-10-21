@@ -6,7 +6,28 @@
 
 //////////////////////////QUESTOES/////////////////////////////////////////
 
-//MAIN E04
+/*MAIN E05
+int main(){
+    printf("\n*******************************************************\n");
+
+    int num;
+
+    printf("Digite um numero inteiro:\n");
+    scanf("%d",&num);
+
+    if(num % 2 == 0){
+        printf("Numero PAR!");
+    }else{
+        printf("Numero IMPAR!");
+    }
+
+
+    printf("\n*******************************************************\n");
+
+}
+*/
+
+/*MAIN E04
 int main(){
     printf("\n*******************************************************\n");
 
@@ -15,7 +36,10 @@ int main(){
     printf("Digite um numero:\n");
     scanf("%d",&num);
 
-    if(num % 2 == 0){
+    int a = num / 2;
+    printf("%d",a);
+
+    if(num / 2 > 0){
         printf("O numero %d ao quadrado = %d\n", num, num*num);
         
     }else{
@@ -27,7 +51,7 @@ int main(){
     printf("\n*******************************************************\n");
     return 0;
 }
-
+*/
 
 /*MAIN E03
 int main(){
@@ -48,8 +72,6 @@ int main(){
     return 0;
 }
 */
-
-
 
 /*MAIN E02
 int main(){
