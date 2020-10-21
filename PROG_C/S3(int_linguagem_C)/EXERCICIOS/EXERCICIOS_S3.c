@@ -7,12 +7,50 @@
 #define PI 3.14
 ///////////////////////////////variaveis//////////////////////////////////
 
+/*MAIN E51
+int main(){
+    printf("\n*******************************************************\n");
+
+    int x, y, Ox, Oy;
+    int a1;
+
+    printf("Digite a quantidade de pontos:\n");
+    scanf("%d", &a1);
 
 
+    while(a1 != 0){
+        Ox = 0;
+        Oy = 0;
+        printf("\nDigite as coordenadas x e y: \n");
+        scanf("%d %d", &x, &y);
+        Ox = Ox - x;
+        Oy = Oy -y;
+        printf("\nDistancia da origem (%d,%d)\n", Ox, Oy);
+        a1--;
 
+    }
+    printf("\n*******************************************************\n");
+    return 0;
+}
+*/
 
+/*MAIN E50
+int main(){
+    printf("\n*******************************************************\n");
 
+    int idad,ano;
 
+    printf("Digite sua idade e o ano atual:\n");
+    scanf("%d %d", &idad, &ano);
+
+    int nasc = ano - idad;
+
+    printf("Ano de Nascimento: %d\n", nasc);
+
+    printf("\n*******************************************************\n");
+    return 0;
+}
+*/
 
 /*MAIN E49
 int main(){
