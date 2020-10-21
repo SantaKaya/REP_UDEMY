@@ -7,47 +7,61 @@
 #define PI 3.14
 ///////////////////////////////variaveis//////////////////////////////////
 
-//MAIN E49
+
+
+
+
+
+
+
+/*MAIN E49
 int main(){
     printf("\n*******************************************************\n");
 
-    int h,m,s, dur_s, horas;
+    int h,m,s, dur_s;
 
     printf("Digite o horario de inicio H|M|S:\n");
     scanf("%d %d %d",&h,&m,&s);
+    
 
     printf("Digite a duração do experimento em segundos:\n");
     scanf("%d",&dur_s);
 
-    int a = dur_s/3600;
-    dur_s = dur_s - 3600;
-    h = h + a;
-
     //calculo das h m s;
     int a = dur_s/3600;
-    printf("horas = %d\n",a);
+    printf("ADD horas = %d\n",a);
     dur_s = dur_s - 3600;
-    printf("duracao restante = %d\n",dur_s);
+    //printf("duracao restante = %d\n",dur_s);
 
     int b = dur_s/60;
-    printf("minutos = %d\n",b);
+    printf("ADD minutos = %d\n",b);
 
     dur_s = dur_s - (b*60);
     printf("duracao restante = %d\n",dur_s);
+   
+    h = h + a;
+    m = m + b;
+    s = s + dur_s;
 
+    if(m > 60 ){
+        m = m - 60;
+        h++;
+    }
+    if( s > 60){
+        s = s - 60;
+        m++;
+        if(m > 60){
+            m = m -60;
+            h++;
+        }
+    }
 
-    
-    
-
-    
-    printf("|%d:%d:%d|",h,m,s );
-
+    printf("|%dH:%dM:%dS|",h,m,s );
 
     printf("\n*******************************************************\n");
     return 0;
 }
-
-
+*/
 
 /*MAIN E48
 int main(){
