@@ -7,27 +7,69 @@
 //////////////////////////QUESTOES/////////////////////////////////////////
 
 
+/*MAIN E10
+int main(){
+    printf("\n*******************************************************\n");
+    
+    float alt;
+    char sexo;
 
 
+    printf("Digite a altura e o sexo:(-1 para sair)\n");
+    scanf("%f %c", &alt, &sexo);
+
+    switch (sexo)
+    {
+    case 'f':
+        printf("Peso ideal = %.2f", ((62.1 * alt) - 44.7));
+        break;
+    case 'm':
+        printf("Peso ideal = %.2f",((72.7 * alt ) - 58));
+        break;
+    
+    default:
+        printf("Valor invalido!\n");
+        break;
+    }
+    printf("\n*******************************************************\n");
+    return 0;
+}
+*/
 
 
+/*MAIN E09
+int main(){
+
+    float sal_t, val_emp;
+
+    printf("Digite o salario do trabalhador e o valor da prestação de um emprestimo:\n");
+    scanf("%f %f", &sal_t, &val_emp);
+
+    int a = sal_t*0.2;
+
+    if ( val_emp > a){
+        printf("Emprestimo nao concedido.\n");
+    }else{
+        printf("Emprestimmo Concedido.\n");
+    }
+    return 0;
+}
+*/
 
 
-
-
-/*MAIN E05
+/*MAIN E08
 int main(){
     printf("\n*******************************************************\n");
 
-    int n1;
+    float n1, n2;
 
-    printf("Digite um numer:\n");
-    scanf("%d",&n1);
+    printf("Digite as notas:\n");
+    scanf("%f %f", &n1, &n2);
 
-    if(n1 % 2 == 0){
-        printf("Numero PAR!\n");
+    if(n1 >= 0.0 && n1 <= 10.0){
+        printf("Media = %.2f",(n1+n2)/2);
     }else{
-        printf("Numero impar");
+        printf("Nota Nao possui valor valido!\n");
     }
 
     printf("\n*******************************************************\n");
@@ -35,19 +77,89 @@ int main(){
 }
 */
 
-/*MAIN E04
-int main (){
+
+/*MAIN E07
+int main(){
     printf("\n*******************************************************\n");
 
-    int n1;
+    int n1, n2;
 
-    printf("Digite um numero:\n");
-    scanf("%d",&n1);
+    printf("Digite dois numeros:\n");
+    scanf("%d %d", &n1, &n2);
 
-    if( n1 / 2 >= 0){
-        printf("Quadrado %d = %d\nRaiz Quadrada %d = %.2f",n1,n1*n1,n1,sqrt(n1));
+    if(n1 == n2){
+        printf("Numeros Iguais.\n");
+    }else if(n1 > n2){
+        printf("MAIOR %d", n1);
+    }else{
+        printf("MAIOR %d", n2);
     }
 
+    printf("\n*******************************************************\n");
+    return 0;
+}
+*/
+
+/*MAINE 06
+int main(){
+    printf("\n*******************************************************\n");
+
+    int n1, n2;
+
+    printf("Digite dois numeros:\n");
+    scanf("%d %d", &n1, &n2);
+
+    if(n1 > n2){
+        printf("MAIOR %d\nDiferenca = %d\n", n1, n1-n2);
+    }else{
+        printf("MAIOR %d\nDiferenca = %d\n", n2, n2-n1);
+>>>>>>> 5acd573a0ca1e2dfed63021352eaefeb9e5660d7
+    }
+
+    printf("\n*******************************************************\n");
+    return 0;
+}
+*/
+
+/*MAIN E05
+int main(){
+    printf("\n*******************************************************\n");
+
+    int num;
+
+    printf("Digite um numero inteiro:\n");
+    scanf("%d",&num);
+
+    if(num % 2 == 0){
+        printf("Numero PAR!");
+    }else{
+        printf("Numero IMPAR!");
+    }
+
+
+    printf("\n*******************************************************\n");
+
+}
+*/
+
+/*MAIN E04
+int main(){
+    printf("\n*******************************************************\n");
+
+    int num;
+
+    printf("Digite um numero:\n");
+    scanf("%d",&num);
+
+    int a = num / 2;
+    printf("%d",a);
+
+    if(num / 2 > 0){
+        printf("O numero %d ao quadrado = %d\n", num, num*num);
+        
+    }else{
+        printf("A raiz quadrada do numero %d = %.2f",num, sqrt(num));
+    }
     printf("\n*******************************************************\n");
     return 0;
 }
