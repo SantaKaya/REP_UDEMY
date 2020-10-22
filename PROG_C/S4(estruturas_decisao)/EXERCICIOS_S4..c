@@ -6,6 +6,47 @@
 
 //////////////////////////QUESTOES/////////////////////////////////////////
 
+/*MAIN E09
+int main(){
+
+    float sal_t, val_emp;
+
+    printf("Digite o salario do trabalhador e o valor da prestação de um emprestimo:\n");
+    scanf("%f %f", &sal_t, &val_emp);
+
+    int a = sal_t*0.2;
+
+    if ( val_emp > a){
+        printf("Emprestimo nao concedido.\n");
+    }else{
+        printf("Emprestimmo Concedido.\n");
+    }
+    return 0;
+}
+*/
+
+
+/*MAIN E08
+int main(){
+    printf("\n*******************************************************\n");
+
+    float n1, n2;
+
+    printf("Digite as notas:\n");
+    scanf("%f %f", &n1, &n2);
+
+    if(n1 >= 0.0 && n1 <= 10.0){
+        printf("Media = %.2f",(n1+n2)/2);
+    }else{
+        printf("Nota Nao possui valor valido!\n");
+    }
+
+    printf("\n*******************************************************\n");
+    return 0;
+}
+*/
+
+
 /*MAIN E07
 int main(){
     printf("\n*******************************************************\n");
@@ -28,13 +69,6 @@ int main(){
 }
 */
 
-
-
-
-
-
-
-
 /*MAINE 06
 int main(){
     printf("\n*******************************************************\n");
@@ -54,7 +88,6 @@ int main(){
     return 0;
 }
 */
-
 
 /*MAIN E05
 int main(){
