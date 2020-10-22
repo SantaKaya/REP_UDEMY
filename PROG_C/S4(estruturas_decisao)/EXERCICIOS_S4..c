@@ -6,6 +6,53 @@
 
 //////////////////////////QUESTOES/////////////////////////////////////////
 
+
+
+
+
+
+
+
+
+
+/*MAIN E05
+int main(){
+    printf("\n*******************************************************\n");
+
+    int n1;
+
+    printf("Digite um numer:\n");
+    scanf("%d",&n1);
+
+    if(n1 % 2 == 0){
+        printf("Numero PAR!\n");
+    }else{
+        printf("Numero impar");
+    }
+
+    printf("\n*******************************************************\n");
+    return 0;
+}
+*/
+
+/*MAIN E04
+int main (){
+    printf("\n*******************************************************\n");
+
+    int n1;
+
+    printf("Digite um numero:\n");
+    scanf("%d",&n1);
+
+    if( n1 / 2 >= 0){
+        printf("Quadrado %d = %d\nRaiz Quadrada %d = %.2f",n1,n1*n1,n1,sqrt(n1));
+    }
+
+    printf("\n*******************************************************\n");
+    return 0;
+}
+*/
+
 /*MAIN E03
 int main(){
     printf("\n*******************************************************\n");
@@ -25,8 +72,6 @@ int main(){
     return 0;
 }
 */
-
-
 
 /*MAIN E02
 int main(){
