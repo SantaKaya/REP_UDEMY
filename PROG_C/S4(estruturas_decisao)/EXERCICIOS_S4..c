@@ -6,6 +6,36 @@
 
 //////////////////////////QUESTOES/////////////////////////////////////////
 
+/*MAIN E10
+int main(){
+    printf("\n*******************************************************\n");
+    
+    float alt;
+    char sexo;
+
+
+    printf("Digite a altura e o sexo:(-1 para sair)\n");
+    scanf("%f %c", &alt, &sexo);
+
+    switch (sexo)
+    {
+    case 'f':
+        printf("Peso ideal = %.2f", ((62.1 * alt) - 44.7));
+        break;
+    case 'm':
+        printf("Peso ideal = %.2f",((72.7 * alt ) - 58));
+        break;
+    
+    default:
+        printf("Valor invalido!\n");
+        break;
+    }
+    printf("\n*******************************************************\n");
+    return 0;
+}
+*/
+
+
 /*MAIN E09
 int main(){
 
