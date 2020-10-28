@@ -6,6 +6,65 @@
 
 //////////////////////////QUESTOES/////////////////////////////////////////
 
+// MAIN E11
+int main(){
+    printf("\n*******************************************************\n");
+
+    int num;
+
+    printf("Digite um numero inteiro:\n");
+    scanf("%d",&num);
+
+    if(num > 0){
+        if(num > 10){//12
+            int a = num / 10;//1
+            printf("a = %d\n",a);
+            int b = num % 10;//2
+            printf("b = %d\n",b);
+            printf("Soma = %d", a + b);
+
+        }else if(num >= 100 && num < 999){//234
+            int a = num/1000;//2
+            printf("a = %d\n",a);
+            int b = num % 100;//34
+            printf("b = %d\n",b);
+            int c = b / 10;//3
+            printf("c = %d\n",c);
+            int d = b % 10;//4
+            printf("d = %d\n",d);
+
+            printf("Soma = %d",a + c + d);
+        }else if(num > 1000){//1234
+
+            int a = num / 1000;//1
+            printf("a = %d\n",a);
+            int b = num % 1000;//234
+            printf("b = %d\n",b); 
+            int c = b / 100;//2
+            printf("c = %d\n",c);
+            int d = b % 100;//34
+            printf("d = %d\n",d);
+            int e = d / 10;//3
+            printf("e = %d\n",e);
+            int f = d % 10;//4
+            printf("d = %d\n",d);
+
+            printf("Soma = %d", a + c + e + f);
+        }
+    }else{
+        printf("Numero invalido");
+    }
+
+    printf("\n*******************************************************\n");
+    return 0;
+}
+
+
+
+
+
+
+
 /*MAIN E10
 int main(){
     printf("\n*******************************************************\n");
