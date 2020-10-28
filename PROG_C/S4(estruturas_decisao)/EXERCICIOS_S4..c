@@ -24,7 +24,7 @@ int main(){
             printf("Soma = %d", a + b);
 
         }else if(num >= 100 && num < 999){//234
-            int a = num/1000;//2
+            int a = num/100;//2
             printf("a = %d\n",a);
             int b = num % 100;//34
             printf("b = %d\n",b);
