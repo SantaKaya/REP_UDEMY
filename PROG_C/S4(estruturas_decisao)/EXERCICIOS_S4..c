@@ -11,6 +11,36 @@
 int main(){
     printf("\n*******************************************************\n");
 
+    int a, b, c;
+
+    printf("Digite os valores de a, b e c:\n");
+    scanf("%d %d %d", &a, &b, &c);
+
+    int delt = (b*b) - (4*a*c);
+
+    int x1 = (-b + sqrt(delt))/(2*a);
+    int x2 = (-b - sqrt(delt))/(2*a);
+    //printf("X1 = %d\n",x1);
+    //printf("X2 = %d\n",x2);
+
+    if(a == 0){
+        printf("Nao eh equacao de 2 grau!\n");
+    }
+
+
+
+    if ( delt < 0){
+        printf("Raiz nao existe!\n");
+    }else if(delt == 0){
+        if( x1 < 0){
+            printf("Raiz unica = %d",x2);
+        }else{
+            printf("Raiz unica = %d",x1);
+        }
+
+    }else if(delt >= 0){
+        printf("Duas raizes reais:\nx1 = %d\nx2= %d",x1,x2);
+    }
 
 
 
