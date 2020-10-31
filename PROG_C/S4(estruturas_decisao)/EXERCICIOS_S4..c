@@ -8,14 +8,51 @@
 //////////////////////////QUESTOES/////////////////////////////////////////
 
 
-//MAIN E20
+/*MAIN E20
 int main(){
+    printf("\n*******************************************************\n");
+    int l1,l2,l3;
 
+    printf("Digite os possiveis lados do triangulo:\n");
+    scanf("%d %d %d", &l1, &l2, &l3);
 
+    int somal1 = l2 + l3;
+    int somal2 = l1 + l3;
+    int somal3 = l1 + l2;
 
+    //verificação lado
+    if (l1 > somal1){
+        printf("l1 nao eh um lado do triangulo.");
+    }else if(l2 > somal2){
+        printf("l2 nao eh um lado do triangulo");
+    }else if(l3 > somal3){
+        printf("l3 nap eh um lado do triangulo");
+    }
+    
+    //verificação equilatero
 
+    if(l1 == l2){
+        if(l2 == l3){
+            printf("Triangulo Equilatero!\n");
+        }
+    }
+
+    // verificação isoceles
+    if( l1 == l2 && l1 != l3){
+        printf("Triangulo Isoceles!\n");
+    }else if(l2 == l3 && l2 != l1){
+        printf("Triangulo Isoceles!\n");
+    }
+
+    //verificação escaleno
+    if(l1 != l2 && l2 !=l3){
+        printf("triangulo Escaleno");
+    }
+
+    printf("\n*******************************************************\n");
     return 0;
 }
+*/
 
 /*MAIN E19
 int main(){
