@@ -8,8 +8,30 @@
 //////////////////////////QUESTOES/////////////////////////////////////////
 
 
+/*MAIN E27
+int main(){
+    printf("\n*******************************************************\n");
 
+    int id;
 
+    printf("Digite sua idade:\n");
+    scanf("%d",&id);
+
+    if(id >= 5 && id <= 7){
+        printf("Infantil A\n");
+    }else if( id >= 8 && id <= 10){
+        printf("Infatil B\n");
+    }else if(id >= 11 && id <= 13){
+        printf("Juvenil A\n");
+    }else if( id >= 14 && id <= 17){
+        printf("Juvenil B\n");
+    }else if(id >= 18){
+        printf("Senior\n");
+    }
+    printf("\n*******************************************************\n");
+    return 0;
+}
+*/
 
 
 /*MAIN E26
