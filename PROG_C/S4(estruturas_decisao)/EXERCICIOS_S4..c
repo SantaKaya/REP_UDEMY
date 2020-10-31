@@ -7,6 +7,59 @@
 
 //////////////////////////QUESTOES/////////////////////////////////////////
 
+//MAIN E25
+int main(){
+    printf("\n*******************************************************\n");
+
+
+
+
+
+    printf("\n*******************************************************\n");
+    return 0;
+}
+
+
+
+/*MAIN E24
+int main(){
+    printf("\n*******************************************************\n");
+
+    float val_prod, total;
+    int est;
+
+    printf("Digite o valor e o estado do produto:\n");
+    printf("1 - MG:\n");
+    printf("2 - SP:\n");
+    printf("3 - RJ:\n");
+    printf("4 - MS:\n");
+    scanf("%f %d", &val_prod, &est);
+
+    switch(est){
+        case 1:
+            total = val_prod + (val_prod * 0.07); 
+            printf("Valor Total = %.2f",total);
+            break;
+        case 2:
+            total = val_prod + (val_prod * 0.12);
+            printf("Valor Total = %.2f", total);
+            break;
+        case 3:
+            total = val_prod + (val_prod * 0.15);
+            printf("Valor Total = %.2f", total);
+            break;
+        case 4:
+            total = val_prod + (val_prod * 0.08);
+            printf("Valor Total = %.2f",total);
+            break;
+        default:
+            printf("Estado Invalido!\n");
+    }
+    printf("\n*******************************************************\n");
+    return 0;
+}
+*/
+
 /*MAIN E23
 int main(){
     printf("\n*******************************************************\n");
