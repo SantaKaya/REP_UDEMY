@@ -7,6 +7,96 @@
 
 //////////////////////////QUESTOES/////////////////////////////////////////
 
+//MAIN E22
+int main(){
+    printf("\n*******************************************************\n");
+
+    int id, temp_serv;
+
+    printf("Digite sua idade e tempo de servico:\n");
+    scanf("%d %d", &id, &temp_serv);
+
+    if(id >= 65){
+        printf("Apto para Aposentadoria!\n");
+    }else if(temp_serv >= 30){
+        printf("Apto para Aposentadoria!\n");
+    }else if(id >= 60 && temp_serv >= 25){
+        printf("Apto para Aposentadoria!\n");
+    }else{
+        printf("Nao Apto para Aposentadoria!\n");
+    }
+
+    printf("\n*******************************************************\n");
+    return 0;
+}
+
+
+
+/*MAIN E21
+int main(){
+    printf("\n*******************************************************\n");
+
+    int op;
+    int n1, n2;
+
+
+    printf("1 - Soma de 2 numeros:\n");
+    printf("2 - Diferenca entre 2 numeros (maior pelo menor):\n ");
+    printf("3 - Produto entre 2 numeros:\n");
+    printf("4 - Divisao entre 2 numeros:\n");
+    printf("Opcao:\n");
+    scanf("%d",&op);
+
+    switch(op){
+        case 1:
+            
+            printf("Digite 2 numeros:\n");
+            scanf("%d %d", &n1, &n2);
+            int soma = n1 + n2;
+            printf("%d + %d = %d", n1, n2, soma);
+            break;
+
+        case 2:
+            
+            printf("Digite dois numeros:\n");
+            scanf("%d %d", &n1, &n2);
+            if(n1 > n2){
+                int dif = n1 - n2;
+                printf("%d - %d = %d", n1, n2, dif);
+            }else{
+                int dif = n2 - n1;
+                printf("%d - %d = %d",n2, n1, dif);
+            }
+            break;
+        case 3:
+            
+            printf("Digite 2 numeros:\n");
+            scanf("%d %d", &n1, &n2);
+            int prod = n1 *n2;
+            printf("%d * %d = %d", n1, n2, prod);
+            break;
+
+        case 4:
+            
+            printf("Digite 2 numeros:\n");
+            scanf("%d %d", &n1, &n2);
+
+            if(n2 == 0){
+                printf("Opcao invalida\n");
+            }else{
+                float div = n1/n2;
+                printf("%d / %d = %.2f\n", n1, n2, div);
+
+            }
+            break;
+        default:
+            printf("\nOpcao invalida");
+    }
+
+    printf("\n*******************************************************\n");
+    return 0;
+}
+*/
 
 /*MAIN E20
 int main(){
