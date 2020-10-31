@@ -7,6 +7,71 @@
 
 //////////////////////////QUESTOES/////////////////////////////////////////
 
+//MAIN E30
+int main(){
+    printf("\n*******************************************************\n");
+
+
+
+
+    printf("\n*******************************************************\n");
+    return 0;
+}
+
+
+
+
+
+/*MAIN E29
+int main(){
+    printf("\n*******************************************************\n");
+
+
+
+
+
+
+    printf("\n*******************************************************\n");
+    return 0;
+}
+*/
+/*MAIN E28
+int main(){
+    printf("\n*******************************************************\n");
+
+    int n1,n2,n3,op;
+
+    printf("Digite os numeros:\n");
+    scanf("%d %d %d", &n1, &n2, &n3);
+
+    printf("\nDigite a opçcao:\n");
+    printf("1 - Geometrica:\n");
+    printf("2 - Ponderada:\n");
+    printf("3 - Harmonica:\n");
+    printf("4 - Aritimetica:\n");
+    scanf("%d",&op);
+
+    switch(op){
+        case 1: 
+            printf("media geometrica = %.2f", pow(n1*n2*n3,1.0/3.0));
+            break;
+
+        case 2:
+            printf("Media Ponderada = %d",(n1 + (2*n2) + (3*n3)) / 6);
+            break;
+
+        case 3:
+            printf("Media Harmonica = %d",(1 / ((1/n1) + (1/n2)+ (1/n3))));
+            break;
+
+        case 4:
+            printf("Media Aritmetica = %d",(n1 + n2 + n3)/3);
+            break;
+    }
+    printf("\n*******************************************************\n");
+    return 0;
+}
+*/
 
 /*MAIN E27
 int main(){
