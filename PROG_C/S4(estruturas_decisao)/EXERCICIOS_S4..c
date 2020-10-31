@@ -7,7 +7,31 @@
 
 //////////////////////////QUESTOES/////////////////////////////////////////
 
-//MAIN E22
+/*MAIN E23
+int main(){
+    printf("\n*******************************************************\n");
+
+    int ano;
+    printf("Digite um ano:\n");
+    scanf("%d", &ano);
+
+    int div = ano % 4;
+    int div2 = ano % 100;
+
+    if(div2 == 0){
+        printf("Ano não bissexto");
+    }else if(div == 0){
+        printf("Ano Bissexto!");
+    }else{
+        printf("Ano nao bissexto!");
+    }
+
+    printf("\n*******************************************************\n");
+    return 0;
+}
+*/
+
+/*MAIN E22
 int main(){
     printf("\n*******************************************************\n");
 
@@ -29,8 +53,7 @@ int main(){
     printf("\n*******************************************************\n");
     return 0;
 }
-
-
+*/
 
 /*MAIN E21
 int main(){
