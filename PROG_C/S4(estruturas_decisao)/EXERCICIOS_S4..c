@@ -7,7 +7,34 @@
 
 //////////////////////////QUESTOES/////////////////////////////////////////
 
-//MAIN E25
+
+
+
+
+
+/*MAIN E26
+int main(){
+    printf("\n*******************************************************\n");
+
+    float km, lt_perc;
+    printf("Digite os Quilometros rodados e QTD.Gasolina gasta:\n");
+    scanf("%f %f",&km,&lt_perc);
+
+    float consumo = km / lt_perc;
+
+    if(consumo < 8){
+        printf("Venda o Carro!\n");
+    }else if(consumo >= 8 && consumo < 12){
+        printf("Economico!\n");
+    }else if(consumo > 12){
+        printf("Super Economico!\n");
+    }
+    printf("\n*******************************************************\n");
+    return 0;
+}
+*/
+
+/*MAIN E25
 int main(){
     printf("\n*******************************************************\n");
 
@@ -27,8 +54,6 @@ int main(){
         printf("Nao eh equacao de 2 grau!\n");
     }
 
-
-
     if ( delt < 0){
         printf("Raiz nao existe!\n");
     }else if(delt == 0){
@@ -41,14 +66,10 @@ int main(){
     }else if(delt >= 0){
         printf("Duas raizes reais:\nx1 = %d\nx2= %d",x1,x2);
     }
-
-
-
-
     printf("\n*******************************************************\n");
     return 0;
 }
-
+*/
 
 
 /*MAIN E24
