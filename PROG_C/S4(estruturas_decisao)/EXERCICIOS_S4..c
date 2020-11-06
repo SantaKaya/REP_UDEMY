@@ -7,7 +7,66 @@
 
 //////////////////////////QUESTOES/////////////////////////////////////////
 
+//MAIN E30
+int main(){
 
+    int n1, n2, n3;
+
+    printf("Digite 3 numeros");
+    scanf("%d %d %d", &n1, &n2, &n3);
+
+    if(n1 < n2 && n2 < n3){
+            printf(" %d %d %d",n1,n2,n3);
+    }else if(n1 < n3 && n3 < n2){
+        printf("%d %d %d",n1,n3,n2);
+    }
+    
+    if(n2 < n1 && n1 < n3){
+            printf(" %d %d %d",n2,n1,n3);
+    }else if(n2 < n3 && n3 < n1){
+        printf("%d %d %d",n2,n3,n1);
+    }
+
+    if(n3 < n1 && n1 < n2){
+        printf("%d %d %d",n3,n1,n2);
+    }else if(n3 < n2 && n2 < n1){
+        printf("%d %d %d",n3,n2,n1);
+    }
+    
+    return 0;
+}
+
+/*MAIN E29
+int main(){
+
+    srand((unsigned)(time(NULL)));
+    int acertos = 0, err = 0;
+    float a,b,soma,resp;
+
+    for(int i = 0; i < 5; i++){
+        a = (rand()%100) + 1;
+        b = (rand()%100) + 1;
+
+        soma = a + b;
+        resp = soma;
+
+
+        printf("Qual eh a soma de %.0f + %.0f?\n",a,b);
+        scanf("%f",&resp);
+
+        if(resp != soma){
+            err++;
+            //printf("Resposta Errada!\nResposta Certa = %.0f\n",soma);
+        }else{
+            acertos++;
+            printf("Resposta Correta!\n%.0f + %.0f = %.0f\n",a,b,resp);
+        }
+    
+    }
+    printf("Acertos: %d\nErros: %d\n",acertos,err);
+    return 0;
+}
+*/
 
 /*MAIN E28
 int main(){
