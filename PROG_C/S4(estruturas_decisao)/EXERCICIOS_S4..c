@@ -11,6 +11,38 @@
 //MAIN E35
 int main(){
 
+    int d,m,a;
+
+    printf("Digite dia/mes/ano:\n");
+    scanf("%d %d %d",&d,&m,&a);
+
+    if(a % 4 == 0 && (a % 400 == 0 || a % 100 !=0)){
+        if(m <= 1 && m <=12 ){
+            
+            if(m == 2 && d <= 29){
+                printf("|%d|%d|%d|- Data Valida!\n",d,m,a);
+            }else{
+                printf("|%d|%d|%d|- Data Invalida\n",d,m,a);
+            }
+
+            if(d != 29 && d <=30){
+                printf("|%d|%d|%d| - Data Valida!",d,m,a);
+            }
+        }
+    }else if(m <=1 && m <=12){
+        
+        if(m ==2 && d <= 28){
+            printf("|%d|%d|%d| - Data Valida!\n",d,m,a);
+        }else{
+            printf("|%d|%d|%d| - Data Invalida!",d,m,a);
+        }
+
+        if(d != 28 && d <= 30){
+            printf("|%d|%d|%d| - Data Valida!\n",d,m,a);
+        }
+    }else{
+        printf("Data Invalida!\n",d,m,a);
+    }
 
 
 
