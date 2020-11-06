@@ -7,6 +7,67 @@
 
 //////////////////////////QUESTOES/////////////////////////////////////////
 
+//MAIN E34
+int main(){
+
+    int num_f;
+    float nota;
+
+    printf("Digite a nota e o numero de faltas:\n");
+    scanf("%f %f",&nota,&num_f);
+
+    if(nota >= 9 && nota <= 10){
+        if(num_f <= 20){
+            printf("\nnota = %.2f\n",nota);
+            printf("CONCEITO A!\n");
+        }else if(num_f > 20){
+            printf("\nnota = %.2f\n",nota);
+            printf("CONCEITO B!\n");
+        }
+    }else if(nota >= 7.5 && nota <= 8.9){
+        if(num_f <=20){
+            printf("\nnota = %.2f\n",nota);
+            printf("CONCEITO B");
+        }else if(num_f > 20){
+            printf("\nnota = %.2f\n",nota);
+            printf("CONCEITO C");
+        }
+    }else if(nota >= 5 && nota <=7.4){
+        if(num_f <= 20){
+            printf("\nnota = %.2f\n",nota);
+            printf("CONCEITO C");
+        }else if(num_f > 20){
+            printf("\nnota = %.2f\n",nota);
+            printf("CONCEITO D");
+        }
+    }else if(nota >= 4 && nota<=4.9){
+        if(num_f <=20){
+            printf("\nnota = %.2f\n",nota);
+            printf("CONCEITO D");
+        }else if(num_f > 20){
+            printf("\nnota = %.2f\n",nota);
+            printf("CONCEITO E");
+        }
+    }else if(nota >= 0 && nota<=3.9){
+        if(num_f <= 20){
+            printf("\nnota = %.2f\n",nota);
+            printf("CONCEITO E");
+        }else if(num_f > 20){
+            printf("n\nota = %.2f\n",nota);
+            printf("CONCEITO E");
+        }
+    }
+
+
+
+
+
+
+    return 0;
+}
+
+
+
 /*MAIN E33
 int main(){
 
@@ -17,16 +78,26 @@ int main(){
 
     if(p < 50){
         val = p + (p * 0.05);
-        printf("Valor Novo = %.2f\n",val);
-        printf("Desconto = 5%%");
+        printf("\nValor Novo = %.2f\n",val);
+        printf("\nDesconto = 5%%\n");
     }else if(p >= 50 && p < 100){
         val = p + (p*0.1);
-        printf("Valor Novo = %.2f\n",val);
-        printf("Desconto = 10%%");
+        printf("\nValor Novo = %.2f\n",val);
+        printf("\nDesconto = 10%%\n");
     }else if(p >=100){
         val = p + (p * 0.15);
-        printf("Valor Novo = %.2f\n",val);
-        printf("Desconto = 15%%");
+        printf("\nValor Novo = %.2f\n",val);
+        printf("\nDesconto = 15%%\n");
+    }
+
+    if(val < 80){
+        printf("\nBARATO!\n\n");
+    }else if(val >= 80 && val <=120 ){
+        printf("\nNORMAL!\n");
+    }else if(val > 120 && val <= 200){
+        printf("\nCaro!\n");
+    }else if(val > 200){
+        printf("\nMUITO CARO!");
     }
     return 0;
 }
