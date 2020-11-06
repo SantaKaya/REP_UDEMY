@@ -7,34 +7,183 @@
 
 //////////////////////////QUESTOES/////////////////////////////////////////
 
-//MAIN E30
+/*MAIN E33
+int main(){
+
+    float p,val;
+
+    printf("Digite o preco antigo:\n");
+    scanf("%f",&p);
+
+    if(p < 50){
+        val = p + (p * 0.05);
+        printf("Valor Novo = %.2f\n",val);
+        printf("Desconto = 5%%");
+    }else if(p >= 50 && p < 100){
+        val = p + (p*0.1);
+        printf("Valor Novo = %.2f\n",val);
+        printf("Desconto = 10%%");
+    }else if(p >=100){
+        val = p + (p * 0.15);
+        printf("Valor Novo = %.2f\n",val);
+        printf("Desconto = 15%%");
+    }
+    return 0;
+}
+*/
+
+/*MAIN E32
+int main(){
+
+    int cod,qtd;
+    float val = 0,ped;
+
+    printf("100 - CACHORRO QUENTE\n");
+    printf("101 - BAURO SIMPLES\n");
+    printf("102 - BAURU COM OVO\n");
+    printf("103 - HAMBUERGUER\n");
+    printf("104 - CHEESEBURGUER\n");
+    printf("105 - SUCO\n");
+    printf("106 - REFRIGERANTE\n");
+    printf("0 - Finalizar pedido.\n");
+
+    printf("\nDigite o Codigo do produto e a Quantidade:\n");
+    scanf("%d %d", &cod, &qtd);
+
+    while(cod != 0){
+
+        switch (cod){
+        
+            case 100:
+                ped = qtd * 1.20;
+                val = val + ped;
+                break;
+            case 101:
+                ped = qtd * 1.30;
+                val = val + ped;
+                break;
+            case 102:
+                ped = qtd * 1.50;
+                val = val + ped;
+                break;
+            case 103:
+                ped = qtd * 1.20;
+                val = val + ped;
+                break;
+            case 104:
+                ped = qtd * 1.70;
+                val = val + ped;
+                break;
+            case 105:
+                ped = qtd * 2.20;
+                val = val + ped;
+                break;
+            case 106:
+                ped = qtd * 1.00;
+                val = val + ped;
+                break;
+            default:
+                //printf("\n Valor total = %.2f\n", val);
+                break;
+        }
+
+        printf("Valor total = %.2f",val);
+
+        printf("\nDigite o Codigo do produto e a Quantidade:\n");
+        scanf("%d %d", &cod, &qtd);
+        
+
+    }
+
+    printf("Valor total = %.2f",val);
+    return 0;
+}
+*/
+
+
+
+
+
+
+/*MAIN E31
+int main(){
+
+    int a = 0, p = 0;
+    float alt, pes;
+
+    printf("Digite sua altura e peso:\n");
+    scanf("%f %f",&alt,&pes);
+
+    if(alt < 1.20){
+        a = 1;
+    }else if(alt >= 1.20 && alt < 1.70){
+        a = 2;
+    }else if( alt >= 1.70){
+        a = 3;
+    }
+
+    if(pes <= 60){
+        p = 1;
+    }else if(pes > 60 && pes <= 90 ){
+        p = 2;
+    }else if(pes > 90){
+        p = 3;
+    }
+
+    printf("a = %d\n",a);
+    printf("p = %d\n",p);
+
+    if(a == 1 && p==1){
+        printf("\nCategoria A");
+    }else if(a==1 && p==2){
+        printf("\nCategoria D");
+    }else if(a==1 && p==3){
+        printf("\nCategoria G");
+    }else if(a==2 && p==1){
+        printf("\nCategoria B");
+    }else if(a==2 && p==2){
+        printf("\nCategoria E");
+    }else if(a==2 && p==3){
+        printf("\nCategoria H");
+    }else if(a==3 && p==1){
+        printf("\nCategoria C");
+    }else if(a==3 && p==2){
+        printf("\nCategoria F");
+    }else if(a==3 && p==3){
+        printf("\nCategoria I");
+    }
+    return 0;
+}
+*/
+
+
+
+
+
+/*MAIN E30
 int main(){
 
     int n1, n2, n3;
 
-    printf("Digite 3 numeros");
+    printf("Digite 3 numeros:\n");
     scanf("%d %d %d", &n1, &n2, &n3);
 
     if(n1 < n2 && n2 < n3){
-            printf(" %d %d %d",n1,n2,n3);
-    }else if(n1 < n3 && n3 < n2){
-        printf("%d %d %d",n1,n3,n2);
-    }
-    
-    if(n2 < n1 && n1 < n3){
-            printf(" %d %d %d",n2,n1,n3);
-    }else if(n2 < n3 && n3 < n1){
-        printf("%d %d %d",n2,n3,n1);
-    }
-
-    if(n3 < n1 && n1 < n2){
-        printf("%d %d %d",n3,n1,n2);
-    }else if(n3 < n2 && n2 < n1){
-        printf("%d %d %d",n3,n2,n1);
-    }
-    
+        printf("%d %d %d\n", n1, n2, n3);
+    }else if(n1 < n2 && n2 > n3 && n1 < n3){
+        printf("%d %d %d\n", n1, n3, n2);
+    }else if(n2 < n1 && n1 < n3){
+        printf("%d %d %d\n", n2, n1, n3);
+    }else if(n2 < n1 && n1 > n3 && n2 < n3){
+        printf("%d %d %d\n",n2,n3,n1);
+    }else if(n3 < n1 && n1 < n2){
+        printf("%d %d %d\n", n3,n1,n2);
+    }else if(n3 < n1 && n1 > n2){
+        printf("%d %d %d\n", n3, n2, n1);
+    }    
     return 0;
 }
+*/
 
 /*MAIN E29
 int main(){
