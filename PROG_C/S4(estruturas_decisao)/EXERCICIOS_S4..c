@@ -7,56 +7,9 @@
 
 //////////////////////////QUESTOES/////////////////////////////////////////
 
-//MAIN E34
+
+//MAIN E35
 int main(){
-
-    int num_f;
-    float nota;
-
-    printf("Digite a nota e o numero de faltas:\n");
-    scanf("%f %f",&nota,&num_f);
-
-    if(nota >= 9 && nota <= 10){
-        if(num_f <= 20){
-            printf("\nnota = %.2f\n",nota);
-            printf("CONCEITO A!\n");
-        }else if(num_f > 20){
-            printf("\nnota = %.2f\n",nota);
-            printf("CONCEITO B!\n");
-        }
-    }else if(nota >= 7.5 && nota <= 8.9){
-        if(num_f <=20){
-            printf("\nnota = %.2f\n",nota);
-            printf("CONCEITO B");
-        }else if(num_f > 20){
-            printf("\nnota = %.2f\n",nota);
-            printf("CONCEITO C");
-        }
-    }else if(nota >= 5 && nota <=7.4){
-        if(num_f <= 20){
-            printf("\nnota = %.2f\n",nota);
-            printf("CONCEITO C");
-        }else if(num_f > 20){
-            printf("\nnota = %.2f\n",nota);
-            printf("CONCEITO D");
-        }
-    }else if(nota >= 4 && nota<=4.9){
-        if(num_f <=20){
-            printf("\nnota = %.2f\n",nota);
-            printf("CONCEITO D");
-        }else if(num_f > 20){
-            printf("\nnota = %.2f\n",nota);
-            printf("CONCEITO E");
-        }
-    }else if(nota >= 0 && nota<=3.9){
-        if(num_f <= 20){
-            printf("\nnota = %.2f\n",nota);
-            printf("CONCEITO E");
-        }else if(num_f > 20){
-            printf("n\nota = %.2f\n",nota);
-            printf("CONCEITO E");
-        }
-    }
 
 
 
@@ -67,6 +20,42 @@ int main(){
 }
 
 
+
+
+/*MAIN E34
+int main(){
+
+    int num_f;
+    float nota;
+
+    printf("Digite a nota e o numero de faltas:\n");
+    scanf("%f %d",&nota,&num_f);
+
+
+    if(nota >= 9 && nota <=10 && num_f <= 20){
+        printf("CONCEITO A!\n");
+    }else if(nota >= 9 && nota <=10 && num_f > 20){
+        printf("CONCEITO B!\n");
+    }else if(nota >=7.5 && nota <=8.9 && num_f <=20){
+        printf("CONCEITO B!\n");
+    }else if(nota >=7.5 && nota <=8.9 && num_f > 20){
+        printf("CONCEITO C!");
+    }else if(nota >= 5 && nota <=7.5 && num_f <=20){
+        printf("CONCEITO C!\n");
+    }else if(nota >= 5 && nota <=7.5 && num_f > 20){
+        printf("CONCEITO D!\n");
+    }else if(nota >= 4 && nota <= 4.9 && num_f <= 20){
+        printf("CONCEITO D!\n");
+    }else if(nota >= 4 && nota <= 4.9 && num_f > 20){
+        printf("CONCEITO E1!");
+    }else if(nota >= 0 && nota < 4 && num_f <=20){
+        printf("CONCEITO E2!\n");
+    }else if(nota >= 0 && nota < 4 && num_f > 20){
+        printf("CONCEITO E3!\n");
+    }
+    return 0;
+}
+*/
 
 /*MAIN E33
 int main(){
