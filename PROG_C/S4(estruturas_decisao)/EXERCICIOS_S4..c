@@ -8,6 +8,20 @@
 //////////////////////////QUESTOES/////////////////////////////////////////
 
 
+/*MAIN E36
+int main(){
+
+
+
+
+
+
+    return 0;
+}
+*/
+
+
+
 //MAIN E35
 int main(){
 
@@ -16,43 +30,46 @@ int main(){
     printf("Digite dia/mes/ano:\n");
     scanf("%d %d %d",&d,&m,&a);
 
-    if(a % 4 == 0 && (a % 400 == 0 || a % 100 !=0)){
-        if(m <= 1 && m <=12 ){
-            
-            if(m == 2 && d <= 29){
-                printf("|%d|%d|%d|- Data Valida!\n",d,m,a);
-            }else{
-                printf("|%d|%d|%d|- Data Invalida\n",d,m,a);
-            }
 
-            if(d != 29 && d <=30){
-                printf("|%d|%d|%d| - Data Valida!",d,m,a);
+    int div = a % 4;
+    int div2 = a % 100;
+
+    if(div2 == 0){//nb
+        if(m>=1 && m<=12 && d<=30){
+            if(m == 2 && d<29){
+                printf("|%d|%d|%d|- DATA VALIDA1!\n",d,m,a);
+            }else if(m !=2 && d<=30){
+                printf("|%d|%d|%d| - DATA VALIDA2!\n");
             }
-        }
-    }else if(m <=1 && m <=12){
-        
-        if(m ==2 && d <= 28){
-            printf("|%d|%d|%d| - Data Valida!\n",d,m,a);
         }else{
-            printf("|%d|%d|%d| - Data Invalida!",d,m,a);
+            printf("|%d|%d|%d| - DATA INVALIDA1!\n",d,m,a);
         }
+    }else if(div == 0){//bis
+        if(m>=1 && m<=12 && d<=30){
+            if(m==2 && d<=29){
+                printf("|%d|%d|%d| - DATA VALIDA3!\n",d,m,a);
+            }else if(m!=2 && d<=30){
+                printf("|%d|%d|%d| - DATA VALIDA4!\n",d,m,a);
 
-        if(d != 28 && d <= 30){
-            printf("|%d|%d|%d| - Data Valida!\n",d,m,a);
+            }
+        }else{
+            printf("|%d|%d|%d| - DATA INVALIDA2!\n",d,m,a);
         }
+        
     }else{
-        printf("Data Invalida!\n",d,m,a);
+        if(m>=1 && m<=12 && d<=30){
+            if(m == 2 && d<29){
+                printf("|%d|%d|%d|- DATA VALIDA5!\n",d,m,a);
+            }else if(m !=2 && d<=30){
+                printf("|%d|%d|%d| - DATA VALIDA6!\n");
+            }
+        }else{
+            printf("|%d|%d|%d| - DATA INVALIDA3!\n",d,m,a);
+        }
     }
-
-
-
-
-
     return 0;
 }
-
-
-
+//
 
 /*MAIN E34
 int main(){
