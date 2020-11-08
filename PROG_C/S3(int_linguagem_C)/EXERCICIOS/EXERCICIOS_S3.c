@@ -1149,9 +1149,8 @@ int main(){
     //Processamento_dados
 
     //Saida_dados
-    printf("O numero digitado foi: %d",numero);
+    printf("O numero digitado foi: %d",&numero);
 
     return 0;
 }
-
 */

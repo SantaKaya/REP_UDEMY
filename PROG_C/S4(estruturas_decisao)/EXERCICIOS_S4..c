@@ -7,7 +7,7 @@
 
 //////////////////////////QUESTOES/////////////////////////////////////////
 
-//MAIN E37
+/*MAIN E37
 int main(){
 
     int hc,mc,hp,mp,DIA,hora_t;
@@ -73,6 +73,7 @@ int main(){
 
     return 0;
 }
+*/
 
 /*MAIN E36
 int main(){
