@@ -7,22 +7,114 @@
 
 //////////////////////////QUESTOES/////////////////////////////////////////
 
+//MAIN E37
+int main(){
+
+    int hc,mc,hp,mp,DIA,hora_t;
+    float val;
+
+    printf("Digite a hora da chegada:\n");
+    scanf("%d %d",&hc,&mc);
+
+    printf("Digite a hora da partida:\n");
+    scanf("%d %d",&hp,&mp);
+
+    int hora_c = (hc*60) + mc;
+    printf("Hora chegada = %d\n\n",hora_c);
+    int hora_p = (hp*60) + mp;
+    printf("Hora chegada = %d\n\n",hora_p);
+
+
+    hora_t = hora_p - hora_c;//120
+
+    if(hora_c < hora_p){
+        if(hora_t <= 60){
+                val = 1;//1hora
+                printf("\n***CHEGADA - |%d|%d|\n**PARTIDA - |%d|%d|\n*VALOR TOTAL1 R$ = %.2f\n",hc,mc,hp,mp,val);
+            }else if(hora_t > 60 && hora_t <=120){
+                val = (2*1);//2horas
+                printf("\n***CHEGADA - |%d|%d|\n**PARTIDA - |%d|%d|\n*VALOR TOTAL2 R$ = %.2f\n",hc,mc,hp,mp,val);
+            }else if(hora_t > 120 && hora_t <=180){
+                val = (3*(1.4));//3horas
+                printf("\n***CHEGADA - |%d|%d|\n**PARTIDA - |%d|%d|\n*VALOR TOTAL3 R$ = %.2f\n",hc,mc,hp,mp,val);
+            }else if(hora_t >180 && hora_t <=240){
+                val = (4*(1.4));//4horas
+                printf("\n***CHEGADA - |%d|%d|\n**PARTIDA - |%d|%d|\n*VALOR TOTAL4 R$ = %.2f\n",hc,mc,hp,mp,val);
+            }else if(hora_t >240 && hora_t <= 300){
+                val = (5*2);
+                printf("\n***CHEGADA - |%d|%d|\n**PARTIDA - |%d|%d|\n*VALOR TOTAL5 R$ = %.2f\n",hc,mc,hp,mp,val);
+            }else if(hora_t > 300 && hora_t <= 1380){//23h
+                
+                float ver = hora_t%60;
+                printf("\n\nverificação = %.2f\n",ver);
+
+                if(ver == 0){//valor inteiro
+                    val = (hora_t/60)*2;
+                    printf("\n***CHEGADA - |%d|%d|\n**PARTIDA - |%d|%d|\n*VALOR TOTAL6 R$ = %.2f\n",hc,mc,hp,mp,val);
+                }else if(ver !=0){//valor aproximado
+                    val = ((hora_t/60)+1)*2;
+                    printf("\n***CHEGADA - |%d|%d|\n**PARTIDA - |%d|%d|\n*VALOR TOTAL7 R$ = %.2f\n",hc,mc,hp,mp,val);
+                }
+            }
+    }else if(hora_c > hora_p){
+        DIA = (1440 - hora_c) + hora_p;
+        printf("DIA = %d\n\n",DIA);
+        float ver = DIA%60;
+
+        if(ver==0){
+            val = (DIA/60)*2;
+            printf("\n***CHEGADA - |%d|%d|\n**PARTIDA - |%d|%d|\n*VALOR TOTAL6 R$ = %.2f\n",hc,mc,hp,mp,val);
+        }else if(ver!=0){
+            val = ((DIA/60)+1)*2;
+            printf("\n***CHEGADA - |%d|%d|\n**PARTIDA - |%d|%d|\n*VALOR TOTAL7 R$ = %.2f\n",hc,mc,hp,mp,val);
+        }
+    }   
+    
+
+    return 0;
+}
 
 /*MAIN E36
 int main(){
 
+    float val, com;
 
+    printf("Digite o valor da venda:\n");
+    scanf("%f",&val);
 
+    if(val >= 100000){
+        com = 700 + (val*0.16);
+        printf("Comissao R$ = %.2f",com);
 
+    }else if( val < 100000 && val >=80000){
+        com = 650 + (val*0.14);
+        printf("Commisao R$ = %.2f",com);
 
+    }else if(val < 80000 && val >= 60000){
+        
+        com = 600 + (val *0.14);
+        printf("Comissao R$ = %.2f",com);
 
+    }else if(val <60000 && val >= 40000){
+        
+        com = 550 + (val *0.14);
+        printf("Comissao R$ = %.2f",com);
+
+    }else if(val < 40000 && val >= 20000){
+        
+        com = 500 +(val*0.14);
+        printf("Comissao R$ = %.2f",com);
+
+    }else if( val <20000){
+        
+        com = 400 + (val * 0.14);
+        printf("Comissao R$ = %.2f",com);
+    }
     return 0;
 }
 */
 
-
-
-//MAIN E35
+/*MAIN E35
 int main(){
 
     int d,m,a;
@@ -34,42 +126,30 @@ int main(){
     int div = a % 4;
     int div2 = a % 100;
 
-    if(div2 == 0){//nb
-        if(m>=1 && m<=12 && d<=30){
-            if(m == 2 && d<29){
-                printf("|%d|%d|%d|- DATA VALIDA1!\n",d,m,a);
-            }else if(m !=2 && d<=30){
-                printf("|%d|%d|%d| - DATA VALIDA2!\n");
+    if(m >= 1 && m <= 12){
+        if(d<=30){
+            if(m==2 && d<30){
+                if(div2 == 0 && d < 29){//nao bi
+                    printf("|%d|%d|%d| - DATA VALIDA1!\n",d,m,a);
+                }else if(div ==0 && d<=29){//ano bi
+                    printf("|%d|%d|%d| - DATA VALIDA2!",d,m,a);
+                }else{//nao bi
+                    printf("|%d|%d|%d| - DATA VALIDA3!\n",d,m,a);
+                }
+            }else{
+                printf("|%d|%d|%d| - DATA VALIDA4!\n",d,m,a);
             }
         }else{
             printf("|%d|%d|%d| - DATA INVALIDA1!\n",d,m,a);
         }
-    }else if(div == 0){//bis
-        if(m>=1 && m<=12 && d<=30){
-            if(m==2 && d<=29){
-                printf("|%d|%d|%d| - DATA VALIDA3!\n",d,m,a);
-            }else if(m!=2 && d<=30){
-                printf("|%d|%d|%d| - DATA VALIDA4!\n",d,m,a);
-
-            }
-        }else{
-            printf("|%d|%d|%d| - DATA INVALIDA2!\n",d,m,a);
-        }
         
     }else{
-        if(m>=1 && m<=12 && d<=30){
-            if(m == 2 && d<29){
-                printf("|%d|%d|%d|- DATA VALIDA5!\n",d,m,a);
-            }else if(m !=2 && d<=30){
-                printf("|%d|%d|%d| - DATA VALIDA6!\n");
-            }
-        }else{
-            printf("|%d|%d|%d| - DATA INVALIDA3!\n",d,m,a);
-        }
+        printf("|%d|%d|%d| - DATA INVALIDA2!\n",d,m,a);
     }
+
     return 0;
 }
-//
+*/
 
 /*MAIN E34
 int main(){
