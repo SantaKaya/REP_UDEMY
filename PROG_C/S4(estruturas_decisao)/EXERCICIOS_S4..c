@@ -7,6 +7,63 @@
 
 //////////////////////////QUESTOES/////////////////////////////////////////
 
+
+
+//MAINE38
+int main(){
+
+    #define AT 2008
+
+    int d,m,a;
+
+    printf("Digite o DIA MES ANO:\n");
+    scanf("%d %d %d",&d,&m,&a);
+
+    int div = a % 4;
+    printf("\ndiv = %d\n",div);
+    int div2 = a % 100;
+    printf("\ndiv2 = %d\n",div2);
+
+    if(a<=AT){
+        if(m>=1 && m <13){
+            
+            if(m==2 && d<=29){
+                if(div2!=0 && d<=28){//NB
+                    printf("\n|%d|%d|%d| - DATA VALIDA1!\n",d,m,a);
+                }else if(div==0 && d<30){//bis
+                    printf("\n|%d|%d|%d| - DATA VALIDA2!\n",d,m,a);
+                }else if(div==div2 && div>0){
+                    printf("|%d|%d|%d| - DATA INVALIDAs!X\n",d,m,a);
+                }else{
+                    printf("|%d|%d|%d| - DATA INVALIDA!\n");
+                }
+                    
+                
+            }else if(m==4 || m==6 || m==9 || m==11){
+                if(d<=30){
+                printf("|%d|%d|%d| - DATA VALIDA3!\n",d,m,a);
+                }else{
+                    printf("\n|%d|%d|%d| - DATA INVALIDA1!\n",d,m,a);
+                }
+
+            }else if(m==1 || m==3 || m==5 || m==7 || m==8 || m==10 ||m==12){
+                if(d<=31){
+                    printf("\n|%d|%d|%d| - DATA VALIDA4!\n",d,m,a);
+                }else{
+                    printf("\n|%d|%d|%d| - DATA INVALIDA2!\n",d,m,a);
+                }
+            }
+            
+        }
+    }else{
+        printf("|%d|%d|%d| - DATA INVALIDA!\n",d,m,a);
+    }
+    
+    return 0;
+}
+
+
+
 /*MAIN E37
 int main(){
 
