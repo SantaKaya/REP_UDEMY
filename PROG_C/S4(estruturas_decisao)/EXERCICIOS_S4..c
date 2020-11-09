@@ -7,9 +7,64 @@
 
 //////////////////////////QUESTOES/////////////////////////////////////////
 
+//MAINE39
+int main(){
+
+    float val_s,temp_s;
+
+    printf("Digite o salario atual e o tempo de servico:\n");
+    scanf("%f %f",&val_s,&temp_s);
+
+    if(val_s <=500 && temp_s < 1){
+        float val_f = val_s + (val_s*0.25);
+        printf("\nSALARIO ANTIGO R$ = %.2f\n",val_s);
+        printf("\nSALARIO NOVO R$ = %.2f\n",val_f);
+    }else if(val_s > 500 && val_s <=1000){
+        if(temp_s>1 && temp_s <=3){
+            float val_f = val_s + (val_s*0.2) + 100;
+            printf("\nSALARIO ANTIGO R$ = %.2f\n",val_s);
+            printf("\nSALARIO NOVO R$ = %.2f\n",val_f);
+        }
+    }else if(val_s > 1000 && val_s <= 1500){
+        if(temp_s > 3 && temp_s <=6){
+            float val_f = val_s + (val_s * 0.15) + 200;
+            printf("\nSALARIO ANTIGO R$ = %.2f\n",val_s);
+            printf("\nSALARIO NOVO R$ = %.2f\n",val_f);
+        }
+    }else if(val_s > 1500 && val_s <=2000){
+        if(temp_s > 6 && temp_s <= 10){
+            float val_f = val_s + (val_s*0.10) + 300;
+            printf("\nSALARIO ANTIGO R$ = %.2f\n",val_s);
+            printf("\nSALARIO NOVO R$ = %.2f\n",val_f);
+        }
+    }else if(val_s > 2000){
+        if(temp_s > 10){
+            float val_f = val_s + 500;
+            printf("\nSALARIO ANTIGO R$ = %.2f\n",val_s);
+            printf("\nSALARIO NOVO R$ = %.2f\n",val_f);
+        }
+    }
+
+    return 0;
+}
 
 
-//MAINE38
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*MAINE38
 int main(){
 
     #define AT 2008
@@ -61,7 +116,7 @@ int main(){
     
     return 0;
 }
-
+*/
 
 
 /*MAIN E37
