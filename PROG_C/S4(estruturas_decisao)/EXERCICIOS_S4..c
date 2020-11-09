@@ -7,7 +7,65 @@
 
 //////////////////////////QUESTOES/////////////////////////////////////////
 
-//MAINE39
+//MAIN E41
+int main(){
+
+    float alt,peso;
+
+    printf("Digite sua altura e peso:\n");
+    scanf("%f%f",&alt,&peso);
+
+    float IMC = peso/(alt*alt);
+
+    if(IMC < 18.5){
+        printf("ABAIXO DO PESO!\nIMC = %.2f",IMC);
+    }else if(IMC >=18.6 && IMC <=24.9){
+        printf("SAUDAVEL!\nIMC = %2.f",IMC);
+    }else if(IMC >=25 && IMC <=29.9){
+        printf("PESO EM EXCESSO!\nIMC = %2.f",IMC);
+    }else if(IMC >=30 && IMC <=34.9){
+        printf("OBESIDADE GRAU 1!\nIMC = %.2f",IMC);
+    }else if(IMC >=35 && IMC <= 39.9){
+        printf("OBSEDIDADE GRAU 2! (SEVERA)\nIMC = %2.f",IMC);
+    }else if(IMC >= 40){
+        printf("OBESIDADE GRAU 3! (MORBIDA)\nIMC = %.2f",IMC);
+    }
+    
+    return 0;
+}
+
+
+
+
+
+/*MAIN E40
+int main(){
+
+    float ct_f;
+
+    printf("Digite o custo de fabrica:\n");
+    scanf("%f",&ct_f);
+
+    if(ct_f <=12000){
+        float ct_c = ct_f + (ct_f*0.05);
+        printf("\nCUSTO FABRICA R$ = %.2f\n",ct_f);
+        printf("\nCUSTO CONSUMIDOR R$ = %.2f\n",ct_c);
+    }else if(ct_f >12000 && ct_f <25000){
+        float ct_c = ct_f + (ct_f*0.1) + (ct_f*0.15);
+        printf("\nCUSTO FABRICA R$ = %.2f\n",ct_f);
+        printf("CUSTO CONSUMIDOR R$ = %.2f\n",ct_c);
+    }else if(ct_f >=25000){
+        float ct_c = ct_f + (ct_f *0.15) + (ct_f * 0.2);
+        printf("\nCUSTO FABRICA R$ = %.2f\n",ct_f);
+        printf("CUSTO CONSUMIDOR R$ = %.2f\n",ct_c);
+    }
+
+    return 0;
+}
+*/
+
+
+/*MAINE39
 int main(){
 
     float val_s,temp_s;
@@ -47,21 +105,7 @@ int main(){
 
     return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+*/
 
 
 /*MAINE38
