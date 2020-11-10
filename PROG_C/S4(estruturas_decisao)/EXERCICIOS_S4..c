@@ -7,7 +7,7 @@
 
 //////////////////////////QUESTOES/////////////////////////////////////////
 
-//MAIN E41
+/*MAIN E41
 int main(){
 
     float alt,peso;
@@ -33,10 +33,7 @@ int main(){
     
     return 0;
 }
-
-
-
-
+*/
 
 /*MAIN E40
 int main(){
