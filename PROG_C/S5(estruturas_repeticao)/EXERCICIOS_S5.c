@@ -6,7 +6,8 @@
 //////////////////////////QUESTOES/////////////////////////////////////////
 
 
-//MAIN E13
+
+/*MAIN E14
 int main(){
 
     int num,a,b,c;
@@ -24,13 +25,10 @@ int main(){
             printf("C = %d\n\n",c);
             for(int i = 0; i < c; i++){//0....4
                 printf("PAR %d = |%d|\n",i+1,b);
-                //printf("I = %d\n",i);
-                //printf("\nB=%d",b);
-                //printf("\nA=%d\n",a);
+                
                 b = b - 2;//4
                 a = a - 2;
-                //printf("\nB1=%d",b);
-                //printf("\nA1=%d\n",a);
+                
                 
                 if(a == 2){
                    printf("PAR %d = |%d|\n",i+2,b) ;
@@ -44,14 +42,47 @@ int main(){
         printf("NUMERO IMPAR!\n");
     }
 
-
-
     return 0;
 }
+*/
+
+/*MAIN E13
+int main(){
+
+    int num,a,b,c;
 
 
+    printf("Digite um numero:\n");
+    scanf("%d",&num);
 
+    a = num;
+    b = 0;
+    if(a%2==0){//10
 
+        while(a>0){//10
+            c = (a/2);
+            printf("C = %d\n\n",c);
+            for(int i = 0; i < c; i++){//0....4
+                printf("PAR %d = |%d|\n",i+1,b);
+                
+                b = b +2;
+                a = a - 2;
+                
+                
+                if(a == 2){
+                   printf("PAR %d = |%d|\n",i+2,b) ;
+                   a = 0;
+                   break;
+                }
+                
+            }
+        }
+    }else{
+        printf("NUMERO IMPAR!\n");
+    }
+    return 0;
+}
+*/
 
 /*MAIN E12
 int main(){
