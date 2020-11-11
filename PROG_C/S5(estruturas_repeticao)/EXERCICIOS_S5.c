@@ -5,7 +5,27 @@
 
 //////////////////////////QUESTOES/////////////////////////////////////////
 
-//MAIN E19
+/*MAIN E20
+int main(){
+
+    int a = 0,c = 0,p=0;
+
+    while(a!=1000){
+        printf("DIGITE UM VALOR :\n");
+        scanf("%d",&a);
+        c++;
+
+        if(a%2==0){
+            p++;
+        }
+    }
+    printf("NUMERO DE DADOS = |%d|\nNUMERO DE VALORES PARES = |%d|\n",c-1,p-1);
+
+    return 0;
+}
+*/
+
+/*MAIN E19
 int main(){
 
     int num;
@@ -24,14 +44,9 @@ int main(){
         printf("DEZENA = |%d|\n",c);
         printf("UNIDADE = |%d|\n",d);
     }
-
     return 0;
 }
-
-
-
-
-
+*/
 
 /*MAIN E18
 int main(){
