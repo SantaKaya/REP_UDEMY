@@ -5,7 +5,42 @@
 
 //////////////////////////QUESTOES/////////////////////////////////////////
 
-//MAIN E15
+/*MAIN E16
+int main(){
+
+    int num,a,b,c;
+
+
+    printf("Digite um numero:\n");
+    scanf("%d",&num);
+
+    a = num;
+    b = num-2;
+    c = a/2;
+    if(a%2==0){//PAR
+
+        printf("NUMERO PAR!\n");
+    }else{//IMPAR
+        for(int i = 0; i < c;i++){
+
+            printf("IMPAR %d = |%d|\n",i+1,b);
+            b = b - 2;
+            a = a -2;
+
+            if(a==2){
+                printf("IMPAR %d = |%d|\n",i+2,b);
+                a = 0;
+                break;
+            }
+        }
+    }
+    return 0;
+}
+*/
+
+
+
+/*MAIN E15
 int main(){
 
     int num,a,b,c;
@@ -33,17 +68,9 @@ int main(){
             }
         }
     }
-
-
-
     return 0;
 }
-
-
-
-
-
-
+*/
 
 /*MAIN E14
 int main(){
