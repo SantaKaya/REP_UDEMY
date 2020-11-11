@@ -5,7 +5,36 @@
 
 //////////////////////////QUESTOES/////////////////////////////////////////
 
-//MAIN E17
+//MAIN E18
+int main(){
+
+    int qtd_num,num,aux1=0,c=1;
+
+    printf("Forneca a quantidade de numeros:\n");
+    scanf("%d",&qtd_num);
+
+    while(qtd_num >0){
+        printf("Digite um numero:\n");
+        scanf("%d",&num);
+        qtd_num--;
+
+        if(num>aux1){
+            aux1 = num;
+            //printf("\nAUX1 = %d\n",aux1);
+        }else if(num == aux1){
+                c++;
+                //printf("\nc = |%d|\n",c);
+            }
+    }
+    printf("\nMAIOR = |%d|\nQTD AP = |%d|\n",aux1,c);
+    return 0;
+}
+
+
+
+
+
+/*MAIN E17
 int main(){
 
     int num,soma=0;
@@ -27,14 +56,9 @@ int main(){
         }
         printf("\nADD = %d\n",soma);
     }
-
-
-
-    
+    return 0;
 }
-
-
-
+*/
 
 /*MAIN E16
 int main(){
