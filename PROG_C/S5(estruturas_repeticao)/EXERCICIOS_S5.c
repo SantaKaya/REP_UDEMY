@@ -6,7 +6,30 @@
 //////////////////////////QUESTOES/////////////////////////////////////////
 
 
-//MAIN E26
+
+//MAIN E27
+int main(){
+
+    int num;
+
+    printf("Digite um numero:\n");
+    scanf("%d",&num);
+    
+    float harm,soma;
+    soma = 0;
+
+    for(int i = 1; i<=num; i++){
+        harm = 1/(float)i;
+        soma = soma + harm;
+        //printf("harm %d = |%.2f|\n",i,harm);
+        printf("|1/%d|",i);
+    }
+
+    printf("\n\nh(n) = |%.2f|\n",soma);
+    return 0;
+}
+
+/*MAIN E26
 int main(){
 
     int num;
@@ -35,11 +58,9 @@ int main(){
         }
 
     }
-
-
     return 0;
 }
-
+*/
 
 /*MAIN E25
 int main(){
