@@ -5,6 +5,107 @@
 
 //////////////////////////QUESTOES/////////////////////////////////////////
 
+
+//MAIN E26
+int main(){
+
+    int num;
+
+    printf("Digite um numero:\n");
+    scanf("%d",&num);
+
+
+    for(int i = num+1; i < num+1000; i++){
+        printf("i =|%d|\n",i);
+        float a = i%11;
+        float b = i%13;
+        float c = i%17;
+
+        if(a==0 || b==0 || c == 0){
+            if(a == 0){
+                printf("Multiplo 11 = |%d|\n",i);
+                i = num + 1000;
+            }else if(b==0){
+                printf("Multiplo 13 = |%d|\n",i);
+                i = num + 1000;
+            }else if(c==0){
+                printf("Multiplo 17 = |%d|\n",i);
+                i = num + 1000;
+            }
+        }
+
+    }
+
+
+    return 0;
+}
+
+
+/*MAIN E25
+int main(){
+
+    int num = 1000,soma = 0;
+
+    for(int i = 0; i<num;i++){
+        if(i%3==0 || i%5==0){
+            //printf("NUMERO = |%d|\n",i);
+            soma = soma + i;
+            //printf("\nSOMA = |%d|\n",soma);
+        }
+        
+    }
+    printf("\n\nSOMA NUM 3 OU 5 = |%d|\n\n",soma);
+
+    return 0;
+}
+*/
+
+/*MAIN E24
+int main(){
+☺☻
+
+    int num,soma=0;
+
+    printf("Digite um numero:\n");
+    scanf("%d",&num);
+
+    if(num > 0){
+        for(int i =1; i<num;i++){
+            if(num%i==0){
+                soma = soma + i;
+            }
+        }
+        printf("SOMA DOS DIVISORES = |%d|\n",soma);
+    }else{
+        printf("NUMERO INVALIDO!\n");
+    }
+
+    return 0;
+}
+*/
+
+/*MAIN E23
+int main(){
+
+    int num;
+
+    printf("Digite um numero:\n");
+    scanf("%d",&num);
+
+    if(num > 0){
+        for(int i = 1; i<num; i++ ){
+            
+            if(num%i==0){
+                printf("DIVISORES = |%d|\n",i);
+            }
+        }
+    }else{
+        printf("NUMERO NEGATIVO!\n");
+    }
+    return 0;
+}
+*/
+
 /*MAIN E22
 int main(){
 
@@ -14,12 +115,8 @@ int main(){
     printf("Digite uma nota:\n");
     scanf("%f",&nota);
     a++;
-    
-    //int b = nota;
-    //int c = 20;
     soma = 0;
     soma = (float)soma + (float)nota;
-
 
     while(nota >9 && nota <= 20){
         printf("Digite uma nota:\n");
@@ -38,8 +135,6 @@ int main(){
     return 0;
 }
 */
-
-
 
 /*MAIN E21
 int main(){
