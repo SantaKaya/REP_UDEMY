@@ -5,6 +5,37 @@
 
 //////////////////////////QUESTOES/////////////////////////////////////////
 
+//MAIN E17
+int main(){
+
+    int num,soma=0;
+
+    printf("Digite um numero:\n");
+    scanf("%d",&num);
+
+    int a = num;
+    //10
+    printf("NUMBER - |%d|\n",num);
+
+    while(a>0){
+        int b = num;
+        for(int i = 0; i<num ;i++){
+            soma = soma + b;
+            b = b - 1;
+            a--;
+            //printf("\nSOMA = %d\n",soma);
+        }
+        printf("\nADD = %d\n",soma);
+    }
+
+
+
+    
+}
+
+
+
+
 /*MAIN E16
 int main(){
 
