@@ -5,7 +5,35 @@
 
 //////////////////////////QUESTOES/////////////////////////////////////////
 
-//MAIN E18
+//MAIN E19
+int main(){
+
+    int num;
+
+    printf("Digite um numero:\n");
+    scanf("%d",&num);
+
+
+    if(num>= 100 && num<=999){
+        int a = num / 100;//8
+        int b = num % 100;//52
+        int c = b / 10;//5
+        int d = b % 10;//2
+
+        printf("CENTENA = |%d|\n",a);
+        printf("DEZENA = |%d|\n",c);
+        printf("UNIDADE = |%d|\n",d);
+    }
+
+    return 0;
+}
+
+
+
+
+
+
+/*MAIN E18
 int main(){
 
     int qtd_num,num,aux1=0,c=1;
@@ -29,10 +57,7 @@ int main(){
     printf("\nMAIOR = |%d|\nQTD AP = |%d|\n",aux1,c);
     return 0;
 }
-
-
-
-
+*/
 
 /*MAIN E17
 int main(){
