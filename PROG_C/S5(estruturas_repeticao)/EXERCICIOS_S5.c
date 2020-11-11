@@ -5,6 +5,54 @@
 
 //////////////////////////QUESTOES/////////////////////////////////////////
 
+
+//MAIN E21
+int main(){
+
+    int num1,num2,soma,mult;
+
+    printf("DIGITE 2 VALORES:\n");
+    scanf("%d %d",&num1, &num2);
+
+    soma = num1 + num2;
+    mult = num1 * num2;
+
+    if(num1>num2){
+        int a = num1-num2;
+        a = a -1;
+
+        for(int i = num2+1; i<num1; i++){
+            if(i%2==0){
+                soma = soma + i;
+                //printf("\nSOMA = |%d|\n",soma);
+            }else{
+                mult = mult*i;
+            }
+        }
+    }else{
+        int a = num2-num1;
+        a = a-1;
+
+        for(int i = num1+1; i<num2;i++){
+
+            if(i%2==0){
+                soma = soma + i;
+                //printf("\nSOMA = |%d|\n",soma);
+            }else{
+                mult = mult*i;
+            }
+        }
+    }
+
+    printf("SOMA = |%d|\nMULTIPLICAÇÃO = |%d|\n",soma,mult);
+
+    return 0;
+}
+
+
+
+
+
 /*MAIN E20
 int main(){
 
