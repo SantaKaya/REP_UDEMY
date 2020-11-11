@@ -5,9 +5,72 @@
 
 //////////////////////////QUESTOES/////////////////////////////////////////
 
+//MAIN E29
+int main(){
+
+    int num = 5;
+    float soma = 0,c = 0,e,soma1;
+
+    for(int i = 1; i<=num; i++){
+        c = (float)(2*(i));//2
+        printf("C = |%.2f|\n\n",c);
+        soma1 = 0;
+        for(int j = 1; j <= c; j++){
+            soma1 = soma1 + (float)(j);
+            printf("\n\nSOMA1_total = |%.2f|\n\n",soma1);
+
+        }
+
+        printf("\n\nSOMA1_total = |%.2f|\n\n",soma1);
+
+        e = (float)(i)/soma1;
+        printf("E = |%.2f|\n\n",e);
+
+        soma = soma + e;
+        printf("SOMA = |%.2f|\n\n",soma);
+    }
+
+    printf("SOMA_total = |%.2f|\n",soma);
+
+    return 0;
+}
 
 
-//MAIN E27
+
+/*MAIN E28
+int main(){
+
+    int num,b=0;
+    float e,soma,c;
+
+    soma = 1;
+
+    printf("Digite um valor:\n");
+    scanf("%d",&num);
+
+    if(num>0){
+
+        for(int i = 1; i<=num; i++){
+            b = b + i;
+            printf("B = |%d|\n",b);
+
+            e = 1/(float)b;
+            printf("E = |%.2f|\n",e);
+
+            soma = soma + e;
+        
+
+        }
+
+    printf("Soma = |%.2f|\n",soma);
+    }else{
+        printf("NUMERO INVALIDO!\n");
+    }
+    return 0;
+}
+*/
+
+/*MAIN E27
 int main(){
 
     int num;
@@ -28,6 +91,7 @@ int main(){
     printf("\n\nh(n) = |%.2f|\n",soma);
     return 0;
 }
+*/
 
 /*MAIN E26
 int main(){
