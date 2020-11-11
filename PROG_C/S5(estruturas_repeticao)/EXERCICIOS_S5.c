@@ -5,8 +5,43 @@
 
 //////////////////////////QUESTOES/////////////////////////////////////////
 
+/*MAIN E22
+int main(){
 
-//MAIN E21
+    int a=0;
+    float nota,soma,med;
+
+    printf("Digite uma nota:\n");
+    scanf("%f",&nota);
+    a++;
+    
+    //int b = nota;
+    //int c = 20;
+    soma = 0;
+    soma = (float)soma + (float)nota;
+
+
+    while(nota >9 && nota <= 20){
+        printf("Digite uma nota:\n");
+        scanf("%f",&nota);
+        a++;
+        soma = (float)soma + (float)nota;
+        printf("Soma = |%.2f|\n",soma);
+
+    }
+    soma = soma -1;
+    a = a -1;
+    med = soma/a;
+    
+    printf("MEDIA ARITIMETICA = |%.2f|\n",med);
+
+    return 0;
+}
+*/
+
+
+
+/*MAIN E21
 int main(){
 
     int num1,num2,soma,mult;
@@ -48,10 +83,7 @@ int main(){
 
     return 0;
 }
-
-
-
-
+*/
 
 /*MAIN E20
 int main(){
