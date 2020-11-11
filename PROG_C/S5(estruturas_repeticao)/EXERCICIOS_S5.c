@@ -5,7 +5,50 @@
 
 //////////////////////////QUESTOES/////////////////////////////////////////
 
-//MAIN E29
+//MAIN E30
+int main(){
+
+    int num = 10,soma = 0,a=1,b=2,c;
+
+    for(int i = 1; i <=num; i++){
+        soma = soma + i;
+        //printf("\nSOMA = |%d|\n",soma);
+    }
+
+    printf("SEQUENCIA 1 = |%d|\n\n",soma);
+    
+
+    for(int j = 1; j <= 5;j++){
+       // printf("=================i = |%d|===============\n",j);
+        c = a - b;
+        //printf("\n\n|%d| - |%d| = |%d|\n",a,b,c);
+        b++;
+        //printf("\nB =|%d|\n",b);
+        a = c + b;
+        ///printf("\n\n|%d| + |%d| = |%d|\n",c,b,a);
+        b++;
+        //printf("\nB =|%d|\n\n\n\n",b);
+
+    }
+    printf("SEQUENCIA 2 = |%d|\n\n",a);
+    soma = 0;
+    
+    for(int x = 1 ; x <=4; x++ ){
+        c = (2*x) -1;
+        soma = soma + c;
+    }
+    printf("SEQUENCIA 3 =|%d|\n",soma);
+
+
+
+
+    return 0;
+}
+
+
+
+
+/*MAIN E29
 int main(){
 
     int num = 5;
@@ -34,7 +77,7 @@ int main(){
 
     return 0;
 }
-
+*/
 
 
 /*MAIN E28
