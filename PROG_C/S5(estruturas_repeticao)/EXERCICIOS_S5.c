@@ -5,7 +5,53 @@
 
 //////////////////////////QUESTOES/////////////////////////////////////////
 
-//MAIN E30
+/*MAIN E32
+int main(){
+
+    int num,d1=0,d2=0;
+
+    printf("Digite o numero de lancamentos:\n");
+    scanf("%d",&num);
+    srand((unsigned)time(NULL));
+
+
+    for(int i = 1; i <=num;i++){
+        printf("LANÇAMENTO %d\n\n",i);
+        //srand((unsigned)time(NULL));
+        d1 = 1 + (rand()%6);
+        d2 = 1 + (rand()%6);
+        printf("\nDADO 1 = |%d|\nDADO 2 = |%d|\n",d1,d2);
+        if(d1>d2){
+            printf("\n%d > %d\n",d1,d2);
+        }else if(d2>d1){
+            printf("\n%d > %d\n",d2,d1);
+        }else{
+            printf("\n%d == %d\n",d1,d2);
+        }
+
+    }
+    return 0;
+}
+*/
+
+/*MAIN E31
+int main(){
+
+    int num = 99;
+    float a=1,b=1,soma =0,c;
+
+    for(int i = 1 ;i<=99 ;i++){
+        c = a/b;
+        soma = soma + c;
+        a = a+2;
+        b = b + 1;
+    }
+    printf("S = |%.2f|",soma);
+    return 0;
+}
+*/
+
+/*MAIN E30
 int main(){
 
     int num = 10,soma = 0,a=1,b=2,c;
@@ -38,13 +84,9 @@ int main(){
         soma = soma + c;
     }
     printf("SEQUENCIA 3 =|%d|\n",soma);
-
-
-
-
     return 0;
 }
-
+*/
 
 
 
