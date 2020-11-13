@@ -5,6 +5,55 @@
 
 //////////////////////////QUESTOES/////////////////////////////////////////
 
+
+//MAIN E34
+int main(){
+
+    int n=1,i=1,a=1;
+
+    while(a<=20){
+        if(n%i!=0){
+            //printf("N1 = |%d|\n",n);
+            n++;
+            a=0;
+            i=1;
+            //printf("N2 = |%d|\n ",n);
+        }else{
+            //printf("N3 = |%d|\n",n);
+            a=i;
+            i++;
+            //printf("A = |%d|\n I = |%d|\n",a,i);
+        }
+    }
+
+    printf("MENOR DIVISOR COMUM 1..20 = |%d|\n",n);
+
+
+    return 0;
+}
+
+
+/*MAIN E33
+int main(){
+
+    int num,i,j;
+    printf("Digite num,i,j:\n");
+    scanf("%d %d %d",&num,&i,&j);
+
+    printf("NUM = |%d|\ni = |%d|\nj = |%d|\n",num,i,j);
+    num = num + 1;
+
+    for(int x = 0; x <=num+1 ; x++){
+        printf("x = |%d|\n",x);
+        if(x%i==0 || x%j==0){
+            printf("MULTIPLOES = |%d|\n",x);
+        }
+    }
+
+    return 0;
+}
+*/
+
 /*MAIN E32
 int main(){
 
