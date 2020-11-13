@@ -5,16 +5,52 @@
 
 //////////////////////////QUESTOES/////////////////////////////////////////
 
-//MAIN E39
+//MAIN E40
+int main(){
+
+
+    int num,a1,a2;
+
+
+    printf("Digite um valor:\n");
+    scanf("%d",&num);
+    a1 = num;
+    a2 = num;
+
+    while(num>0){
+
+        if(num>a1){
+            a1=num;
+        }else if(num<a2){
+            a2=num;
+        }
+
+        printf("Digite um valor:\n");
+        scanf("%d",&num);
+
+    }
+
+    printf("MAIOR NUMERO = |%d|\nMENOR NUMERO = |%d|\n",a1,a2);
+
+    return 0;
+}
+
+
+
+
+
+/*MAIN E39
 int main(){
 
 
     int h=1,b=1;
 
     while(h > 0 || b>0){
+
         printf("H =\t");
         scanf("%d",&h);
         if(h==0) break;
+
         printf("B =\t");
         scanf("%d",&b);
         if(b==0) break;
@@ -23,16 +59,9 @@ int main(){
 
         printf("AREA = |%.2f|\n",area);
     }
-
-
-
-
-
-
     return 0;
 }
-
-
+*/
 
 /*MAIN E38
 int main(){
