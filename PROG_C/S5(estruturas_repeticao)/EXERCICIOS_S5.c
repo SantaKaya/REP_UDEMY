@@ -5,12 +5,47 @@
 
 //////////////////////////QUESTOES/////////////////////////////////////////
 
-//MAIN E40
+
+//MAIN E41
 int main(){
 
+    float r1,r2;
+
+    printf("R1 =\t");
+    scanf("%f",&r2);
+
+    printf("R2 =\t");
+    scanf("%f",&r1);
+    
+    
+
+    while(r1>0 && r2>0){
+
+        float rp = (r1*r2)/(r1+r2);
+
+        printf("RESISTENCIA PARALELA = %.2f Ohms\n",rp);
+
+        printf("R1 =\t");
+        scanf("%f",&r2);
+        if(r1==0) break;
+
+        printf("R2 =\t");
+        scanf("%f",&r1);
+        if(r2==0) break;
+
+    }
+
+
+    return 0;
+}
+
+
+
+
+/*MAIN E40
+int main(){
 
     int num,a1,a2;
-
 
     printf("Digite um valor:\n");
     scanf("%d",&num);
@@ -34,9 +69,7 @@ int main(){
 
     return 0;
 }
-
-
-
+*/
 
 
 /*MAIN E39
