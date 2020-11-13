@@ -5,6 +5,53 @@
 
 //////////////////////////QUESTOES/////////////////////////////////////////
 
+//MAIN E37
+int main(){
+
+    int num,a,b,soma;
+
+    for(int i = 1000 ; i<=9999; i++){
+        a = i/100;//30
+        b = i%100;//25
+        soma = (a + b)*(a+b);
+
+        if(soma == i){
+            printf("PROPRIEDADE NUMERO = |%d|\n",i);
+        }
+    }
+
+
+    return 0;
+}
+
+
+
+
+/*MAIN E36
+int main(){
+
+    int dif,s_q = 0,q_s = 0,a = 0,b = 0;
+
+    for(int i = 1; i <=100; i++){
+        a = i*i;
+        s_q = s_q + a;
+        b = b + i;
+    }
+    q_s = b*b;
+
+    printf(" SQ = |%d|\n",s_q);
+    printf(" QS = |%d|\n",q_s);
+
+    if(s_q>q_s){
+        dif = s_q - q_s;
+        printf("DIFERENÇA1 = |%d|\n",dif);
+    }else{
+        dif = q_s - s_q;
+        printf("DIFERENÇA2 = |%d|\n",dif);
+    }
+    return 0;
+}
+*/
 
 /*MAIN E35
 int main(){
