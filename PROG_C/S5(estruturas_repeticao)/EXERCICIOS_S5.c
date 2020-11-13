@@ -5,7 +5,36 @@
 
 //////////////////////////QUESTOES/////////////////////////////////////////
 
-//MAIN E38
+//MAIN E39
+int main(){
+
+
+    int h=1,b=1;
+
+    while(h > 0 || b>0){
+        printf("H =\t");
+        scanf("%d",&h);
+        if(h==0) break;
+        printf("B =\t");
+        scanf("%d",&b);
+        if(b==0) break;
+
+        float area = (float)(b*h)/2;
+
+        printf("AREA = |%.2f|\n",area);
+    }
+
+
+
+
+
+
+    return 0;
+}
+
+
+
+/*MAIN E38
 int main(){
 
     int a,b,c=1000,d;
@@ -27,19 +56,9 @@ int main(){
         }
         
     }       
-
-    
-
-
-
-
     return 0;
 }
-
-
-
-
-
+*/
 
 
 /*MAIN E37
