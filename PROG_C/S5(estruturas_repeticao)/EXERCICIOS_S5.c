@@ -5,7 +5,44 @@
 
 //////////////////////////QUESTOES/////////////////////////////////////////
 
-//MAIN E37
+//MAIN E38
+int main(){
+
+    int a,b,c=1000,d;
+    
+    //d = (a*a) + (b*b);
+
+    for(int i = 1; i<=100;i++){
+        for(int j = 2; j<=100;j++){
+            a=i;
+            b=j;
+            d = (a*a) + (b*b);
+            //printf("A = %d| B = %d| D = %d|\n",a,b,d);
+
+            if(d==c){
+            printf("\nA = %d|B = %d| C = %.2f|\n",a,b,(float)sqrt(c));
+            i=100;
+            j=100;
+            }
+        }
+        
+    }       
+
+    
+
+
+
+
+    return 0;
+}
+
+
+
+
+
+
+
+/*MAIN E37
 int main(){
 
     int num,a,b,soma;
@@ -19,13 +56,9 @@ int main(){
             printf("PROPRIEDADE NUMERO = |%d|\n",i);
         }
     }
-
-
     return 0;
 }
-
-
-
+*/
 
 /*MAIN E36
 int main(){
