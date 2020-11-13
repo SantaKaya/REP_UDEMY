@@ -6,7 +6,29 @@
 //////////////////////////QUESTOES/////////////////////////////////////////
 
 
-//MAIN E34
+/*MAIN E35
+int main(){
+
+    int i1,i2,soma = 0;
+
+    printf("DIGITE INICIO E FIM DO INTERVALO :\n");
+    scanf("%d %d",&i1, &i2);
+
+    if(i1<i2){
+        for(int i = i1; i<=i2; i++){
+            if(i%2!=0){
+                soma = soma + i;
+            }
+        }
+        printf("SOMA DOS IMPARES ENTRE %d-%d = |%d|",i1,i2,soma);
+    }else{
+        printf("\nINTERVALO INVALIDO!\n");
+    }
+    return 0;
+}
+*/
+
+/*MAIN E34
 int main(){
 
     int n=1,i=1,a=1;
@@ -25,13 +47,10 @@ int main(){
             //printf("A = |%d|\n I = |%d|\n",a,i);
         }
     }
-
     printf("MENOR DIVISOR COMUM 1..20 = |%d|\n",n);
-
-
     return 0;
 }
-
+*/
 
 /*MAIN E33
 int main(){
