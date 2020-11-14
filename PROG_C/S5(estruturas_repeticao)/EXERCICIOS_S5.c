@@ -5,6 +5,51 @@
 
 //////////////////////////QUESTOES/////////////////////////////////////////
 
+
+//MAIN E45
+int main(){
+
+    int a;
+    float km_h,ms_s;
+
+    do{
+
+        printf("\n1 - km/h p/ m/s. \n");
+        printf("2 - m/s p/ km/h.\n");
+        printf("3 - FINALIZAR PROGAMA!\n\nDIGITE OPCAO:\t");
+        scanf("%d",&a);
+
+        switch(a){
+            case 1:
+                printf("DIGITE A VELOCIDADE:\n");
+                scanf("%f",&km_h);
+
+                ms_s = km_h/3.6;
+
+                printf("\n\nVELOCIDADE EM M/S = |%.2f|\n",ms_s);
+                break;
+            case 2:
+                printf("DIGITE A VELOCIDADE:\n");
+                scanf("%f",&ms_s);
+
+                km_h = ms_s*3.6;
+
+                printf("\n\nVELOCIDADE EM KM/H = |%.2f|\n",km_h);
+                break;
+            case 3:
+                printf("\n\nPROGAMA FINALIZADO!\n");
+                break;
+        }
+
+    }while(a!=3);
+
+    return 0;
+}
+
+
+
+
+
 /*MAIN E44
 int main(){
 
