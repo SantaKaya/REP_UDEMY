@@ -5,8 +5,39 @@
 
 //////////////////////////QUESTOES/////////////////////////////////////////
 
+//MAIN E46
 
-//MAIN E45
+
+
+
+
+/*MAIN E46
+int main(){
+
+    int num, a,b=0;
+    srand(time(NULL));
+    a = 1 + (rand()%1000);
+
+    do{
+        printf("Digite um numero:\n");
+        scanf("%d",&num);
+        if(num<a){
+            printf("CHUTE MENOR!\n");
+            b++;
+        }else if(num>a){
+            printf("CHUTE MAIOR!\n");
+            b++;
+        }else if(num==a){
+            printf("ACERTOU!\nNUMERO DE TENTATIVAS = %d",b);
+            
+        }
+    }while(num!=a);
+
+    return 0;
+}
+*/
+
+/*MAIN E45
 int main(){
 
     int a;
@@ -45,7 +76,7 @@ int main(){
 
     return 0;
 }
-
+*/
 
 
 
