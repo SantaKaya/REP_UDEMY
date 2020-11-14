@@ -5,8 +5,48 @@
 
 //////////////////////////QUESTOES/////////////////////////////////////////
 
+/*MAIN E44
+int main(){
 
-//MAIN E43
+    int num,soma,fib1,fib2,a;
+
+    do{
+        printf("Digite um numero:\n");
+        scanf("%d",&num);
+        fib1 = 1;
+        fib2 = 1;
+        if(num==0) break;
+
+        for(int j = 0; j<=1;j++){
+            a = (fib1+j) - fib2;
+            printf("|%d|\n",a);
+        }
+        printf("|1|\n");
+
+        for(int i = 3 ; i<=num; i=i+1){
+            soma = fib1 + fib2;
+            fib1 = fib2;
+            fib2 = soma;
+            printf("|%d|\n",fib2);
+            if(fib2 > num){
+                //printf("|%d|",fib2);
+                i = num;
+            }
+        }
+        
+    }while(num>0);
+
+    printf("FIM DO PROGAMA!\n");
+
+    return 0;
+}
+*/
+
+
+
+
+
+/*MAIN E43
 int main(){
 
     int id,a=0;
@@ -29,11 +69,7 @@ int main(){
 
     return 0;
 }
-
-
-
-
-
+*/
 
 /*MAIN E42
 int main(){
