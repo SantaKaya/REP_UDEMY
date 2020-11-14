@@ -5,8 +5,61 @@
 
 //////////////////////////QUESTOES/////////////////////////////////////////
 
-//MAIN E46
 
+
+/*MAIN E47
+int main(){
+
+    int op,n1,n2;;
+    float a1,a2;
+
+    do{
+        printf("1 - |+|:\n");
+        printf("2 - |-|:\n");
+        printf("3 - |*|:\n");
+        printf("4 - |/|:\n");
+        printf("5 - |SAIDA|:\n");
+        scanf("%d",&op);
+
+        switch (op){
+            case 1:
+                
+                printf("\nDigite 2 numeros:\n\n");
+                scanf("%d %d",&n1,&n2);
+                int soma = n1 + n2;
+                printf("\n|%d + %d| = |%d|\n\n",n1,n2,soma);
+                break;
+            case 2:
+                
+                printf("Digite 2 numeros:\n\n");
+                scanf("%d %d",&n1,&n2);
+                int sub = n1 -n2;
+                printf("\n|%d - %d| = |%d|\n\n",n1,n2,sub);
+                break;
+            case 3:
+                
+                printf("Digite 2 numeros:\n\n");
+                scanf("%d %d",&n1,&n2);
+                int mult = n1*n2;
+                printf("\n|%d * %d| = |%d|\n\n",n1,n2,mult);
+                break;
+            case 4:
+                
+                printf("Digite 2 numeros:\n\n");
+                scanf("%f %f",&a1,&a2);
+                float div = (a1/a2);
+                printf("\n|%.0f / %.0f| = |%.2f|\n\n",a1,a2,div);
+                break;
+            case 5:
+                printf("\nPROGAMA FINALIZADO!\n\n");
+                break;
+        }
+
+    }while(op!=5);
+
+    return 0;
+}
+*/
 
 
 
