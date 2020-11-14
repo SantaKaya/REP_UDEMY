@@ -6,7 +6,36 @@
 //////////////////////////QUESTOES/////////////////////////////////////////
 
 
-//MAIN E41
+//MAIN E42
+int main(){
+
+    float num,a;
+
+    do{
+        printf("Digite um valor:\n");
+        scanf("%f",&num);
+
+        a = num*num;
+        printf("QUADRADO DE %.0f = %.2f\n",num,a);
+        a = num*num*num;
+        printf("CUBO DE %.0f = %.2f\n",num,a);
+        a = sqrt(num);
+        printf("RAIZ QUADRADA DE %.0f = %.2f\n",num,a);
+
+    }while(num>0);
+
+    return 0;
+}
+
+
+
+    
+
+
+
+
+
+/*MAIN E41
 int main(){
 
     float r1,r2;
@@ -34,13 +63,9 @@ int main(){
         if(r2==0) break;
 
     }
-
-
     return 0;
 }
-
-
-
+*/
 
 /*MAIN E40
 int main(){
