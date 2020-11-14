@@ -6,7 +6,36 @@
 //////////////////////////QUESTOES/////////////////////////////////////////
 
 
-//MAIN E42
+//MAIN E43
+int main(){
+
+    int id,a=0;
+    float med,soma = 0;
+
+    do{
+        printf("DIGITE A IDADE:\n");
+        scanf("%d",&id);
+        a++;
+        printf("A = %d\n",a);
+        soma = soma + id;
+        printf("Soma = %.2f\n",soma);
+
+
+    }while(id>0);
+    a = a -1;
+    med = soma/(float)a;
+
+    printf("MEDIA DAS IDADES = |%.2f|\n",med);
+
+    return 0;
+}
+
+
+
+
+
+
+/*MAIN E42
 int main(){
 
     float num,a;
@@ -26,14 +55,7 @@ int main(){
 
     return 0;
 }
-
-
-
-    
-
-
-
-
+*/
 
 /*MAIN E41
 int main(){
