@@ -3,8 +3,26 @@
 #include <math.h>
 #include <string.h>
 
+#define L 4000000
+
 //////////////////////////QUESTOES/////////////////////////////////////////
 
+//MAIN 48
+int main(){
+
+    int fb1=1,fb2=1,soma = 0,fb;
+
+    while(soma <=L){
+        fb = fb1 + fb2;
+        if(fb%2==0){
+            soma = soma + fb;
+        }
+        fb1 = fb2;
+        fb2 = fb; 
+    }
+    printf("A = |%d|\n SOMA = |%d|",fb,soma);
+    return 0;
+}
 
 
 /*MAIN E47
