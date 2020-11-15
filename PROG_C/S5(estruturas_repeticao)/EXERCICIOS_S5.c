@@ -3,25 +3,34 @@
 #include <math.h>
 #include <string.h>
 
-#define L 4000000
+
 
 //////////////////////////QUESTOES/////////////////////////////////////////
 
 //MAIN 48
 int main(){
 
-    int fb1=1,fb2=1,soma = 0,fb;
+    int fb1=1,fb2=1,soma=0,fb;
 
-    while(soma <=L){
+    while(soma<4000000){
         fb = fb1 + fb2;
+        printf("FB = |%d|\n",fb);
+        printf("SOMA = |%d|\n",soma);
+
         if(fb%2==0){
             soma = soma + fb;
+            fb1 = fb2;
+            fb2 = fb;
+            printf("SOMA = |%d|\n",soma);
+            printf("fb1 = |%d|\n",fb1);
+            printf("fb2 = |%d|\n",fb2);
+        }else{
+            fb1 = fb2;
+            fb2 = fb;
         }
-        fb1 = fb2;
-        fb2 = fb; 
+        
     }
-    printf("A = |%d|\n SOMA = |%d|",fb,soma);
-    return 0;
+    printf("SOMA = |%d|\n FB = |%d|",soma,fb);
 }
 
 
