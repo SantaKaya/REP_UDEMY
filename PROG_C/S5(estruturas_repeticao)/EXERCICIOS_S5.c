@@ -7,7 +7,37 @@
 
 //////////////////////////QUESTOES/////////////////////////////////////////
 
-//MAIN 48
+//MAIN E49
+int main(){
+
+    float sal_c,sal_j;
+    int mc=1,mj=1;
+
+    printf("Digite o valor do salario:\n");
+    scanf("%f",&sal_c);
+    sal_j = sal_c/3;
+
+    while(sal_c>=sal_j){
+        sal_c = sal_c + (sal_c*0.02);
+        sal_j = sal_j + (sal_j*0.05);
+        mc++;
+        mj++;
+
+    }
+    printf("SAL.CARLOS  R$ = |%.2f|\nMESES = |%d|\n",sal_c,mc);
+    printf("SAL.JOAO  R$ = |%.2f|\nMESES = |%d|\n",sal_j,mj);
+
+
+
+
+    return 0;
+}
+
+
+
+
+
+/*MAIN 48
 int main(){
 
     int fb1=1,fb2=1,soma=0,fb;
@@ -32,7 +62,7 @@ int main(){
     }
     printf("SOMA = |%d|\n FB = |%d|",soma,fb);
 }
-
+*/
 
 /*MAIN E47
 int main(){
