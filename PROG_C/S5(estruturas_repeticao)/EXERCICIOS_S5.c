@@ -7,7 +7,168 @@
 
 //////////////////////////QUESTOES/////////////////////////////////////////
 
-//MAIN E58
+
+//MAIN E60
+int main(){
+
+    int num,soma,med=0,qtd=1,num_M,num_m,p1 = 0,p2 = 0;
+    float div;
+
+        printf("Digite Um numero:\n");
+        scanf("%d",&num);
+        num_M = num;
+        num_m = num;
+
+        if(num%2==0){
+            p1 = p1+num;
+            p2++;
+        }
+        soma = num;
+
+
+    while(num!=0){
+
+        printf("Digite Um numero:\n");
+        scanf("%d",&num);
+        if(num==0) break;
+
+        //maior menor
+        if(num>=num_M){
+            num_M = num;
+        }else if(num<num_m){
+            num_m = num;
+        }
+        //media num pares
+        if(num%2==0){
+            p1 = p1 + num;
+            p2++;
+        }
+
+        //soma dos numeros
+        soma = soma + num;
+        //quanidade de numeros
+        qtd++;
+    }
+
+    printf("\nSOMA = |%d|\n",soma);
+    printf("\nQUANTIDADE DE NUMEROS = |%d|\n",qtd);
+
+    med = soma/qtd;
+    printf("\nMEDIA DOS NUMEROS = |%d|\n",med);
+
+    printf("\nMAIOR NUMERO = |%d|\n ",num_M);
+    printf("\nMENOR NUMERO = |%d|\n ",num_m);
+
+    med = p1/p2;
+
+    printf("MEDIA NUMEROS PARES = |%d|\n",med);
+
+    return 0;
+}
+
+
+
+
+
+/*MAIN R59
+int main(){
+
+    int num_hab,cod,c1=0,c2=0,c3=0,a=1,b=1;
+    float val_kwh,cons,cons_M,cons_m,use,cons_h = 0,cons_c1=0,cons_c2 = 0,cons_c3 = 0,h;
+
+    printf("\n1 - NUMERO DE HABITANTES:\nDigite:\t");
+    scanf("%d",&num_hab);
+
+    printf("\n2 - valor DE kwh:\nDigite:\t");
+    scanf("%f",&val_kwh);
+
+    printf("\n*HABITANTE |1|*\n");
+    printf("3 - CONSUMO DO MES:\nDigite:\t");
+    scanf("%f",&cons);
+    cons_M = cons;
+    cons_m = cons;
+    
+    use = cons * val_kwh;
+    cons_h = cons_h + use;
+    printf("\nUSE = |%.2f|\n",use);
+    printf("\ncons_h = |%.2f|\n",cons_h);
+
+    printf("4 - CODIGO DO CONSUMIDOR:\n");
+    scanf("%d",&cod);
+
+    if(cod==1){
+        c1++;
+        cons_c1 = cons_c1 + use;
+        printf("1 - cons_c1 = |%.2f|\n",cons_c1);
+    }else if(cod==2){
+        c2++;
+        cons_c2 = cons_c2 + use;
+        printf("2 - cons_c1 = |%.2f|\n",cons_c1);
+    }else if(cod==3){
+        c3++;
+        cons_c3 = cons_c3 + use;
+        printf("3 - cons_c1 = |%.2f|\n",cons_c1);
+    }
+
+    for(int i = 2; i<=num_hab; i++){
+        printf("\n*HABITANTE |%d|*\n",i);
+        printf("3 - CONSUMO DO MES:\nDigite:\t");
+        scanf("%f",&cons);
+
+        if(cons>=cons_M){
+            cons_M = cons;
+            a=i;
+        }else if(cons<=cons_m){
+            cons_m = cons;
+            b=i;
+        }
+
+        use = cons * val_kwh;
+        cons_h = cons_h + use;
+        printf("\nUSE = |%.2f|\n",use);
+        printf("cons_h = |%.2f|\n",cons_h);
+
+        printf("4 - CODIGO DO CONSUMIDOR:\nDigite:\t");
+        scanf("%d",&cod);
+
+        if(cod==1){
+            c1++;
+            cons_c1 = cons_c1 + use;
+            printf("cons_c1 = |%.2f|\n",cons_c1);
+        }else if(cod==2){
+            c2++;
+            cons_c2 = cons_c2 + use;
+            printf("\ncons_c2 = |%.2f|\n",cons_c2);
+        }else if(cod==3){
+            c3++;
+            cons_c3 = cons_c3 + use;
+            printf("\ncons_c3 = |%.2f|\n",cons_c3);
+        }
+    }
+
+    printf("MAIOR CONSUMO HABITANTE %d = |%.2f|\n",a,cons_M);
+    printf("MENOR CONSUMO HABITANTE %d = |%.2f|\n",b,cons_m);
+    
+    h = cons_h/((float)(num_hab));
+    printf("MEDIA CONSUMO P/ HABITANTE = |%.2f|\n",h);
+    
+    cons_c1 = cons_c1/c1;
+    printf("1 - RESIDENCIAL:\nCT = |%.2f|\n",cons_c1);
+
+    cons_c2 = cons_c2/c2;
+    printf("1 - RESIDENCIAL:\nCT = |%.2f|\n",cons_c2);
+
+    cons_c3 = cons_c3/c3;
+    printf("1 - RESIDENCIAL:\nCT = |%.2f|\n",cons_c3);
+
+    return 0;
+}
+*/
+
+
+
+
+/*MAIN E58
 int main(){
 
     int n,a,b,c=0,soma = 0;
@@ -30,16 +191,10 @@ int main(){
             c=0;
         }
     }
-
     printf("SOMA DE |%d -> %d| = |%d|",a,b,soma);
-
-
-
     return 0;
 }
-
-
-
+*/
 
 /*MAIN E57
 int main(){
