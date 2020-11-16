@@ -7,6 +7,28 @@
 
 //////////////////////////QUESTOES/////////////////////////////////////////
 
+//MAIN E54
+int main(){
+
+    int num,a,b = 1;
+
+    printf("Digite um numero:\n");
+    scanf("%d",&num);
+
+    for(int i = 2; i<=num; i++){
+        a = num%i;
+        if(a==0){
+            b++;
+        }
+    }
+    if(b==2){
+        printf("NUMERO PRIMO!\n");
+    }else{
+        printf("O NUMERO NAO EH PRIMO!\n");
+    }
+
+    return 0;
+}
 
 /*MAIN E53
 int main(){
