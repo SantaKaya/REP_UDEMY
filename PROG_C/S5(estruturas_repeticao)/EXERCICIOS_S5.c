@@ -7,14 +7,63 @@
 
 //////////////////////////QUESTOES/////////////////////////////////////////
 
-//MAIN E51
+
+//MAIN E52
+int main(){
+
+    int saq,n100=0,n50=0,n20=0,n10=0,n5=0,n2=0,n1=0,tt = 0;
+
+    printf("Digite o valor do saque:\n");
+    scanf("%d",&saq);
+
+    while(saq>0){
+        if(saq>=100){
+            saq = saq - 100;
+            n100++;
+            printf("SAQ = |%d|\n QTD.NOTA = |%d|\n",saq,n100);
+        }else if(saq<100 && saq >= 50){
+            saq = saq - 50;
+            n50++;
+            printf("SAQ = |%d|\n QTD.NOTA = |%d|\n",saq,n50);
+        }else if(saq<50 && saq >= 20){
+            saq = saq - 20;
+            n20++;
+            printf("SAQ = |%d|\n QTD.NOTA = |%d|\n",saq,n20);
+        }else if(saq < 20 && saq >= 10){
+            saq = saq - 10;
+            n10++;
+            printf("SAQ = |%d|\n QTD.NOTA = |%d|\n",saq,n10);
+        }else if( saq < 10 && saq >= 5){
+            saq = saq -  5;
+            n5++;
+            printf("SAQ = |%d|\n QTD.NOTA = |%d|\n",saq,n5);
+        }else if(saq < 5 && saq >=2){
+            saq = saq - 2;
+            n2++;
+            printf("SAQ = |%d|\n QTD.NOTA = |%d|\n",saq,n2);
+        }else if(saq < 2 ){
+            saq = saq - 1;
+            n1++;
+            printf("SAQ = |%d|\n QTD.NOTA = |%d|\n",saq,n1);
+        }
+    }
+
+    printf("NOTA 100 = |%d|\nNOTA 50 =  |%d|\nNOTA 20 = |%d|\nNOTA 10 = |%d|\nNOTA 5 = |%d|\nNOTA 2 = |%d|\nNOTA 1 = |%d|\n",n100,n50,n20,n10,n5,n2,n1);
+
+
+
+    return 0;
+}
+
+
+
+
+/*MAIN E51
 int main(){
 
     float sal_fun = 2000;
     float ano = 1995;
     float tx = 0.015;
-
-    
 
     while(ano<=2000){
         sal_fun = sal_fun + (sal_fun*tx);
@@ -27,11 +76,9 @@ int main(){
     }
     printf("SALARIO R$ = |%.2f|\n PERCENTUAL AUMENTO = |%.2f|\n",sal_fun,tx);
 
-
     return 0;
 }
-
-
+*/
 
 
 /*MAIN E50
