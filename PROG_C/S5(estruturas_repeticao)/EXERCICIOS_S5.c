@@ -7,6 +7,37 @@
 
 //////////////////////////QUESTOES/////////////////////////////////////////
 
+/*MAIN E57
+int main(){
+
+    int n,a,b,c=0,d=0;
+
+    printf("Digite os valores de a e b:\n");
+    scanf("%d %d",&a,&b);
+
+    for(int i = a; i<= b; i++){
+        for(int j = 1; j<=i; j++){
+            n = i%j;
+            if(n==0){
+                c++;
+            }
+        }
+        if(c==2){
+            d++;
+            c=0;
+        }else{
+            c=0;
+        }
+    }
+
+    printf(" Entre %d e %d ha %d valores primos!\n",a,b,d);
+    return 0;
+}
+*/
+
+
+
+
 /*MAIN E56
 int main(){
 
