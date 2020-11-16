@@ -7,7 +7,31 @@
 
 //////////////////////////QUESTOES/////////////////////////////////////////
 
-//MAIN E49
+
+//MAIN E50
+int main(){
+
+    float alt_c = 1.5,alt_z = 1.10;
+    int a=1;
+
+    while(alt_z<alt_c){
+        alt_c = alt_c + 2;
+        alt_z = alt_z + 3;
+        a++;
+
+    }
+    printf("ALTURA ZE = |%.2f|\n",alt_z);
+    printf("ALTURA CHICO = |%.2f|\n",alt_c);
+    printf("ANOS = |%d|\n",a);
+
+
+    return 0;
+}
+
+
+
+
+/*MAIN E49
 int main(){
 
     float sal_c,sal_j;
@@ -27,15 +51,9 @@ int main(){
     printf("SAL.CARLOS  R$ = |%.2f|\nMESES = |%d|\n",sal_c,mc);
     printf("SAL.JOAO  R$ = |%.2f|\nMESES = |%d|\n",sal_j,mj);
 
-
-
-
     return 0;
 }
-
-
-
-
+*/
 
 /*MAIN 48
 int main(){
