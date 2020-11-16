@@ -7,6 +7,40 @@
 
 //////////////////////////QUESTOES/////////////////////////////////////////
 
+//MAIN E58
+int main(){
+
+    int n,a,b,c=0,soma = 0;
+
+    printf("Digite os valores de a e b:\n");
+    scanf("%d %d",&a,&b);
+
+    for(int i = a; i<=b; i++)  {
+        for(int j = 1; j <=i; j++){
+            n = i%j;
+
+            if(n==0){
+                c++;
+            }
+        }
+        if(c==2){
+            soma = soma + i;
+            c=0;
+        }else{
+            c=0;
+        }
+    }
+
+    printf("SOMA DE |%d -> %d| = |%d|",a,b,soma);
+
+
+
+    return 0;
+}
+
+
+
+
 /*MAIN E57
 int main(){
 
@@ -30,7 +64,7 @@ int main(){
         }
     }
 
-    printf(" Entre %d e %d ha %d valores primos!\n",a,b,d);
+    printf(" |%d -> %d| = |%d| Valores Primos!\n",a,b,d);
     return 0;
 }
 */
