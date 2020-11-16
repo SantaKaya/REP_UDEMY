@@ -7,8 +7,34 @@
 
 //////////////////////////QUESTOES/////////////////////////////////////////
 
+//MAIN E51
+int main(){
 
-//MAIN E50
+    float sal_fun = 2000;
+    float ano = 1995;
+    float tx = 0.015;
+
+    
+
+    while(ano<=2000){
+        sal_fun = sal_fun + (sal_fun*tx);
+        ano++;
+        if(ano >= 1997){
+            tx = tx*2;
+            sal_fun = sal_fun + (sal_fun*tx);
+            ano++;
+        }
+    }
+    printf("SALARIO R$ = |%.2f|\n PERCENTUAL AUMENTO = |%.2f|\n",sal_fun,tx);
+
+
+    return 0;
+}
+
+
+
+
+/*MAIN E50
 int main(){
 
     float alt_c = 1.5,alt_z = 1.10;
@@ -27,7 +53,7 @@ int main(){
 
     return 0;
 }
-
+*/
 
 
 
