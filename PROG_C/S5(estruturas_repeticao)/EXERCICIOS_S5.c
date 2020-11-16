@@ -7,7 +7,38 @@
 
 //////////////////////////QUESTOES/////////////////////////////////////////
 
-//MAIN E55
+/*MAIN E56
+int main(){
+
+        int num = 2000000,b=2,c=0,soma=0;
+        
+        for(int i = 2; i<num;i++){
+            for(int j = 1; j<=i; j++){
+                int a = b%j;
+
+                if(a==0){
+                    c++;
+                }
+            }
+            if(c==2){
+                soma = soma + b;
+                printf("B = |%d|\nSOMANDO = |%d|\n",b,soma);
+                b++;
+                c=0;
+            }else{
+                b++;
+                c=0;
+            }
+        }
+        printf("SOMA TOTAL = |%d|\n",soma);
+
+
+    return 0;
+}
+*/
+
+
+/*MAIN E55
 int main(){
 
     int num,b = 2,c=0,soma;
@@ -41,7 +72,7 @@ int main(){
 
     return 0;
 }
-
+*/
 
 /*MAIN E54
 int main(){
