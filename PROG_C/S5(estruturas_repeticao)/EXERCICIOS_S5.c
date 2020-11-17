@@ -7,8 +7,93 @@
 
 //////////////////////////QUESTOES/////////////////////////////////////////
 
+//MAIN E62
+int main(){
+    
+    for(int i = 1; i<=1000; i++){
+        
+    }
 
-//MAIN E60
+
+
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+/*MAIN E61
+int main(){
+
+    int pal ,a,b,c,d,e,f,g,h,k,l,maior = 10000,n1,n2;
+
+    for(int i = 100; i<=999; i++){
+        for(int j = 101; j<=999; j++){
+            
+            pal = i*j;
+
+            if(pal>=10000 && pal <=99999){
+                a = pal/10000;//valor 1;
+                b = pal%10000;//valor 2 3 4 5;
+                c = b/1000;//valor 2;
+                d = b%1000;//valor 3 4 5;
+                e = d/100;//valor 3
+                f = d%100;//valor 4 e 5;
+                h = f/10;//valor 4;
+                k = f%10;//valor 5;
+
+                if(a==k && c==h){
+                    //printf("Palindromo1 |%d*%d| = |%d|\n",i,j,pal);
+                    if(pal>=maior){
+                        maior = pal;
+                        n1=i;
+                        n2=j;
+                        //printf("Palindromo1 |%d*%d| = |%d|\n",n1,n2,maior);
+                        
+                    }
+                }
+
+            }else if(pal>=100000 && pal <=999999){
+                a = pal/100000;//valor 1;
+                b = pal%100000;//valor 2 3 4 5 6
+                c = b/10000;//valor 2
+                d = b%10000;//valor 3 4 5 6
+                e = d/1000;//valor 3
+                f = d%1000;//valor 4 5 6
+                g = f/100;//valor 4
+                h = f%100;//valor 5 e 5
+                k = h/10;//valor 5
+                l = h%10;//valor 6
+
+                if(a==l && c==k && e==g){
+                    //printf("Palindromo2 |%d*%d| = |%d|\n",i,j,pal);
+                    if(pal>=maior){
+                        maior = pal;
+                        n1=i;
+                        n2=j;
+                        //printf("Palindromo2 |%d*%d| = |%d|\n",n1,n2,maior);
+                        
+                    }
+                }
+
+                
+            }
+        }
+
+        //printf("Palindromo2 |%d*%d| = |%d|\n",n1,n2,maior);
+    }
+    printf("MAIOR PALINDROMO |%d*%d| = |%d|\n",n1,n2,maior);
+
+    return 0;
+}
+*/
+
+/*MAIN E60
 int main(){
 
     int num,soma,med=0,qtd=1,num_M,num_m,p1 = 0,p2 = 0;
@@ -65,10 +150,7 @@ int main(){
 
     return 0;
 }
-
-
-
-
+*/
 
 /*MAIN R59
 int main(){
