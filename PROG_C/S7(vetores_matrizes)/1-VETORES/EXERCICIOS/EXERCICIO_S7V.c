@@ -5,7 +5,34 @@
 
 ///////////////////////QUESTOÕES VETORES////////////////////////////
 
-//MAIN E02
+//MAIN E03
+int main(){
+
+    float a[10],b[10],c,d;
+    
+    
+    for(int i = 0; i<=9; i++){
+        
+        printf("Digite um valor:\t");
+        scanf("%f",&a[i]);
+
+        c = a[i]*a[i];
+        b[i] = c;
+    }
+
+    for(int j = 1; j<=10; j++){
+        printf("\n\nA[%d] = |%.1f|\tB[%d] = |%.1f| \n",j,a[j-1],j,b[j-1]);
+    }
+
+    printf("A[9] = %.0f",a[9]);
+
+
+
+
+    return 0;
+}
+
+/*MAIN E02
 
 int main(){
 
@@ -19,12 +46,11 @@ int main(){
     }
     for (int j = 1; j <=6; j++){
         printf("VALOR %d = |%d|\n",j,n[j-1]);
-        
     }
    
     return 0;
 }
-
+*/
 
 
 /*MAIN E01
