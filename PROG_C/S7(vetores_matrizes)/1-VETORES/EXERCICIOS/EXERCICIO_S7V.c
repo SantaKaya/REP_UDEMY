@@ -5,7 +5,59 @@
 
 ///////////////////////QUESTOÕES VETORES////////////////////////////
 
-//MAIN E13
+//MAIN E14
+int main(){
+
+    int num[10],b[10],a,c;
+
+    for(int i = 0; i<=9; i++){
+        printf("\nVALOR |%d|\nDIGITE:\t",i+1);
+        scanf("%d",&num[i]);
+        b[i] = num[i];
+    }
+
+    int j = 0,k=1;
+
+    while (j<=9){
+        a = num[j];//1
+        c = b[k];//2
+
+        if(a == c){
+            c++;
+            printf("Valor igual |%d|\n",a);
+        }else{
+            c++;
+        }
+
+    }
+♥
+    /*
+    for(int j = 0; j<=9; j++){
+        for(int k = 1; k<=j; k++){
+            a = num[j];
+            c = b[k];
+            if(a==c){
+                printf("Valor igual - |%d|\n",c);
+            }else{
+                return 0;
+            }
+        }
+    }
+    */
+
+    
+    
+
+
+    
+
+
+    return 0;
+}
+
+
+
+/*MAIN E13
 int main(){
 
     int n[5],M=1,m=1,p_M,p_m;
@@ -27,9 +79,7 @@ int main(){
 
     return 0;
 }
-
-
-
+*/
 
 /*MAIN E12
 int main(){
