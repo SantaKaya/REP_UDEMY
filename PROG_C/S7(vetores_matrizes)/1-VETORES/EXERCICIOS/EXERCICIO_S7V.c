@@ -5,7 +5,36 @@
 
 ///////////////////////QUESTOÕES VETORES////////////////////////////
 
-//MAIN E05
+//MAIN E06
+int main(){
+
+    int a[10],M,m;
+
+    for(int i = 0; i<=9; i++){
+        printf("Valor %d do vetor.\nDigite :\t",i);
+        scanf("%d",&a[i]);
+    }
+    M = 1;
+    m = 1;
+
+    for(int j = 0; j<= 9; j++){
+        if(a[j] >= M){
+                M = a[j];
+                printf("\nA[%d] = %d\nA[%d] = |%d|\n",j,a[j],j+1,a[j+1]);
+                printf("M1 = |%d|\n",M);
+                printf("m1 = |%d|\n",m);
+            }else if(a[j]<=m){
+                m = a[j];
+            }
+    }
+    printf("\nMaior = |%d|\nMenor = |%d|\n",M,m);
+
+    return 0;
+}
+
+
+
+/*MAIN E05
 int main(){
 
     int a[10],b[10],p=0;
@@ -33,7 +62,7 @@ int main(){
 
     return 0;
 }
-
+*/
 
 /*MAIN E04
 int main(){
