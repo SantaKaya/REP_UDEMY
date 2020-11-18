@@ -5,6 +5,32 @@
 
 ///////////////////////QUESTOÕES VETORES////////////////////////////
 
+//MAIN E13
+int main(){
+
+    int n[5],M=1,m=1,p_M,p_m;
+
+    for(int i = 0; i<=4; i++){
+        printf("VALOR %d.\nDIGITE :\t",i+1);
+        scanf("%d",&n[i]);
+
+        if(n[i]>M){
+            M=n[i];
+            p_M = i;
+        }else if(n[i]<=m){
+            m = n[i];
+            p_m = i;
+        }
+
+    }
+    printf("MAIOR[%d] = |%d|\nMENOR[%d] = |%d|\n",p_M,M,p_m,m);
+
+    return 0;
+}
+
+
+
+
 /*MAIN E12
 int main(){
 
@@ -14,7 +40,7 @@ int main(){
         printf("VALOR %d.\nDIGITE :\t",i+1);
         scanf("%d",&n[i]);
 
-        if(n[i]>=M){
+        if(n[i]>M){
             M=n[i];
         }else if(n[i]<=m){
             m=n[i];
@@ -173,7 +199,7 @@ int main(){
     m = 1;
 
     for(int j = 0; j<= 9; j++){
-        if(a[j] >= M){
+        if(a[j] > M){
                 M = a[j];
                 printf("\nA[%d] = %d\nA[%d] = |%d|\n",j,a[j],j+1,a[j+1]);
                 printf("M1 = |%d|\n",M);
