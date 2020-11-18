@@ -6,6 +6,42 @@
 ///////////////////////QUESTOÕES VETORES////////////////////////////
 
 
+//MAIN E09
+int main(){
+
+    int n[6],b[6],i=0;
+
+    do{
+        
+        printf("Valor inteiro %d.\nDigite :\t",i+1);
+        scanf("%d",&n[i]);
+        if(n[i]%2==0){
+            b[i]= n[i];
+            i++;
+        }
+
+    }while(i<=6);
+
+
+
+    for(int j = 0; j<=5; j++){
+        printf("Valor PAR %d = |%d|\n",j+1,b[j]);
+    }
+    
+    
+
+
+
+
+
+
+    printf("\n");
+    return 0;
+}
+
+
+
+
 
 /*MAIN E08
 int main(){
@@ -25,7 +61,6 @@ int main(){
     return 0;
 }
 */
-
 
 /*MAIN E07
 int main(){
