@@ -5,7 +5,33 @@
 
 ///////////////////////QUESTOÕES VETORES////////////////////////////
 
-//MAIN E04
+//MAIN E05
+int main(){
+
+    int a[10],b[10],p=0;
+
+    for(int i = 0; i<=9; i++){
+        printf("Valor %d do vetor.\nDigite :\t",i);
+        scanf("%d",&a[i]);
+
+        if(a[i]%2==0){
+            p++;
+            b[i] = a[i];
+        }
+    }
+
+    for(int j = 0; j<=9; j++){
+        if(b[j]>0){
+            printf("Par %d = |%d|\n",j+1,b[j]);
+        }
+    }
+
+
+    return 0;
+}
+
+
+/*MAIN E04
 int main(){
 
     int num[8],x,y;
@@ -20,12 +46,9 @@ int main(){
 
     int soma = num[x-1]+num[y-1];
     printf("Soma %d + %d = |%d|",x,y,soma);
-
-
-
     return 0;
 }
-
+*/
 
 
 /*MAIN E03
