@@ -5,13 +5,42 @@
 
 ///////////////////////QUESTOÕES VETORES////////////////////////////
 
-//MAIN E06
+//MAIN E07
+int main(){
+
+    int a[10],M,p;
+
+    for(int i = 0; i<=9; i++){
+        printf("Valor %d do vetor.\nDigite :\t",i+1);
+        scanf("%d",&a[i]);
+    }
+    M = 1;
+    
+
+    for(int j = 0; j<= 9; j++){
+        if(a[j] >= M){
+                M = a[j];
+                p = j;
+                printf("\nA[%d] = %d\n\n",j,a[j],j+1,a[j+1]);
+                printf("M = |%d|\n",M);
+            }
+    }
+    printf("\n\n***Maior = |%d|\n***POSICAO =  |%d|\n",M,p);
+
+
+
+    return 0;
+}
+
+
+
+/*MAIN E06
 int main(){
 
     int a[10],M,m;
 
     for(int i = 0; i<=9; i++){
-        printf("Valor %d do vetor.\nDigite :\t",i);
+        printf("Valor %d do vetor.\nDigite :\t",i+1);
         scanf("%d",&a[i]);
     }
     M = 1;
@@ -31,8 +60,7 @@ int main(){
 
     return 0;
 }
-
-
+*/
 
 /*MAIN E05
 int main(){
