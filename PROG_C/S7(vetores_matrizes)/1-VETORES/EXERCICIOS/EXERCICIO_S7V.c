@@ -5,7 +5,30 @@
 
 ///////////////////////QUESTOÕES VETORES////////////////////////////
 
-//MAIN E03
+//MAIN E04
+int main(){
+
+    int num[8],x,y;
+
+    for(int i = 0; i<=7;i++){
+        printf("Valor %d do veto =\t",i+1);
+        scanf("%d",&num[i]);
+    }
+
+    printf("Digite duas posições:\n");
+    scanf("%d %d",&x,&y);
+
+    int soma = num[x-1]+num[y-1];
+    printf("Soma %d + %d = |%d|",x,y,soma);
+
+
+
+    return 0;
+}
+
+
+
+/*MAIN E03
 int main(){
 
     float a[10],b[10],c,d;
@@ -25,12 +48,9 @@ int main(){
     }
 
     printf("A[9] = %.0f",a[9]);
-
-
-
-
     return 0;
 }
+*/
 
 /*MAIN E02
 
