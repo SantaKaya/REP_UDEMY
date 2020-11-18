@@ -5,7 +5,29 @@
 
 ///////////////////////QUESTOÕES VETORES////////////////////////////
 
-//MAIN E07
+
+
+/*MAIN E08
+int main(){
+
+    int n[6];
+
+    for(int i = 0; i<=5; i++){
+        printf("Valores Inteiros:\nDigite :\t");
+        scanf("%d",&n[i]);
+    }
+    
+    for(int j = 5; j>=0; j--){
+        printf("Valores Inteiros (-1) = %d\n",n[j]);
+    }
+
+    printf("\n");
+    return 0;
+}
+*/
+
+
+/*MAIN E07
 int main(){
 
     int a[10],M,p;
@@ -26,12 +48,9 @@ int main(){
             }
     }
     printf("\n\n***Maior = |%d|\n***POSICAO =  |%d|\n",M,p);
-
-
-
     return 0;
 }
-
+*/
 
 
 /*MAIN E06
