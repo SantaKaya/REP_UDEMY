@@ -5,8 +5,32 @@
 
 ///////////////////////QUESTOÕES VETORES////////////////////////////
 
+/*MAIN E10
+int main(){
 
-//MAIN E09
+    float nota[15];
+
+    for(int i = 0; i<=14; i++){
+        printf("ALUNO %d NOTA.\nDIGITE :\t",i+1);
+        scanf("%f",&nota[i]);
+
+    }
+
+    int soma = 0;
+
+    for(int j = 0; j<=14;j++){
+        soma = soma + nota[j];
+        printf("soma = |%d|\n\n",soma);
+    }
+
+    float media = (soma / 15);
+
+    printf("MEDIA = |%.2f|\n",media);
+    return 0;
+}
+*/
+
+/*MAIN E09
 int main(){
 
     int n[6],b[6],i=0;
@@ -28,17 +52,10 @@ int main(){
         printf("Valor PAR %d = |%d|\n",j+1,b[j]);
     }
     
-    
-
-
-
-
-
-
     printf("\n");
     return 0;
 }
-
+*/
 
 
 
