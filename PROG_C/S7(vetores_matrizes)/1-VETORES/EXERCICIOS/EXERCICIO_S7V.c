@@ -30,7 +30,7 @@ int main(){
         }
 
     }
-♥
+
     /*
     for(int j = 0; j<=9; j++){
         for(int k = 1; k<=j; k++){
