@@ -5,6 +5,32 @@
 
 ///////////////////////QUESTOÕES VETORES////////////////////////////
 
+
+/*MAIN E11
+int main(){
+
+    float a[10],neg = 0,pos=0;
+    int p=0;
+
+    for(int i = 0; i<=9; i++){
+        printf("Valor Real |%d|\nDigite :\t",i+1);
+        scanf("%f",&a[i]);
+
+        if(a[i]<0){
+            neg = neg + a[i];
+            p++;
+        }else if(a[i]>0){
+            pos = pos + a[i];
+        }
+    }
+    printf("Soma + = |%.2f|\n",pos);
+    printf("SOMA NEGATIVOS = |%.2f|\tQTD = |%d|\n",neg,p);
+    return 0;
+}
+*/
+
+
+
 /*MAIN E10
 int main(){
 
