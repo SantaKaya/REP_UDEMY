@@ -17,15 +17,19 @@ int main(){
         if(a[i]%2==0){
             p++;
             b[i] = a[i];
+        }else{
+            b[i] = 0;
         }
     }
+
+    printf("\nQTD_NUM_PAR = |%d|\n\n",p);
+    printf("\n***NUMEROS***\n");
 
     for(int j = 0; j<=9; j++){
         if(b[j]>0){
             printf("Par %d = |%d|\n",j+1,b[j]);
         }
     }
-
 
     return 0;
 }

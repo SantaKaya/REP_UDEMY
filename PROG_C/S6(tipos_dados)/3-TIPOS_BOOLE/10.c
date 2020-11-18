@@ -21,12 +21,5 @@ int main(){
     }else{
         printf("Falso..");
     }
-
-    //processamento_dados
-
-    //saida_dados
-
-
-
     return 0;
 }
