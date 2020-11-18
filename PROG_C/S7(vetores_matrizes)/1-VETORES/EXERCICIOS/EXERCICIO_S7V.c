@@ -5,6 +5,35 @@
 
 ///////////////////////QUESTOÕES VETORES////////////////////////////
 
+/*MAIN E12
+int main(){
+
+    int n[5],M=1,m=1;
+
+    for(int i = 0; i<=4; i++){
+        printf("VALOR %d.\nDIGITE :\t",i+1);
+        scanf("%d",&n[i]);
+
+        if(n[i]>=M){
+            M=n[i];
+        }else if(n[i]<=m){
+            m=n[i];
+        }
+
+    }
+
+    float soma = 0;
+
+    for(int j = 0; j <= 4; j++){
+        soma = soma + n[j];
+    }
+
+    float med = soma / 5;
+    printf("MAIOR = |%d|\nMENOR = |%d|\nMEDIA = |%.2f|",M,m,med);
+    return 0;
+}
+*/
+
 
 /*MAIN E11
 int main(){
