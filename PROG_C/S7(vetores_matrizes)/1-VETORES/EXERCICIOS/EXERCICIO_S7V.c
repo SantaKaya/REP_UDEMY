@@ -6,17 +6,50 @@
 ///////////////////////QUESTOÕES VETORES////////////////////////////
 
 
-/*MAIN E16
+//MAIN E16
 int main(){
 
+    float num[5];
+    int cod;
+
+    for(int i = 0; i<=4; i++){
+        printf("\nVALOR |%d|\nDIGITE:\t",i+1);
+        scanf("%f",&num[i]);
+    }
+
+    for(int j = 0; j<=4;j++){
+        printf("VETOR1 = |%.1f|\n",num[j]);
+    }
+
+
+
+
+    printf("\nCODIGO|Digite:\t");
+    scanf("%d",&cod);
+    if(cod!=1 && cod!=2 && cod !=0){
+        printf("CODIGO INVALIDO!\n");
+    }
+    switch (cod){
+        case 1:
+            for(int j = 0; j<=4;j++){
+                printf("VETOR = |%.1f|\n",num[j]);
+            }
+        break;
+
+        case 2:
+            for(int j = 4; j>=0;j--){
+                printf("VETOR INVERSO = |%.1f|\n",num[j]);
+            }
+            break;
     
-
-
-
+        case 0:
+            printf("Progama FINALIZADO!\n");
+        break;
+        }
 
     return 0;
 }
-*/
+
 
 
 /*MAIN E15
@@ -47,9 +80,7 @@ int main(){
 }
 */
 
-
-
-//MAIN E14
+/*MAIN E14
 int main(){
 
     int num[10],b[10],a=0,c;
@@ -79,8 +110,6 @@ int main(){
         }
     }
 
-
-
     for(int m = 0; m<a ;m++){
         for(int n = 0; n<=m;n++){
             if(b[m]==b[n]&& m!=n){
@@ -91,13 +120,11 @@ int main(){
             printf("VALOR IGUAL - |%d|\n",b[m]);
         }
     }
-
-
     printf("\n");
     
     return 0;
 }
-
+*/
 
 
 /*MAIN E13
