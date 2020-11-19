@@ -5,7 +5,21 @@
 
 ///////////////////////QUESTOÕES VETORES////////////////////////////
 
-//MAIN E15
+
+/*MAIN E16
+int main(){
+
+    
+
+
+
+
+    return 0;
+}
+*/
+
+
+/*MAIN E15
 int main(){
 
     int num[20],b[20];
@@ -18,13 +32,10 @@ int main(){
     for(int j = 0; j<=19; j++){
         for(int k = 0; k<=19; k++){
 
-            //c = 0;
-
             if(num[j]==num[k] && j!=k){
-                printf("b1 = |%d|\n",b[j]);
                 b[j]=0;
                 b[k]=0;
-                printf("b2 = |%d|\n",b[j]);
+                
                 
             }
         }
@@ -32,16 +43,13 @@ int main(){
             printf("\nVETOR= |%d|\n",b[j]);
         }    
     }
-    
-    //printf("a = |%d|\n",a);
-    
     return 0;
 }
+*/
 
 
 
-
-/*MAIN E14
+//MAIN E14
 int main(){
 
     int num[10],b[10],a=0,c;
@@ -70,15 +78,26 @@ int main(){
             }
         }
     }
+
+
+
     for(int m = 0; m<a ;m++){
-        printf("VALOR IGUAL - |%d|\n\n",b[m]);
-        
+        for(int n = 0; n<=m;n++){
+            if(b[m]==b[n]&& m!=n){
+                b[m]=0;
+            }
+        }
+        if(b[m]>0){
+            printf("VALOR IGUAL - |%d|\n",b[m]);
+        }
     }
+
+
     printf("\n");
     
     return 0;
 }
-*/
+
 
 
 /*MAIN E13
