@@ -5,30 +5,80 @@
 
 ///////////////////////QUESTOÕES VETORES////////////////////////////
 
-//MAIN E14
+//MAIN E15
 int main(){
 
-    int num[10],b[10],a,c;
+    int num[20],b[20];
+
+    for(int i = 0; i<=19; i++){
+        printf("\nVALOR |%d|\nDIGITE:\t",i+1);
+        scanf("%d",&num[i]);
+        b[i] = num[i];
+    }
+    for(int j = 0; j<=19; j++){
+        for(int k = 0; k<=19; k++){
+
+            //c = 0;
+
+            if(num[j]==num[k] && j!=k){
+                printf("b1 = |%d|\n",b[j]);
+                b[j]=0;
+                b[k]=0;
+                printf("b2 = |%d|\n",b[j]);
+                
+            }
+        }
+        if(b[j]>0){
+            printf("\nVETOR= |%d|\n",b[j]);
+        }    
+    }
+    
+    //printf("a = |%d|\n",a);
+    
+    return 0;
+}
+
+
+
+
+/*MAIN E14
+int main(){
+
+    int num[10],b[10],a=0,c;
 
     for(int i = 0; i<=9; i++){
         printf("\nVALOR |%d|\nDIGITE:\t",i+1);
         scanf("%d",&num[i]);
         b[i] = num[i];
     }
+
+
     for(int j = 0; j<=9; j++){
-        for(int k = 1; k<=j; k++){
-            a = num[j];
-            c = b[k];
-            if(a==c){
-                printf("Valor igual - |%d|\n",c);
-            }else{
-                return 0;
+        for(int k = 0; k<=9; k++){
+            c = 0;
+
+            if(num[j]==num[k] && j!=k){
+                for(int w = 0; w<=9; w++){
+                    if(b[w]==num[j]){
+                        c = 1;
+                    }
+                    if(c == 0){
+                        b[a]=num[j];
+                        a++;
+                    }
+                }
             }
         }
     }
+    for(int m = 0; m<a ;m++){
+        printf("VALOR IGUAL - |%d|\n\n",b[m]);
+        
+    }
+    printf("\n");
+    
     return 0;
 }
-
+*/
 
 
 /*MAIN E13
