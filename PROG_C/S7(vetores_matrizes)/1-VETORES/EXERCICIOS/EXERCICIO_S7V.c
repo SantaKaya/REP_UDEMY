@@ -6,7 +6,33 @@
 ///////////////////////QUESTOÕES VETORES////////////////////////////
 
 
-//MAIN E16
+//MAIN E17
+int main(){
+
+    int num[10];
+
+    for(int i = 0; i<=9; i++){
+        printf("\nVALOR |%d|\nDIGITE:\t",i+1);
+        scanf("%d",&num[i]);
+        
+    }
+
+    for(int k = 0; k<=9; k++){
+        printf("\nVETOR |%d|\n\n",num[k]);
+    }
+    
+    
+    printf("***SAIDA***\n");
+    for(int j = 0; j<=9;j++){
+        if(num[j]<0){
+            num[j]=0;
+        }
+        printf("VETOR = |%d|\n",num[j]);
+    }
+    return 0;
+}
+
+/*MAIN E16
 int main(){
 
     float num[5];
@@ -16,13 +42,6 @@ int main(){
         printf("\nVALOR |%d|\nDIGITE:\t",i+1);
         scanf("%f",&num[i]);
     }
-
-    for(int j = 0; j<=4;j++){
-        printf("VETOR1 = |%.1f|\n",num[j]);
-    }
-
-
-
 
     printf("\nCODIGO|Digite:\t");
     scanf("%d",&cod);
@@ -49,7 +68,7 @@ int main(){
 
     return 0;
 }
-
+*/
 
 
 /*MAIN E15
