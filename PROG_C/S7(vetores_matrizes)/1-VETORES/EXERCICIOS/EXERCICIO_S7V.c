@@ -15,23 +15,6 @@ int main(){
         scanf("%d",&num[i]);
         b[i] = num[i];
     }
-
-    int j = 0,k=1;
-
-    while (j<=9){
-        a = num[j];//1
-        c = b[k];//2
-
-        if(a == c){
-            c++;
-            printf("Valor igual |%d|\n",a);
-        }else{
-            c++;
-        }
-
-    }
-
-    /*
     for(int j = 0; j<=9; j++){
         for(int k = 1; k<=j; k++){
             a = num[j];
@@ -43,15 +26,6 @@ int main(){
             }
         }
     }
-    */
-
-    
-    
-
-
-    
-
-
     return 0;
 }
 
