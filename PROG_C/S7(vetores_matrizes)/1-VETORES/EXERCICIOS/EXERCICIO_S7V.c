@@ -6,7 +6,29 @@
 ///////////////////////QUESTOÕES VETORES////////////////////////////
 
 
-//MAIN E17
+/*MAIN E18
+int main(){
+
+    int num[10],x;
+
+    for(int i = 0; i<=9;i++){
+        printf("Vetor |%d|\nDIGITE :\t",i+1);
+        scanf("%d",&num[i]);
+    }
+
+    printf("\nVALOR X DIGITE :\t");
+    scanf("%d",&x);
+
+    for(int j = 0; j<=9;j++){
+        if(num[j]%x==0){
+            printf("MULTIPLO |%d| = |%d|\n",x,num[j]);
+        }
+    }
+    return 0;
+}
+*/
+
+/*MAIN E17
 int main(){
 
     int num[10];
@@ -31,6 +53,7 @@ int main(){
     }
     return 0;
 }
+*/
 
 /*MAIN E16
 int main(){
