@@ -5,7 +5,84 @@
 
 ///////////////////////QUESTOÕES VETORES////////////////////////////
 
-//MAIN E23
+/*MAIN E26
+int main(){
+
+
+
+
+
+
+
+    return 0;
+}
+*/
+
+
+
+/*MAIN E25
+int main(){
+
+    int num[100],a,b,c=0;
+
+
+    for(int i = 1; i<=100;i++){
+    
+        a = (i)%7;
+        b = (i)%10;
+
+        if(!(a==0 || b==7)){
+            num[c] = i;
+            c++;
+        }
+    }
+    c = c -1;
+
+    for(int j=0; j<=c;j++){
+        printf("NUM[%d] = |%d|\n",j,num[j]);
+    }
+    return 0;
+}
+*/
+
+/*MAIN E24
+int main(){
+
+    int a[10],pM,pm;
+    float alt[10],alt_M=1,alt_m=3;
+
+    
+    for(int i = 1; i<=10; i++){
+        printf("VETOR ALUNO |%d|\nDIGITE :\t",i);
+        scanf("%d",&a[i]);
+    }
+
+    for(int j = 1; j<=10;j++){
+        printf("VETOR ALTURA |%d|\nDIGITE :\t",j);
+        scanf("%f",&alt[j]);
+
+        if(alt[j]>=alt_M){
+            alt_M = alt[j];
+            pM = j;
+        }else if(alt[j]<=alt_m){
+            alt_m = alt[j];
+            pm = j;
+        }
+    }
+
+    printf(" ALUNO %d +ALT = |%.2f|\n ",pM,alt_M);
+    printf(" ALUNO %d +ALT = |%.2f|\n ",pm,alt_m);
+    return 0;
+}
+*/
+
+
+
+
+
+
+
+/*MAIN E23
 int main(){
 
     float a[5],b[5],p[5],soma= 0;
@@ -36,14 +113,9 @@ int main(){
     for(int v = 0; v<=4;v++){
         printf("VETOR PRODUTO [%d] = |%.2f|\n",v+1,p[v]);
     }
-
-
-
-
-
     return 0;
 }
-
+*/
 
 
 
