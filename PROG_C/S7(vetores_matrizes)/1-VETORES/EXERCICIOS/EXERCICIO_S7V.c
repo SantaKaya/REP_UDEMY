@@ -5,7 +5,58 @@
 
 ///////////////////////QUESTOÕES VETORES////////////////////////////
 
-//MAIN E19
+//MAIN E21
+int main(){
+
+    
+
+
+
+
+
+
+    return 0;
+}
+
+
+
+/*MAIN E20
+int main(){
+
+    int n1[10],n2[10],a,c=0;
+
+    for(int i = 0; i<= 9; i++){
+
+        printf("VALOR VETOR |%d|\nDIGITE :\t",i+1);
+        scanf("%d",&a);
+
+        if(a>=0 || a<=50){
+            n1[i]=a;
+        }else{
+            printf("Numero fora do intervalo!\n");
+        }
+
+        if(a%2!=0){
+            n2[c]=a;
+            c++;
+            printf("C = |%d|\n",c);
+        }
+        //printf("V1 |%d| = |%d|\n",i+1,n1[i]);
+    }
+
+    //printf("C = |%d|\n",c);
+
+    a = c-1;
+
+    for(int j = 0; j<=a; j++){
+        //printf("V1 |%d| = |%d|\n",j+1,n1[j]);
+        printf("V2 IMPARES -  |%d| = |%d|\n",j,n2[j]);
+    }
+    return 0;
+}
+*/
+
+/*MAIN E19
 int main(){
     float num[50];
 
@@ -19,7 +70,7 @@ int main(){
 
     return 0;
 }
-
+*/
 
 
 
