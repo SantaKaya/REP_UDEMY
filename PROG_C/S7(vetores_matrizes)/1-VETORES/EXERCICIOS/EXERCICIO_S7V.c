@@ -5,6 +5,23 @@
 
 ///////////////////////QUESTOÕES VETORES////////////////////////////
 
+//MAIN E19
+int main(){
+    float num[50];
+
+    for(int i=0; i<=49;i++){
+        num[i] = (i+(5*i))%(i+1);
+    }
+
+    for(int j=0; j<=49;j++){
+        printf("Vetor |%d| = |%.2f|\n",j,num[j]);
+    }
+
+    return 0;
+}
+
+
+
 
 /*MAIN E18
 int main(){
