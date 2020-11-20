@@ -8,13 +8,23 @@
 //MAIN E21
 int main(){
 
+    int a[10],b[10],c[10];
+
+    for(int i = 0; i<=9; i++){
+        printf("VETOR A\nDIGITE :\t");
+        scanf("%d",&a[i]);
+    }
+    for(int m = 0; m<=9;m++){
+        printf("VETOR B\nDIGITE :\t");
+        scanf("%d",&b[m]);
+    }
     
-
-
-
-
-
-
+    for(int j = 0; j<=9; j++){
+        c[j] = a[j] - b[j];
+        printf("VETOR A = |%d|\n",a[j]);
+        printf("VETOR B = |%d|\n",b[j]);
+        printf("VETOR C = |%d|\n",c[j]);
+    }
     return 0;
 }
 
