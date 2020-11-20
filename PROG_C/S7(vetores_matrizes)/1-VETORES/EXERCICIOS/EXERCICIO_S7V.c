@@ -5,7 +5,49 @@
 
 ///////////////////////QUESTOÕES VETORES////////////////////////////
 
-//MAIN E22
+//MAIN E23
+int main(){
+
+    float a[5],b[5],p[5],soma= 0;
+
+    for(int i = 0; i<=4; i++){
+        printf("VETOR A\nDIGITE :\t");
+        scanf("%f",&a[i]);
+    }
+    for(int m = 0; m<=4;m++){
+        printf("VETOR B\nDIGITE :\t");
+        scanf("%f",&b[m]);
+    }
+
+    
+    for(int c = 0; c<= 4;c++){
+        p[c] = a[c]*b[c];
+        soma = soma + p[c];
+    }
+    
+    for(int k = 0; k<=4; k++){
+        printf("VETOR A[%d] = |%.2f|\n",k+1,a[k]);
+        
+    }
+    for(int l = 0; l<=4;l++){
+        printf("VETOR B[%d] = |%.2f|\n",l+1,b[l]);
+        
+    }
+    for(int v = 0; v<=4;v++){
+        printf("VETOR PRODUTO [%d] = |%.2f|\n",v+1,p[v]);
+    }
+
+
+
+
+
+    return 0;
+}
+
+
+
+
+/*MAIN E22
 int main(){
 
     int a[10],b[10],c[10];
@@ -44,7 +86,7 @@ int main(){
 
     return 0;
 }
-
+*/
 
 /*MAIN E21
 int main(){
