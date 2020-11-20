@@ -5,9 +5,48 @@
 
 ///////////////////////QUESTOÕES VETORES////////////////////////////
 
+//MAIN E22
+int main(){
+
+    int a[10],b[10],c[10];
+
+    for(int i = 1; i<=10; i++){
+        printf("VETOR A\nDIGITE :\t");
+        scanf("%d",&a[i]);
+    }
+    for(int m = 1; m<=10;m++){
+        printf("VETOR B\nDIGITE :\t");
+        scanf("%d",&b[m]);
+    }
+
+    for(int j = 1; j<=10; j++){
+
+        if(j%2==0){
+            c[j]=a[j];
+        }else{
+            c[j]=b[j];
+        }
+
+    }
+    
+    for(int k = 1; k<=10; k++){
+        printf("VETOR A[%d] = |%d|\n",k,a[k]);
+        
+    }
+    for(int p = 1; p<=10;p++){
+        printf("VETOR B[%d] = |%d|\n",p,b[p]);
+        
+    }
+    for(int v = 1; v<=10;v++){
+        printf("VETOR C[%d] = |%d|\n",v,c[v]);
+        
+    }
+
+    return 0;
+}
 
 
-//MAIN E21
+/*MAIN E21
 int main(){
 
     int a[10],b[10],c[10];
@@ -29,6 +68,7 @@ int main(){
     }
     return 0;
 }
+*/
 
 /*MAIN E20
 int main(){
