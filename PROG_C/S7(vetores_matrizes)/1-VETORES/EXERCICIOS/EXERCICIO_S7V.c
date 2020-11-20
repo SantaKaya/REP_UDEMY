@@ -5,20 +5,40 @@
 
 ///////////////////////QUESTOÕES VETORES////////////////////////////
 
+
+
+
+
+
+
 /*MAIN E26
 int main(){
 
+    float v[10],media, soma = 0, dp,a,soma_dp=0;
+    
+    for(int i = 1; i<=10; i++){
+        printf("VALOR VETOR |%d|\nDIGITE :\t",i);
+        scanf("%f",&v[i]);
+        soma = soma + v[i];
+        printf("Soma = |%.2f|\n",soma);
+    }
 
+    media = soma / 10;
 
+    printf("media = |%.2f|\n",media);
 
+    for(int j = 1; j<=10;j++){
+        soma_dp = soma_dp + ((v[j] - media)*(v[j] - media));
+        printf("SOMA DP = |%.2f|\n ",soma_dp);
+    }
 
+    dp = soma_dp/10;
 
+    printf("DESVIO PADRÃO = |%.2f|\n",dp);
 
     return 0;
 }
 */
-
-
 
 /*MAIN E25
 int main(){
