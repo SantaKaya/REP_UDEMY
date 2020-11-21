@@ -6,7 +6,47 @@
 ///////////////////////QUESTOÕES VETORES////////////////////////////
 
 
+//MAIN E27
+int main(){
 
+    int v[10],maior=1,menor=99,b;
+
+    for(int i = 0; i<=9; i++){
+
+        printf("VALOR %d VETOR\nDIGITE :\t",i+1);
+        scanf("%d",&v[i]);
+
+        if(v[i]>=maior){
+            maior = v[i];
+            //printf("maior = |%d|\n",maior);
+        }
+        
+        printf("maior = |%d|\n",maior);
+        printf("menor = |%d|\n",menor);
+        
+        
+    }
+
+    for(int j = 0; j<=9; j++){
+
+        for(int t = menor; t<=maior;t++){
+            b = v[j]%t;
+            
+            if(b==0 && (j==t || t==1)){
+                printf("PRIMO |%d| = |%d|\n",j,v[j]);
+            }
+        }       
+    }
+    
+    /*
+    for(int m = 0 ; m<=c;m++){
+        printf("PRIMO |%d| = |%d|\n",m,a[m]);
+    }
+    */
+
+    return 0;
+
+}
 
 
 
