@@ -5,6 +5,42 @@
 
 ///////////////////////QUESTOÕES VETORES////////////////////////////
 
+/*MAIN E29
+int main(){
+
+    int num[6],p[6],imp[6],a=0,soma = 0,b=0;
+
+    for(int i = 0; i<= 5;i++){
+        printf("|VETOR|POSICAO %d|\nDIGITE :\t",i+1);
+        scanf("%d",&num[i]);
+
+        if(num[i]%2==0){
+            p[a] = num[i];
+            a++;
+            soma = soma + num[i];
+        }else{
+            imp[b]= num[i];
+            b++;
+        }
+    }
+    a = a-1;
+    b=b-1;
+
+    for(int j = 0; j<=a;j++){
+        printf("NUMEROS PARES |%d|\n",p[j]);
+    }
+
+    printf("SOMA DOS PARES =|%d|\n",soma);
+    
+    for(int k = 0; k<=b;k++){
+        printf("NUMEROS IMPARES |%d|\n",imp[k]);
+    }
+    b++;
+    printf("QUANTIDADE DE NUMEROS IMPARES = |%d|\n",b);
+    return 0;
+}
+*/
+
 
 /*MAIN E28
 int main(){
