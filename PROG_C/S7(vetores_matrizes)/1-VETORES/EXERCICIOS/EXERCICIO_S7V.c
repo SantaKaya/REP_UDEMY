@@ -6,6 +6,40 @@
 ///////////////////////QUESTOÕES VETORES////////////////////////////
 
 
+/*MAIN E28
+int main(){
+
+    int v[10],v1[10],v2[10],a=0,b=0;
+
+    for(int i = 0; i<=9;i++){
+        printf("|VETOR|POSICAO %d|\nDIGITE :\t",i);
+        scanf("%d",&v[i]);
+
+        if(v[i]%2==0){
+            v2[a]=v[i];
+            a++;
+        }else{
+            v1[b]=v[i];
+            b++;
+        }
+    }
+    a=a-1;
+    b=b-1;
+
+    for(int j = 0; j<=a;j++){
+        printf("V2|%d| = |%d|\n",j,v2[j]);
+    }
+
+    for(int k = 0; k<=b;k++){
+        printf("V1|%d| = |%d|\n",k,v1[k]);
+    }
+
+
+    return 0;
+}
+*/
+
+
 /*MAIN E27
 int main(){
 
