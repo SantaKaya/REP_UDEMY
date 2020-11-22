@@ -6,50 +6,40 @@
 ///////////////////////QUESTOÕES VETORES////////////////////////////
 
 
-//MAIN E27
+/*MAIN E27
 int main(){
 
-    int v[10],maior=1,menor=99,b;
+    int num[10],m=1,c,b=0;
 
-    for(int i = 0; i<=9; i++){
+    for(int i = 0; i<= 9; i++){
+        printf("VETOR |%d|\nDIGITE : \t",i+1);
+        scanf("%d",&num[i]);
 
-        printf("VALOR %d VETOR\nDIGITE :\t",i+1);
-        scanf("%d",&v[i]);
 
-        if(v[i]>=maior){
-            maior = v[i];
-            //printf("maior = |%d|\n",maior);
+        if(num[i]>m){
+            m = num[i];
         }
-        
-        printf("maior = |%d|\n",maior);
-        printf("menor = |%d|\n",menor);
-        
-        
+
     }
 
-    for(int j = 0; j<=9; j++){
-
-        for(int t = menor; t<=maior;t++){
-            b = v[j]%t;
-            
-            if(b==0 && (j==t || t==1)){
-                printf("PRIMO |%d| = |%d|\n",j,v[j]);
+    for(int j = 0; j<=9;j++){
+        for(int k = 1; k<=m;k++){
+            c = num[j]%k;
+            if(c==0){
+                b++;
+                //a++;
             }
-        }       
+        }
+        if(b==2){
+                printf("|PRIMO|POSICAO %d|VALOR %d|\n",j,num[j]);
+                b=0;
+        }else{
+            b=0;
+        }
     }
-    
-    /*
-    for(int m = 0 ; m<=c;m++){
-        printf("PRIMO |%d| = |%d|\n",m,a[m]);
-    }
-    */
-
     return 0;
-
 }
-
-
-
+*/
 
 /*MAIN E26
 int main(){
