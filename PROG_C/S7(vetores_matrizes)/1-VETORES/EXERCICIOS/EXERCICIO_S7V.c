@@ -5,8 +5,82 @@
 
 ///////////////////////QUESTOÕES VETORES////////////////////////////
 
+//MAIN E32
+int main(){
 
-//MAIN E31
+    int x[5],y[5],soma = 0,mult,dif=0,inter[5],dify[5],e=0,uni[10],un=0;
+
+    for(int i = 0; i<=4;i++){
+        printf("VETOR 1\nDIGITE :\t");
+        scanf("%d",&x[i]);
+        uni[i]=x[i];
+        un++;
+        
+    }
+    for(int j = 0; j<=4;j++){
+        printf("VETOR 2\nDIGITE :\t");
+        scanf("%d",&y[j]);
+        dify[j] = y[j];
+    }
+
+
+    for(int k = 0; k<=4;k++){
+        soma = x[k] + y[k];
+        printf("SOMA x[%d] = |%d| + y[%d] =|%d| =>=> |%d|\n\n",k,x[k],k,y[k],soma);
+        mult = x[k] * y[k];
+        printf("MULTIPLICACAO x[%d] = |%d| * y[%d] =|%d| =>=> |%d|\n\n",k,x[k],k,y[k],mult);
+        printf("\n\n");
+    }
+
+    for(int p=0; p<=4;p++){
+        for(int o = 0; o<=4;o++){
+            if(x[p]==y[o]){
+                inter[e]=x[p];
+                e++;
+                dify[o]=0;
+                y[o]=0;
+                x[p]=0;
+            }
+        }
+    }
+    e=e-1;
+
+    for(int t = 0; t<=4;t++){
+        for(int r = 0; r<=4;r++){
+            if(x[t]!=0 && dify[r]!=0){
+            dif = x[t]-dify[r];
+            printf("DIFERECA x[%d] = |%d| - y[%d] = |%d| =>=> |%d|\n\n",t,x[t],r,y[r],dif);
+            //break;
+            x[t]=0;
+            dify[r]=0;
+            }
+        }
+    }
+
+    for(int w=0;w<=e;w++){
+        printf("INTERSECAO = |%d|\n\n",inter[w]);
+    }
+
+    for(int a = 0 ;a<=4;a++){
+        if(y[a]!=0){
+            uni[un]=y[a];
+            un++;
+        }
+    }
+    un = un-1;
+
+    for(int s=0;s<=un;s++){
+        printf("UNIAO = |%d|\n\n",uni[s]);
+    }
+
+
+
+    return 0;
+}
+
+
+
+/*MAIN E31
 int main(){
     int v1[10],v2[10],vi[20],a=0,c=0;
 
@@ -50,7 +124,7 @@ int main(){
 
     return 0;
 }
-
+*/
 
 
 
