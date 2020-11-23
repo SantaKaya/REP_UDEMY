@@ -5,7 +5,56 @@
 
 ///////////////////////QUESTOÕES VETORES////////////////////////////
 
-//MAIN E30
+
+//MAIN E31
+int main(){
+    int v1[10],v2[10],vi[20],a=0,c=0;
+
+    for(int i = 0; i<=9;i++){
+        printf("VETOR 1\nDIGITE :\t");
+        scanf("%d",&v1[i]);
+        vi[a]=v1[i];
+        a++;
+    }
+    printf("A = |%d|\n",a);
+    c=a;
+
+    for(int j = 0; j<=9;j++){
+        printf("VETOR 2\nDIGITE :\t");
+        scanf("%d",&v2[j]);
+        vi[c]=v2[j];
+        c++;
+        
+    }
+    printf("c = |%d|\n",c);
+
+    for(int n = 0; n<=c;n++){
+        printf("VETOR INTER1 = |%d|\n",vi[n]);
+        
+    }
+    c = c-1;
+
+    for(int z = 0; z <= c; z++){
+        for(int x = 0; x<=a;x++){
+            if(vi[z]==vi[x] && z!=x){
+                vi[x]=0;
+            }
+        }
+    }
+
+    for(int n = 0; n<=c;n++){
+        if(vi[n]!=0){
+            printf("VETOR INTER = |%d|\n",vi[n]);
+        }
+    }
+
+    return 0;
+}
+
+
+
+
+/*MAIN E30
 int main(){
 
 
@@ -45,15 +94,9 @@ int main(){
             printf("VETOR INTER = |%d|\n",vi[n]);
         }
     }
-
-
-
-
-
-
     return 0;
 }
-
+*/
 
 
 
