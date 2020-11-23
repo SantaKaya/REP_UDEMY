@@ -5,7 +5,37 @@
 
 ///////////////////////QUESTOÕES VETORES////////////////////////////
 
-//MAIN E32
+//MAIN E33
+int main(){
+
+    int v[15],a=14,b=0;
+
+    for(int i = 0; i<=a;i++){
+        printf("VETOR |%d|\nDIGITE :\t",i);
+        scanf("%d",&v[i]);
+    }
+
+    for(int j = 0; j<=a;j++){
+        if(v[j]==0){
+            for(int k = j+1; k<=a;k++){
+                v[k-1] = v[k];
+                b++;
+            }
+            a--;
+        }
+    }
+
+    for(int t = 0; t<=a;t++){
+        printf("VETOR COMPAC |%d| = |%d|\n",t,v[t]);
+    }
+
+
+    return 0;
+}
+
+
+
+/*MAIN E32
 int main(){
 
     int x[5],y[5],soma = 0,mult,dif=0,inter[5],dify[5],e=0,uni[10],un=0;
@@ -72,12 +102,9 @@ int main(){
     for(int s=0;s<=un;s++){
         printf("UNIAO = |%d|\n\n",uni[s]);
     }
-
-
-
     return 0;
 }
-
+*/
 
 
 /*MAIN E31
