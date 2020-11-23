@@ -5,7 +5,13 @@
 
 ///////////////////////QUESTOÕES VETORES////////////////////////////
 
-//MAIN E33
+
+//MAIN E34
+
+
+
+
+/*MAIN E33
 int main(){
 
     int v[15],a=14,b=0;
@@ -29,10 +35,9 @@ int main(){
         printf("VETOR COMPAC |%d| = |%d|\n",t,v[t]);
     }
 
-
     return 0;
 }
-
+*/
 
 
 /*MAIN E32
