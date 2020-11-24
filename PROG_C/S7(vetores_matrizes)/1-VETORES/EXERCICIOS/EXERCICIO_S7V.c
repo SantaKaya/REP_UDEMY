@@ -5,85 +5,69 @@
 
 ///////////////////////QUESTOÕES VETORES////////////////////////////
 
-//MAIN E36
+/*MAIN E36
 int main(){
 
-    int v[10],pivo,pp,a=0,aux=0,b=0;
+    int v[10],pivo,pp,a=0,aux=0;
 
     for(int i=0; i<=9; i++){
         printf("VETOR |%d| DIGITE : \t",i);
         scanf("%d",&v[i]);
         pivo=v[i];
         pp=i;
-        printf("\nPIVO = |%d|\n",pivo);
-        printf("\nPOS_PIVOR = |%d|\n",pp);
     }
-    
-    for(int j=0; j<=9; j++){
-        printf("\nV|%d|\n",v[j]);
-    }
-
     for(int k=0; k<=pp; k++){
         if(v[k]<=pivo){
-            //printf("\n*********MENOR OU IGUAL A PIVOR***************\n");
             aux=v[k];
-            //printf("Vk2[%d] = |%d|\n",k,v[k]);
-            //printf("AUX2 = |%d|\n",aux);
-            //printf("\n*****************************\n");
-            //printf("Vk3[%d] = |%d|\n",k,v[k]);
-            //printf("Va1[%d] = |%d|\n",a,v[a]);
             v[k]=v[a];
-            //printf("Vk4[%d] = |%d|\n",k,v[k]);
-            //printf("Va2[%d] = |%d|\n",a,v[a]);
-            //printf("AUX3 = |%d|\n",aux);
-            //printf("Va3[%d] = |%d|\n",a,v[a]);
             v[a]=aux;
-            //printf("AUX4 = |%d|\n",aux);
-            //printf("Va4[%d] = |%d|\n",a,v[a]);
             a++;
-            printf("\nA = |%d|\n",a);
-            
         }
     }
-    
-    pivo = v[a-2];
-    
+    a = a-1;//posição do pivor1
 
-    for(int t=0; t<=a-2; t++){
+    pivo = v[a-1];//posição pivo 2
+    int b =0;
+
+    for(int t=0; t<=a; t++){
        if(v[t]<=pivo){
            aux = v[t];
            v[t]=v[b];
+           v[b]=aux;
            b++;
        }
     }
 
     pivo = v[9];
+    int aux2=a+1;
 
-    for(int f = a; f<= )
+    for(int r = a+1; r<=9;r++){
+        if(v[r]<=pivo){
+            aux = v[r];
+            v[r]= v[aux2];
+            v[aux2]=aux;
+            aux2++;
+        }
+    }
 
+    pivo = v[9];
+    int aux3 = aux2;
 
+    for(int rs = aux2; rs<=9; rs++){
+        if(v[rs]<=pivo){
+            aux = v[rs];
+            v[rs]=v[aux3];
+            v[aux3]=aux;
+            aux3++;
+        }
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
+    for(int g=0; g<=9; g++){
+        printf("\nV1|%d|\n",v[g]);
+    }
     return 0;
 }
+*/
 
 
 /*MAIN 35
