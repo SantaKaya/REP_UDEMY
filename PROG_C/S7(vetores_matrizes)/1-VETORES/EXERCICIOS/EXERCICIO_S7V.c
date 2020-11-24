@@ -5,6 +5,27 @@
 
 ///////////////////////QUESTOÕES VETORES////////////////////////////
 
+//MAIN E37
+int main(){
+
+     int v[11],pivo,pp,a=0,aux=0;
+
+    for(int i=0; i<=10; i++){
+        printf("VETOR |%d| DIGITE : \t",i);
+        scanf("%d",&v[i]);
+        pivo=v[i];
+        pp=i;
+    }
+    
+    for(int g=0; g<=10; g++){
+        printf("\nV1|%d|\n",v[g]);
+    }
+    
+    return 0;
+}
+
+
+
 /*MAIN E36
 int main(){
 
