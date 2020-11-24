@@ -6,7 +6,84 @@
 ///////////////////////QUESTOÕES VETORES////////////////////////////
 
 //MAIN E36
+int main(){
 
+    int v[10],pivo,pp,a=0,aux=0,b=0;
+
+    for(int i=0; i<=9; i++){
+        printf("VETOR |%d| DIGITE : \t",i);
+        scanf("%d",&v[i]);
+        pivo=v[i];
+        pp=i;
+        printf("\nPIVO = |%d|\n",pivo);
+        printf("\nPOS_PIVOR = |%d|\n",pp);
+    }
+    
+    for(int j=0; j<=9; j++){
+        printf("\nV|%d|\n",v[j]);
+    }
+
+    for(int k=0; k<=pp; k++){
+        if(v[k]<=pivo){
+            //printf("\n*********MENOR OU IGUAL A PIVOR***************\n");
+            aux=v[k];
+            //printf("Vk2[%d] = |%d|\n",k,v[k]);
+            //printf("AUX2 = |%d|\n",aux);
+            //printf("\n*****************************\n");
+            //printf("Vk3[%d] = |%d|\n",k,v[k]);
+            //printf("Va1[%d] = |%d|\n",a,v[a]);
+            v[k]=v[a];
+            //printf("Vk4[%d] = |%d|\n",k,v[k]);
+            //printf("Va2[%d] = |%d|\n",a,v[a]);
+            //printf("AUX3 = |%d|\n",aux);
+            //printf("Va3[%d] = |%d|\n",a,v[a]);
+            v[a]=aux;
+            //printf("AUX4 = |%d|\n",aux);
+            //printf("Va4[%d] = |%d|\n",a,v[a]);
+            a++;
+            printf("\nA = |%d|\n",a);
+            
+        }
+    }
+    
+    pivo = v[a-2];
+    
+
+    for(int t=0; t<=a-2; t++){
+       if(v[t]<=pivo){
+           aux = v[t];
+           v[t]=v[b];
+           b++;
+       }
+    }
+
+    pivo = v[9];
+
+    for(int f = a; f<= )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    return 0;
+}
 
 
 /*MAIN 35
