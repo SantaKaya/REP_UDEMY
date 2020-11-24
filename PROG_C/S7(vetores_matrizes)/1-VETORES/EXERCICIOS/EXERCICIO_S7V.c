@@ -5,8 +5,187 @@
 
 ///////////////////////QUESTOÕES VETORES////////////////////////////
 
+//MAIN E36
 
-//MAIN E34
+
+
+/*MAIN 35
+int main(){
+
+    int a,b,ax;
+
+    printf("VALOR A\nDIGITE :\t");
+    scanf("%d",&a);
+
+    printf("VALOR B\nDIGITE :\t");
+    scanf("%d",&b);
+
+    int a1[5],b1[5],a2=0,b2=0;
+
+    
+    if(a<10){
+        a1[a2]=a;
+        a2++;
+        a1[a2]=0;
+        a2++;
+        a1[a2]=0;
+        a2++;
+        a1[a2]=0;
+        
+    }else if(a>=10 && a<=99){
+        int c = a/10;
+        int d = a%10;
+        a1[a2]=d;
+        a2++;
+        a1[a2]=c;
+        a2++;
+        a1[a2]=0;
+        a2++;
+        a1[a2]=0;
+        
+            
+    }else if(a>=100 && a<1000){
+        int c = a/100;//+
+        int d = a%100;
+        int e = d/10;
+        int f = d%10;//-
+
+        a1[a2]=f;
+        a2++;
+        a1[a2]=e;
+        a2++;
+        a1[a2]=c;
+        a2++;
+        a1[a2]=0;
+
+    }else if(a>=1000 && a<=9999){//1323
+        int c = a/1000;//1
+        int d = a%1000;//323
+        int e = d/100;//3
+        int f = d%100;//23
+        int g = f/10;//2
+        int h = f%10;//3
+
+        a1[a2]=h;
+        a2++;
+        a1[a2]=g;
+        a2++;
+        a1[a2]=e;
+        a2++;
+        a1[a2]=c;
+        
+    }
+
+    if(b<10){
+        b1[b2]=b;
+        b2++;
+        b1[b2]=0;
+        b2++;
+        b1[b2]=0;
+        b2++;
+        b1[b2]=0;
+    }else if(b>=10 && b<=99){
+        int c = b/10;
+        int d = b%10;
+        b1[b2]=d;
+        b2++;
+        b1[b2]=c;
+        b2++;
+        b1[b2]=0;
+        b2++;
+        b1[b2]=0;
+            
+    }else if(b>=100 && b<1000){
+        int c = b/100;//+
+        int d = b%100;
+        int e = d/10;
+        int f = d%10;//-
+
+        b1[b2]=f;
+        b2++;
+        b1[b2]=e;
+        b2++;
+        b1[b2]=c;
+        b2++;
+        b1[b2]=0;
+
+
+    }else if(b>=1000 && b<=9999){//1323
+        int c = b/1000;//1
+        int d = b%1000;//323
+        int e = d/100;//3
+        int f = d%100;//23
+        int g = f/10;//2
+        int h = f%10;//3
+
+        b1[b2]=h;
+        b2++;
+        b1[b2]=g;
+        b2++;
+        b1[b2]=e;
+        b2++;
+        b1[b2]=c;
+
+    }
+
+    for(int t = 0; t<a2;t++){
+        
+        if(a<10){
+            a2=1;
+            printf("\nVETOR A = |%d|\n",a1[t]);
+        }else if(a>=10 && a<=99){
+            a2=2;
+            printf("\nVETOR A = |%d|\n",a1[t]);
+        }else if(a<=100 && a>=999){
+            a2 = 3;
+            printf("\nVETOR A = |%d|\n",a1[t]);
+        }else if(a>=1000 && a<=9999){
+            a2=4;
+            printf("\nVETOR A = |%d|\n",a1[t]);
+        }
+
+    }
+    for(int o = 0; o<b2;o++){
+        if(b<10){
+            b2=1;
+            printf("\nVETOR B = |%d|\n",b1[o]);
+        }else if(b>=10 && b<=99){
+            b2=2;
+            printf("\nVETOR B = |%d|\n",b1[o]);
+        }else if(b<=100 && b>=999){
+            b2 = 3;
+            printf("\nVETOR B = |%d|\n",b1[o]);
+        }else if(b>=1000 && b<=9999){
+            b2=4;
+            printf("\nVETOR b = |%d|\n",b1[o]);
+        }
+    }
+
+    
+    for(int r = 0; r<=a2;r++){
+        ax = a1[r]+b1[r];
+
+        if(ax<=9){
+            a1[r]=ax;
+        }else{
+            ax = ax - 10;
+            a1[r]=ax;
+            a1[r+1] = a1[r+1]+1;
+        }
+    }
+
+    for(int z = 0; z<=a2;z++){
+        if(a1[z]!= 0){
+            printf("\nVETOR SOMA = |%d|\n",a1[z]);
+        }
+    }
+
+    return 0;
+}
+*/
+
+
+/*MAIN E34
 int main(){
 
     int v[10],vd[10],c=0,i=0;
@@ -30,25 +209,13 @@ int main(){
 
     }while(i<10);
 
-    for(int h = 0; h<c;h++){
-        printf("\nVETOR D = |%d|\n",vd[h]);
-    }
-
-
-
-
     for(int k = 0; k<i;k++){
         printf("\nVETOR FINAL = |%d|\n",v[k]);
     }
     
-
-
-
-
-
     return 0;
 }
-
+*/
 
 
 /*MAIN E33
