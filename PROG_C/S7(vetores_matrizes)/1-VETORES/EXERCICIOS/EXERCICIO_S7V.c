@@ -7,7 +7,47 @@
 
 
 //MAIN E34
+int main(){
 
+    int v[10],vd[10],c=0,i=0;
+
+    do{
+        printf("VETOR 1\nDIGITE :\t");
+        scanf("%d",&v[i]);
+        vd[c]=v[i];
+       
+        
+
+        for(int j = 0; j<=c;j++){
+            if(v[i]==vd[j] && j!=i){
+                printf("VETOR 1\nDIGITE :\t");
+                scanf("%d",&v[i]);
+                vd[c] = v[i];
+            }
+        }
+        c++;
+        i++;
+
+    }while(i<10);
+
+    for(int h = 0; h<c;h++){
+        printf("\nVETOR D = |%d|\n",vd[h]);
+    }
+
+
+
+
+    for(int k = 0; k<i;k++){
+        printf("\nVETOR FINAL = |%d|\n",v[k]);
+    }
+    
+
+
+
+
+
+    return 0;
+}
 
 
 
