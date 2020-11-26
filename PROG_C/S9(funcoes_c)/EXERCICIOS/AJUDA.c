@@ -6,9 +6,22 @@
 
 ////////////////////////// FUNÇÕES////////////////////////////////////
 
+////////////HIPOTENUSA
+float hipotenusa(float a, float b){
+    printf("DIGITE VALOR DE A :\t");
+    scanf("%f",&a);
+    printf("DIGITE VALOR DE B :\t");
+    scanf("%f",&b);
 
+    float c = pow(a,2);
+    printf("C = |%.2f|\n",c);
+    float d = pow(b,2);
+    printf("D = |%.2f|\n",d);
+    
 
-
+    float hip = sqrt(c+d);
+    printf("HIPOTENUSA = |%.2f|\n",hip);
+}
 
 ///////////////////////////////////////////////////////////////////////////CONVERSÃO CELCIUS FAHRENHEIT
 float conv_CF(float c){

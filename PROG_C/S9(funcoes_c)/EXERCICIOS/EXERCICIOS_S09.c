@@ -7,13 +7,12 @@
 
 //////////////////////////////QUESTOES////////////////////////////
 
-//MAIN E08
+/*MAIN E08
 int main(){
-    
+    float a,b;
+    hipotenusa(a,b);
 }
-
-
-
+*/
 
 /*MAIN E07
 int main(){
