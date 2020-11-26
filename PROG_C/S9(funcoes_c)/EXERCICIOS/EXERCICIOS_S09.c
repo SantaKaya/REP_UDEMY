@@ -8,7 +8,22 @@
 //////////////////////////////QUESTOES////////////////////////////
 
 
-//MAIN E05
+
+
+
+
+/*MAIN E06
+int main(){
+
+    int h,m,s;
+
+    conv_seg(h,m,s);
+    
+    return 0;
+}
+*/
+
+/*MAIN E05
 int main(){
 
     float r;
@@ -16,7 +31,7 @@ int main(){
     vol_esf(r);
     return 0;
 }
-
+*/
 
 
 /*MAIN E04

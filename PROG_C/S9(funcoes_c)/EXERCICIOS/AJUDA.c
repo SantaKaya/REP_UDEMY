@@ -6,6 +6,23 @@
 
 ////////////////////////// FUNÇÕES////////////////////////////////////
 
+//////////////CONVERSÃO SEGUNDOS
+
+int conv_seg(int h,int m, int s){
+    printf("DIGITE HORAS :\t");
+    scanf("%d",&h);
+    printf("DIGITE MINUTOS :\t");
+    scanf("%d",&m);
+    printf("DIGITE SEGUNDOS :\t");
+    scanf("%d",&s);
+
+    int segundos = h*3600 + m*60 + s;
+
+    printf("TEMPO EM SEGUNDOS = |%d|\n",segundos);
+}
+
+
+
 ///////////////////////////////////////////////////////////////////////////VOLUME DE UMA ESFERA
 float vol_esf(float r){
 
@@ -21,7 +38,6 @@ float vol_esf(float r){
 
     printf("\nVOLUME DA ESFERA P/ RAIO |%.4f| = |%.4f|\n",r,vol);
 }
-
 ///////////////////////////////////////////////////////////////////////////QUADRADO PERFEITO
 int quad(int n){
 
