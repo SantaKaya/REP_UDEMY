@@ -6,6 +6,22 @@
 
 ////////////////////////// FUNÇÕES////////////////////////////////////
 
+//VOLUME CILINDRO CIRCULAR
+
+float vol_cc(float r,float alt){
+    printf("DIGITE O RAIO :\t");
+    scanf("%f",&r);
+    printf("DIGITE A ALTURA :\t");
+    scanf("%f",&alt);
+
+    float a = pow(r,2);
+
+    float vol = 3.141592*a*alt;
+
+    printf("VOLUME DO CILINDRO = |%.2f|\n",vol);
+
+}
+
 ////////////HIPOTENUSA
 float hipotenusa(float a, float b){
     printf("DIGITE VALOR DE A :\t");
