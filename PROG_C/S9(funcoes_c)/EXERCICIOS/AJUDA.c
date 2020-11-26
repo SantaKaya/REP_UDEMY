@@ -7,7 +7,10 @@
 ////////////////////////// FUNÇÕES////////////////////////////////////
 
 
-//////CONVERSÃO CELCIUS FAHRENHEIT
+
+
+
+///////////////////////////////////////////////////////////////////////////CONVERSÃO CELCIUS FAHRENHEIT
 float conv_CF(float c){
     printf("*TEMPERATURA EM CELCIUS*\nDIGITE :\t");
     scanf("%f",&c);
@@ -17,7 +20,6 @@ float conv_CF(float c){
     printf("*TEMPERATURA EM FAHRENHEIT*\n = |%.2f|\n",f);
 
 }
-
 ///////////////////////////////////////////////////////////////////////////CONVERSÃO SEGUNDOS
 int conv_seg(int h,int m, int s){
     printf("DIGITE HORAS :\t");
