@@ -6,7 +6,23 @@
 
 ////////////////////////// FUNÇÕES////////////////////////////////////
 
-////QUADRADO PERFEITO
+///////////////////////////////////////////////////////////////////////////VOLUME DE UMA ESFERA
+float vol_esf(float r){
+
+    printf("DIGITEI O RAIO :\t");
+    scanf("%f",&r);
+    float a = 1.33333 * 1.14159;
+    float b = pow(r,3);
+
+    printf("A = |%.4f|\n",a);
+    printf("B = |%.4f|\n",b);
+
+    float vol = a*b;
+
+    printf("\nVOLUME DA ESFERA P/ RAIO |%.4f| = |%.4f|\n",r,vol);
+}
+
+///////////////////////////////////////////////////////////////////////////QUADRADO PERFEITO
 int quad(int n){
 
     int aux;
@@ -83,7 +99,7 @@ int data(int d, int m, int a){
     }
 
 }
-/////////////////////////////////////////////////////////////////////////DOBRO DO NUMERO
+///////////////////////////////////////////////////////////////////////////DOBRO DO NUMERO
 int dobro(int num){
     int dob = num*num;
     return dob;
