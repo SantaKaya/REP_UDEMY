@@ -6,8 +6,19 @@
 
 ////////////////////////// FUNÇÕES////////////////////////////////////
 
-//////////////CONVERSÃO SEGUNDOS
 
+//////CONVERSÃO CELCIUS FAHRENHEIT
+float conv_CF(float c){
+    printf("*TEMPERATURA EM CELCIUS*\nDIGITE :\t");
+    scanf("%f",&c);
+
+    float f = (c*(1.8))+32;
+
+    printf("*TEMPERATURA EM FAHRENHEIT*\n = |%.2f|\n",f);
+
+}
+
+///////////////////////////////////////////////////////////////////////////CONVERSÃO SEGUNDOS
 int conv_seg(int h,int m, int s){
     printf("DIGITE HORAS :\t");
     scanf("%d",&h);
@@ -20,9 +31,6 @@ int conv_seg(int h,int m, int s){
 
     printf("TEMPO EM SEGUNDOS = |%d|\n",segundos);
 }
-
-
-
 ///////////////////////////////////////////////////////////////////////////VOLUME DE UMA ESFERA
 float vol_esf(float r){
 
