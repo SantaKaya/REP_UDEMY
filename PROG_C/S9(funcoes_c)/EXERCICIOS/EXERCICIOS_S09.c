@@ -7,19 +7,36 @@
 
 //////////////////////////////QUESTOES////////////////////////////
 
+//MAIN E04
+int main(){
 
-//MAIN E02
+    int n;
+
+    quad(n);
+
+    return 0;
+}
+
+
+
+/*MAIN E03
+int main(){
+    int n,feedback;
+    pos_neg(n);
+    return 0;
+}
+*/
+
+/*MAIN E02
 int main(){
 
     int d,m,a;
 
     data(d,m,a);
 
-
     return 0;
 }
-
-
+*/
 
 /*MAIN E01
 

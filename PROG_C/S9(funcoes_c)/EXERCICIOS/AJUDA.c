@@ -6,8 +6,35 @@
 
 ////////////////////////// FUNÇÕES////////////////////////////////////
 
-//DATA POR EXTENSO
+////QUADRADO PERFEITO
+int quad(int n){
 
+    int aux;
+    printf("DIGITE UM NUMERO:\t");
+    scanf("%d",&n);
+
+    float a = sqrt(n);
+    aux = a;
+
+    if(aux==a){
+        printf("QUADRADO PERFEITO |%d| = |%.0f|",n,a);
+    }
+}
+///////////////////////////////////////////////////////////////////////////POSITIVO OU NEGATIVO
+int pos_neg(int n){
+
+    printf("DIGITE UM NUMERO:\t");
+    scanf("%d",&n);
+
+    if(n>0){
+        printf("|1|\n");
+    }else if(n<0){
+        printf("|-1|\n");
+    }else if(n==0){
+        printf("|0|\n");
+    }
+}
+///////////////////////////////////////////////////////////////////////////DATA POR EXTENSO
 int data(int d, int m, int a){
     printf("\nDIGITE A DATA:\t");
     scanf("%d",&d);
@@ -56,9 +83,7 @@ int data(int d, int m, int a){
     }
 
 }
-
-
-//DOBRO DO NUMERO
+/////////////////////////////////////////////////////////////////////////DOBRO DO NUMERO
 int dobro(int num){
     int dob = num*num;
     return dob;
