@@ -20,8 +20,6 @@ void proximo_char(char caractere){ //recebe um caractere e vai imprimir o caract
     printf("%c", caractere + 1);
 }
 
-
-
 int main(){
     printf("\n");
 
@@ -39,17 +37,6 @@ int main(){
 
     char cara = 'a'; //char cara = 97
     proximo_char(cara);
-
-
-
-    //declarando_variaveis
-
-    //entrada_dados
-
-    //processamento_dados
- 
-    //saida_dados
-
 
     printf("\n");
     return 0;
