@@ -7,14 +7,22 @@
 
 //////////////////////////////QUESTOES////////////////////////////
 
-//MAIN E09
+//MAIN E10
+int main(){
+    int n1,n2;
+    maior(n1,n2);
+}
+
+
+
+/*MAIN E09
 int main(){
 
     float r, alt;
 
     vol_cc(r,alt);
 }
-
+*/
 
 
 /*MAIN E08
