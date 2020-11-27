@@ -5,11 +5,17 @@
 
 
 
+
 ////////////////////////// FUNÇÕES////////////////////////////////////
 
+//DESENHAR LINHAS
 
-
-
+void desenha_linha(){
+    int qtd = 35;
+    for(int i = 0; i<=qtd;i++){
+        printf("=");
+    }
+}
 
 
 

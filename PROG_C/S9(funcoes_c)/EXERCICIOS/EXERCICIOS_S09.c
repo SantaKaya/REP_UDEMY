@@ -8,7 +8,21 @@
 
 //////////////////////////////QUESTOES////////////////////////////
 
-//MAIN E15
+
+
+int main(){
+    desenha_linha();
+}
+
+/*MAIN E16
+int main(){
+    int qtd = 21;
+    desenha_linha(qtd);
+}
+*/
+
+
+/*MAIN E15
 int main(){
 
     int a,b,c;
@@ -16,7 +30,7 @@ int main(){
     triangulo(a,b,c);
 
 }
-
+*/
 
 
 /*MAIN E14
