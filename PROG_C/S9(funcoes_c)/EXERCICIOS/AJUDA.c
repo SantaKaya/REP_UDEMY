@@ -10,7 +10,21 @@
 
 
 
+//SOMA NUMEROS COM LIMITE
 
+int soma_lim(int n1,int n2){
+    printf("DIGITE O LIMITE:\n");
+    scanf("%d %d",&n1,&n2);
+
+    int soma = 0;
+
+    for(int i = n1; i<=n2; i++){
+        soma = soma + i;
+    }
+
+    printf("SOMA NUMEROS ENTRE |%d| e |%d| = |%d|\n",n1,n2,soma);
+
+}
 
 
 

@@ -8,11 +8,15 @@
 
 //////////////////////////////QUESTOES////////////////////////////
 
-
-
+//MAIN E17
 int main(){
-    desenha_linha();
+    int a,b;
+
+    soma_lim(a,b);
+
 }
+
+
 
 /*MAIN E16
 int main(){
