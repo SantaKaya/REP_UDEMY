@@ -8,16 +8,25 @@
 
 //////////////////////////////QUESTOES////////////////////////////
 
+//MAIN E15
+int main(){
 
-//MAIN E14
+    int a,b,c;
+
+    triangulo(a,b,c);
+
+}
+
+
+
+/*MAIN E14
 int main(){
     float km, lt;
 
     consumo_km(km,lt);
     
 }
-
-
+*/
 
 /*MAIN 13
 int main(){

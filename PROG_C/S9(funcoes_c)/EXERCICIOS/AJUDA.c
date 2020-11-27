@@ -7,6 +7,84 @@
 
 ////////////////////////// FUNÇÕES////////////////////////////////////
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//VERIFICAÇÃO TRIANGULO
+int triangulo(int a, int b, int c){
+    int i = 0;
+    do{
+        printf("DIGITE VALOR DO LADO 1:\t");
+        scanf("%d",&a);
+        printf("DIGITE VALOR DO LADO 2:\t");
+        scanf("%d",&b);
+        printf("DIGITE VALOR DO LADO 3:\t");
+        scanf("%d",&c);
+
+
+        if(a!=0 && b!=0 && c!=0){
+            i = 3;
+        }else{
+            printf("VALORES IGUAIS A ZERO - REPITA!");
+        }
+
+    }while(i<=2);
+
+
+    int ax1 = b + c;
+    int ax2 = a + c;
+    int ax3 = a + b;
+
+    if(c<ax3 && b<ax2 && a<ax1){
+
+        if(a==c && c==b){
+            printf("TRIANGULO EQUILATERO");
+        }else if((a==c && c!=b)||(a==b && b!=c)||(b==c && c!=a)){
+            printf("TRIANGULO ISOCELES");
+        }else if(a!=b && b!=c){
+            printf("TRIANGULO ESCALENO");
+        }
+    }else{
+        printf("NÃO EH UM TRIANGULO!");
+    }
+     
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //CONSUMO KM/L
 float consumo_km(float km, float litros){
     
