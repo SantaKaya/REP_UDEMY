@@ -8,13 +8,21 @@
 
 //////////////////////////////QUESTOES////////////////////////////
 
-//MAIN E11
+//MAIN E12
+int main(){
+    int n;
+    soma_alg(n);
+}
+
+
+
+
+/*MAIN E11
 int main(){
     float n1,n2,n3,op;
     notas(n1,n2,n3,op);
 }
-
-
+*/
 
 /*MAIN E10
 int main(){

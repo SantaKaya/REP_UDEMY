@@ -8,6 +8,49 @@
 ////////////////////////// FUNÇÕES////////////////////////////////////
 
 
+
+
+
+
+
+
+
+
+
+
+
+//SOMA ALGARISMOS
+int soma_alg(int num){
+    printf("DIGITE UM NUMERO:\n");
+    scanf("%d",&num);
+
+    if(num>0 && num<10){
+        printf("SOMA DOS ALGARISMOS = |%d|\n",num);
+    }else if(num>=10 && num <=99){
+        int a = num /10;
+        int b = num%10;
+        printf("SOMA DOS ALGARISMOS |%d|%d| = |%d|",a,b,a+b);
+    }else if(num>=100 && num <=999){
+        int a = num /100;//2
+        int b = num % 100;//52
+        int c = b/10;//5
+        int d = b%10;//2
+        printf("SOMA DOS ALGARISMOS |%d|%d|%d|= |%d|\n",a,c,d,a+c+d);
+    }else if(num>=1000 && num <=9999){//2535
+        int a = num / 1000;//2
+        int b = num %1000;//535
+        int c = b /100;//5
+        int d = b %100;//35
+        int e = d/10;//3
+        int f = d%10;//5
+        printf("SOMA DOS ALGARIMOS |%d|%d|%d|%d| = |%d|\n",a,c,e,f,a+c+e+f);
+    }
+
+}
+
+
+
+
 //MEDIA ALUNO
 void notas(float n1, float n2, float n3,char op){
     
@@ -37,19 +80,6 @@ void notas(float n1, float n2, float n3,char op){
             printf("MEDIA PONDERADA = |%.2f|\n",med_pond);
         break;
     }
-
-    /*
-    if(op !='a'){
-        float soma = (n1*5)+(n2*3)+(n3*2);
-        float med_pond = (soma)/10;
-        printf("MEDIA PONDERADA = |%.2f|\n",med_pond);
-    }else{
-        float soma = n1+n2+n3;
-        float med_ari = soma/3;
-        printf("MEDIA ARITIMETICA = |%d|\n",med_ari);
-    }
-    */
-
 }
 
 
