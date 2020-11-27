@@ -2,18 +2,26 @@
 #include <stdlib.H>
 #include <math.h>
 #include "ajuda.h"
+#include <string.h>
 
 
 
 //////////////////////////////QUESTOES////////////////////////////
 
-//MAIN E10
+//MAIN E11
+int main(){
+    float n1,n2,n3,op;
+    notas(n1,n2,n3,op);
+}
+
+
+
+/*MAIN E10
 int main(){
     int n1,n2;
     maior(n1,n2);
 }
-
-
+*/
 
 /*MAIN E09
 int main(){

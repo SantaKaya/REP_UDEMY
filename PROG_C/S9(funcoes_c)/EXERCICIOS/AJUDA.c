@@ -1,10 +1,56 @@
 #include <stdio.h>
 #include <stdlib.H>
 #include <math.h>
+#include <string.h>
 
 
 
 ////////////////////////// FUNÇÕES////////////////////////////////////
+
+
+//MEDIA ALUNO
+float notas(float n1, float n2, float n3,char op){
+    
+    
+    printf("NOTA 1\nDIGITE :\t");
+    scanf("%f",&n1);
+    printf("NOTA 2\nDIGITE :\t");
+    scanf("%f",&n2);
+    printf("NOTA 3\nDIGITE :\t");
+    scanf("%f",&n3);
+    printf("LETRA\nDIGITE :\t");
+    op = getchar();
+    
+    float soma, med_ari, med_pond;
+
+    switch (op){
+        case 'a':
+            soma = n1+n2+n3;
+            med_ari = soma/3;
+            printf("MEDIA ARITIMETICA = |%d|\n",med_ari);
+            break;
+    
+        default:
+            soma = (n1*5)+(n2*3)+(n3*2);
+            med_pond = (soma)/10;
+            printf("MEDIA PONDERADA = |%.2f|\n",med_pond);
+        break;
+    }
+
+    /*
+    if(op !='a'){
+        float soma = (n1*5)+(n2*3)+(n3*2);
+        float med_pond = (soma)/10;
+        printf("MEDIA PONDERADA = |%.2f|\n",med_pond);
+    }else{
+        float soma = n1+n2+n3;
+        float med_ari = soma/3;
+        printf("MEDIA ARITIMETICA = |%d|\n",med_ari);
+    }
+    */
+
+}
+
 
 //MAIOR DE DOIS
 int maior(int n1, int n2){
