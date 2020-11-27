@@ -6,8 +6,20 @@
 
 ////////////////////////// FUNÇÕES////////////////////////////////////
 
-//VOLUME CILINDRO CIRCULAR
+//MAIOR DE DOIS
+int maior(int n1, int n2){
+    printf("DIGITE 2 NUMEROS :\t");
+    scanf("%d %d",&n1,&n2);
 
+    if(n1>n2){
+        printf("|%d| - MAIOR",n1);
+    }else{
+        printf("|%d| - MAIOR",n2);
+    }
+}
+
+
+//VOLUME CILINDRO CIRCULAR
 float vol_cc(float r,float alt){
     printf("DIGITE O RAIO :\t");
     scanf("%f",&r);
