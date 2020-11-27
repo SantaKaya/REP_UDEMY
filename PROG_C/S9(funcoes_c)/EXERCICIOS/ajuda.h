@@ -9,7 +9,7 @@
 
 
 ////////////////////////////////////////////// 11 - 3 NOTAS (MED_ARI || MED_POND)
-float notas(float n1, float n2, float n3, char op);
+void notas(float n1, float n2, float n3, char op);
 ////////////////////////////////////////////// 10 - MAIOR DE 2
 int maior(int n1, int n2);
 ////////////////////////////////////////////// 9 - VOLUME DO CICLINDRO

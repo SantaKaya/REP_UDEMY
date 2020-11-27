@@ -9,9 +9,9 @@
 
 
 //MEDIA ALUNO
-float notas(float n1, float n2, float n3,char op){
+void notas(float n1, float n2, float n3,char op){
     
-    
+    fflush(stdin);
     printf("NOTA 1\nDIGITE :\t");
     scanf("%f",&n1);
     printf("NOTA 2\nDIGITE :\t");
@@ -19,7 +19,8 @@ float notas(float n1, float n2, float n3,char op){
     printf("NOTA 3\nDIGITE :\t");
     scanf("%f",&n3);
     printf("LETRA\nDIGITE :\t");
-    op = getchar();
+    fflush(stdin);
+    scanf("%c",&op);
     
     float soma, med_ari, med_pond;
 
@@ -27,7 +28,7 @@ float notas(float n1, float n2, float n3,char op){
         case 'a':
             soma = n1+n2+n3;
             med_ari = soma/3;
-            printf("MEDIA ARITIMETICA = |%d|\n",med_ari);
+            printf("MEDIA ARITIMETICA = |%.2f|\n",med_ari);
             break;
     
         default:
