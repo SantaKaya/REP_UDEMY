@@ -8,14 +8,22 @@
 
 //////////////////////////////QUESTOES////////////////////////////
 
-//MAIN E17
+
+/*MAIN E18
+int main(){
+    float x,z;
+    expo(x,z);
+}
+*/
+
+/*MAIN E17
 int main(){
     int a,b;
 
     soma_lim(a,b);
 
 }
-
+*/
 
 
 /*MAIN E16

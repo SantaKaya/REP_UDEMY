@@ -10,8 +10,23 @@
 
 
 
-//SOMA NUMEROS COM LIMITE
 
+//EXPONENCIAÇÃO
+float expo(float x , float z){
+    printf("DIGITE O VALOR DE X E Z:\n");
+    scanf("%f %f",&x,&z);
+
+    float exp = x;
+
+    for(int i = 2 ; i<=z;i++){
+        exp = exp*x;
+    }
+
+    printf("|%.2f|^|%.2f| = |%.2f|\n",x,z,exp);
+}
+
+
+//SOMA NUMEROS COM LIMITE
 int soma_lim(int n1,int n2){
     printf("DIGITE O LIMITE:\n");
     scanf("%d %d",&n1,&n2);
