@@ -7,10 +7,31 @@
 
 ////////////////////////// FUNÇÕES////////////////////////////////////
 
+//CONSUMO KM/L
+float consumo_km(float km, float litros){
+    
+    float consumo;
+    
+    printf("DISTANCIA\nDIGITE :\t");
+    scanf("%f",&km);
+
+    printf("LITROS CONSUMIDOS\nDIGITE :\t");
+    scanf("%f",&litros);
+
+    consumo = km/litros;
+
+    if(consumo < 8){
+        printf("CONSUMO = |%.2f|\nVENDA O CARRO!",consumo);
+    }else if(consumo >=8 && consumo <=14){
+        printf("CONSUMO = |%.2f|\nECONOMICO!",consumo);
+    }else if( consumo > 14){
+        printf("CONSUMO = |%.2f|\nSUPER ECONOMICO!",consumo);
+    }
+
+}
 
 
 //OPERAÇÕES MATEMATICAS
-
 float op_mat(float n1, float n2){
 
     float soma,mult,div,sub;

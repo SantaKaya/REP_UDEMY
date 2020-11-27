@@ -8,14 +8,23 @@
 
 //////////////////////////////QUESTOES////////////////////////////
 
-//MAIN 13
+
+//MAIN E14
 int main(){
-    float n1,n2;
-    op_mat(n1,n2);
+    float km, lt;
+
+    consumo_km(km,lt);
+    
 }
 
 
 
+/*MAIN 13
+int main(){
+    float n1,n2;
+    op_mat(n1,n2);
+}
+*/
 
 /*MAIN E12
 int main(){
