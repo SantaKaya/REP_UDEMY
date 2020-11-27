@@ -9,13 +9,44 @@
 
 
 
+//OPERAÇÕES MATEMATICAS
+
+float op_mat(float n1, float n2){
+
+    float soma,mult,div,sub;
+    char op;
 
 
+    printf("DIGITE 2 NUMEROS:\n");
+    scanf("%f %f",&n1,&n2);
 
 
+    printf("DIGITE O SIMBOLO DA OPERACAO :\t");
+    fflush(stdin);
+    scanf("%c",&op);
 
 
+    switch (op){
+        case '+':
+            soma = n1 + n2;
+            printf("|%.2f| + |%.2f| = |%.2f|",n1,n2,soma);
+            break;
+        case '-':
+            sub = n1 - n2;
+            printf("|%.2f| - |%.2f| = |%.2f|",n1,n2,sub);
+            break;
+        case '*':
+            mult = n1 * n2;
+            printf("|%.2f| - |%.2f| = |%.2f|",n1,n2,mult);
+            break;
+        case '/':
+            div = n1 / n2;
+            printf("|%.2f| - |%.2f| = |%.2f|",n1,n2,div);
+            break;
+    }
 
+
+}
 
 
 

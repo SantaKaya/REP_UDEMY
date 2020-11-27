@@ -8,14 +8,21 @@
 
 //////////////////////////////QUESTOES////////////////////////////
 
-//MAIN E12
+//MAIN 13
 int main(){
-    int n;
-    soma_alg(n);
+    float n1,n2;
+    op_mat(n1,n2);
 }
 
 
 
+
+/*MAIN E12
+int main(){
+    int n;
+    soma_alg(n);
+}
+*/
 
 /*MAIN E11
 int main(){
