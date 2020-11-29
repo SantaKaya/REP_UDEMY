@@ -9,6 +9,34 @@
 ////////////////////////// FUNÇÕES////////////////////////////////////
 
 
+
+//TRIANGULO
+void tri(){
+    int n;
+    printf("Digite um numero:\n");
+    scanf("%d",&n);
+    int a = 2*n-1;
+    printf("A = |%d|\n",a);
+    int met_tri = a/2;
+
+    for(int i = 0; i<=n;i++){
+        for(int d = 0; d<=i;d++){
+            printf("*");
+        }
+        for(int j = 0; j<=i; j++){
+           printf("");
+        }
+        for(int k = 1; k<=i;k++){
+            printf("*");
+        }
+       
+       printf("\n");
+        
+    }
+}
+
+
+
 //TRIANGULO LATERAL
 void tri_lat(){
     int n;
@@ -36,9 +64,6 @@ void tri_lat(){
         }
     }
     
-
-
-
 }
 
 
