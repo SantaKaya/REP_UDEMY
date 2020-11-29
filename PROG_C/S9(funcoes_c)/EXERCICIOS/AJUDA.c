@@ -11,6 +11,51 @@
 
 
 
+
+
+
+
+//MAIOR FATOR PRIMO
+int fat_primo(int n){
+
+    printf("DIGITE UM NUMERO:\t");
+    scanf("%d",&n);
+
+    int n1[n];
+    
+
+    for(int i = 1; i<=n; i++){
+        n1[i] = i;
+        printf("N1 = |%d|\n",n1[i]);
+    }
+
+
+    int d,verifica=1,maior_primo,limite;
+    
+    for(int t = 1; t<=n;t++ ){
+        if(n1[t]>1){
+            d = 2;
+            verifica = 1;
+            limite = sqrt(n1[t]);
+            
+            while(verifica && d<=limite){
+                if(n1[t]%d==0){
+                    verifica = 0;
+                }
+                d++;
+            }
+        
+            if(verifica){
+                maior_primo = n1[t];
+            }
+          
+        }
+        
+    }
+   printf("MAIOR VALOR PRIMO = |%d|\n",maior_primo);
+}
+
+
 //EXPONENCIAÇÃO
 float expo(float x , float z){
     printf("DIGITE O VALOR DE X E Z:\n");

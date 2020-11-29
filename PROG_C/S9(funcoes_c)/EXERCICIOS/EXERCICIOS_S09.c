@@ -9,6 +9,14 @@
 //////////////////////////////QUESTOES////////////////////////////
 
 
+
+//MAIN E19
+int main(){
+    int n;
+    fat_primo(n);
+}
+
+
 /*MAIN E18
 int main(){
     float x,z;
