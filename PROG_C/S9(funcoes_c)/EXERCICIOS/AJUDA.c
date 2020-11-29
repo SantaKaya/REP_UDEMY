@@ -9,7 +9,45 @@
 ////////////////////////// FUNÇÕES////////////////////////////////////
 
 
+//QUANTIDADE DE NUMEROS PRIMOS ABAIXO DE N
+void num_p(){
+    int num;
 
+    printf("DIGITE UM NUMERO:\n");
+    scanf("%d",&num);
+
+    int n[num-1],a=0;
+
+    for(int i = 1; i<num;i++){
+        n[a]=i;
+        a++;  
+    }
+    a = a-1;
+    int d,verifica=1,qtd_primo = 0,limite;
+    
+    for(int t = 1; t<=a;t++ ){
+        if(n[t]>1){
+            d = 2;
+            verifica = 1;
+            limite = sqrt(n[t]);
+            
+            while(verifica && d<=limite){
+                if(n[t]%d==0){
+                    verifica = 0;
+                }
+                d++;
+            }
+        
+            if(verifica){
+                qtd_primo++;
+            }
+          
+        }
+        
+    }
+
+    printf("QTD PRIMOS ABAIXO DE |%d| = |%d|\n",num,qtd_primo);
+}
 
 
 //FATORIAL DE UM NUMERO
