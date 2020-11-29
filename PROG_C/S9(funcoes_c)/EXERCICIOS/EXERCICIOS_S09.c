@@ -8,13 +8,19 @@
 
 //////////////////////////////QUESTOES////////////////////////////
 
+/*MAIN E20
+int main(){
 
+    fato_num();
+}
+*/
 
-//MAIN E19
+/*MAIN E19
 int main(){
     int n;
     fat_primo(n);
 }
+*/
 
 
 /*MAIN E18

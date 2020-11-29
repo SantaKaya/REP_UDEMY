@@ -12,7 +12,30 @@
 
 
 
+//FATORIAL DE UM NUMERO
+void fato_num(){
 
+    int num;
+
+    printf("DIGITE UM NUMERO:\n");
+    scanf("%d",&num);
+
+    int fat[num-1],a=0;
+
+    for(int i = 1; i<=num;i++){
+        fat[a]=i;
+        a++;  
+    }
+    a = a-1;
+
+    for(int k = 0; k<a;k++){
+        fat[a]=fat[a]*fat[k];
+    }
+    
+    printf("FATORACAO |%d| = |%d|\n",num,fat[a]);
+
+
+}
 
 
 //MAIOR FATOR PRIMO
