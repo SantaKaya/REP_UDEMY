@@ -9,6 +9,21 @@
 ////////////////////////// FUNÇÕES////////////////////////////////////
 
 
+//PONTOS DE EXCLAMAÇÃO
+void exc(){
+    int n;
+    printf("DIGITE UM NUMERO:\n");
+    scanf("%d",&n);
+
+    for(int i = 0; i<=n;i++){
+        for(int j=1;j<=i;j++){
+            printf("!");
+        }
+        printf("\n");
+    }
+
+}
+
 //QUANTIDADE DE NUMEROS PRIMOS ABAIXO DE N
 void num_p(){
     int num;
