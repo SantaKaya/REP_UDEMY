@@ -9,6 +9,40 @@
 ////////////////////////// FUNÇÕES////////////////////////////////////
 
 
+//TRIANGULO LATERAL
+void tri_lat(){
+    int n;
+    printf("Digite um numero:\n");
+    scanf("%d",&n);
+    int a = 2*n-1;
+    printf("A = |%d|\n",a);
+
+
+    for(int i = 0; i<=a;i++){
+        
+        if(i<=n){
+            for(int j=1;j<=i;j++){
+            printf("*");
+            }
+            printf("\n");
+        }else if(i>n){
+            
+            for(int k = 2; k<=n;k++){
+                printf("*");
+                
+            }
+            printf("\n");
+            n--;
+        }
+    }
+    
+
+
+
+}
+
+
+
 //PONTOS DE EXCLAMAÇÃO
 void exc(){
     int n;

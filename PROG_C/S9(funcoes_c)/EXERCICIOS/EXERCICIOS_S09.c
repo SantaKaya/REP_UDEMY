@@ -10,10 +10,17 @@
 
 
 
-//MAIN E22
+/*MAIN E23
+int main(){
+    tri_lat();
+}
+*/
+
+/*MAIN E22
 int main(){
     exc();
 }
+*/
 
 /*MAIN E21
 int main(){
