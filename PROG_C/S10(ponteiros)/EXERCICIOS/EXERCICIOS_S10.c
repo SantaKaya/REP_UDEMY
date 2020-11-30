@@ -6,7 +6,21 @@
 
 //////////////////////////////////////QUESTOES//////////////////////////////////////////
 
-//MAIN E07
+//MAIN E08
+int main(){
+
+    float n1[10];
+
+    for(int i = 0; i<= 9; i++){
+        printf("n1[%d]\t &n1[%d] = |%d|\n",i,i,&n1[i]);
+    }
+    return 0;
+}
+
+
+
+
+/*MAIN E07
 int main(){
 
     int a,b;
@@ -20,7 +34,7 @@ int main(){
 
     return 0;
 }
-
+*/
 
 /*MAIN E06
 int main(){
