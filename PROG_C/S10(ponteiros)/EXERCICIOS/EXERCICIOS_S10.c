@@ -7,7 +7,29 @@
 //////////////////////////////////////QUESTOES//////////////////////////////////////////
 
 
-//MAIN E09
+
+//MAIN E10
+int main(){
+
+    int n[5],*pn;
+
+    for(int i = 0; i<=4;i++){
+        printf("N[%d| = \t",i);
+        scanf("%d",&n[i]);
+    }
+
+    for(int j = 1; j<=5; j++){
+        printf("n[%d]=|%d|\n",j,n[5]*2);
+    }
+
+    return 0;
+}
+
+
+
+
+
+/*MAIN E09
 int main(){
 
     float n[3][3];
@@ -17,16 +39,9 @@ int main(){
             printf("&n[%d][%d] = |%d|\n",i,j,&n[i][j]);
         }
     }
-
-
-
-
     return 0;
 }
-
-
-
-
+*/
 /*MAIN E08
 int main(){
 
