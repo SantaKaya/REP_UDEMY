@@ -6,10 +6,23 @@
 
 //////////////////////////////////////QUESTOES//////////////////////////////////////////
 
+//MAIN E07
+int main(){
+
+    int a,b;
+    printf("DIGITE 2 VALORES:\n");
+    scanf("%d %d",&a,&b);
+
+    soma_2(&a,&b);
+
+    printf("A = |%d|\tB = |%d|\n",a,b);
 
 
+    return 0;
+}
 
-//MAIN E06
+
+/*MAIN E06
 int main(){
 
     int a,b;
@@ -20,6 +33,7 @@ int main(){
 
     return 0;
 }
+*/
 
 /*MAIN 05
 int main(){

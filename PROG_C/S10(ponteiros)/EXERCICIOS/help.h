@@ -7,6 +7,19 @@
 
 ////////////////////////////FUNÇÕES///////////////////////////
 
+//SOMA 2 NUMEROS COM ARMAZ. NA 1 VARIAVEL.
+int soma_2(int a,int b){
+
+    int *pa,soma,*pb;
+    pa = a;
+    pb = b;
+
+    soma = *pa + *pb;
+    *pa = soma;
+ 
+}
+
+
 //SOMA DOS DOBROS
 int soma_d(int a, int b){
     int *pa = &a,*pb = &b ;
