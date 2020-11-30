@@ -2,10 +2,26 @@
 #include <stdlib.h>
 #include <string.h>
 #include <math.h>
+#include "help.h"
 
 //////////////////////////////////////QUESTOES//////////////////////////////////////////
 
-//MAIN 03
+
+
+//MAIN E04
+int main(){
+
+    int a,b;
+    printf("digite 2 valores:\n");
+    scanf("%d %d",&a,&b);
+
+    passando_2_variaveis(a,b);
+
+    return 0;
+}
+
+
+/*MAIN 03
 int main(){
 
     int n1,n2;
@@ -21,9 +37,7 @@ int main(){
 
     return 0;
 }
-
-
-
+*/
 
 /*MAIN 02
 int main(){
