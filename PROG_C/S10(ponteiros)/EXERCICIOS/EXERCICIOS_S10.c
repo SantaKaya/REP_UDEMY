@@ -8,7 +8,29 @@
 
 
 
-//MAIN E04
+
+//MAIN E06
+int main(){
+
+
+
+    return 0;
+}
+
+/*MAIN 05
+int main(){
+
+    int a,b;
+    printf("DIGITE 2 VALORES:\n");
+    scanf("%d %d",&a,&b);
+
+    pass_maior(a,b);
+
+    return 0;
+}
+*/
+
+/*MAIN E04
 int main(){
 
     int a,b;
@@ -19,7 +41,7 @@ int main(){
 
     return 0;
 }
-
+*/
 
 /*MAIN 03
 int main(){
