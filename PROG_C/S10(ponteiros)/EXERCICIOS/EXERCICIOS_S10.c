@@ -5,6 +5,26 @@
 
 //////////////////////////////////////QUESTOES//////////////////////////////////////////
 
+//MAIN 02
+int main(){
+
+    int n1,n2;
+
+    printf("n2|%d| - & = |%d|\n",n2,&n2);
+    printf("n1|%d| - & = |%d|\n",n1,&n1);
+
+    if(&n1>&n2){
+        printf("n1|%d| - & = |%d|\n",n1,&n1);
+    }else{
+        printf("n2|%d| - & = |%d|\n",n2,&n2);
+    }
+
+    return 0;
+}
+
+
+
+
 /*MAIN 01
 int main(){
     int a,*pa;
