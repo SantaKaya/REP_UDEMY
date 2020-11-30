@@ -12,7 +12,11 @@
 //MAIN E06
 int main(){
 
+    int a,b;
+    printf("DIGITE 2 VALORES:\n");
+    scanf("%d %d",&a,&b);
 
+    soma_d(a,b);
 
     return 0;
 }

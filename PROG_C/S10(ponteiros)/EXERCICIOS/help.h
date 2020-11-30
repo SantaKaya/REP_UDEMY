@@ -7,7 +7,17 @@
 
 ////////////////////////////FUNÇÕES///////////////////////////
 
+//SOMA DOS DOBROS
+int soma_d(int a, int b){
+    int *pa = &a,*pb = &b ;
 
+    *pa = a*2;
+    *pb = b*2;
+    int soma = *pb + *pa;
+    printf("DA = |%d|\tDB = |%d|\n",*pa,*pb);
+    printf("SOMA DOS DOBROS = |%d|\n",soma);
+
+}
 
 //PASSANDO 2 VARIAVEIS MAIOR EM A E MENOR EM B
 int pass_maior(int a, int b){
