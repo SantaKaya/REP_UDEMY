@@ -7,7 +7,23 @@
 //////////////////////////////////////QUESTOES//////////////////////////////////////////
 
 
-//MAIN E11
+//MAIN E12
+int main(){
+
+    int a, b, c;
+
+    printf("DIGITE 3 VALORES:\n");
+    scanf("%d %d %d",&a,&b,&c);
+
+    ord_3val(&a,&b,&c);
+
+    printf("\nA = |%d|\t B = |%d|\t C = |%d|\t",a,b,c);
+
+    return 0;
+}
+
+
+/*MAIN E11
 int main(){
 
     int n[5];
@@ -22,14 +38,9 @@ int main(){
             printf("&n[%d] = |%d|\n",j,&n[j]);
         }
     }
-
-
-
     return 0;
 }
-
-
-
+*/
 
 /*MAIN E10
 int main(){
