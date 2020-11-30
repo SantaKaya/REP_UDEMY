@@ -7,8 +7,31 @@
 //////////////////////////////////////QUESTOES//////////////////////////////////////////
 
 
+//MAIN E11
+int main(){
 
-//MAIN E10
+    int n[5];
+
+    for(int i = 0; i<=4;i++){
+        printf("n[%d] = \t",i);
+        scanf("%d",&n[i]);
+    }
+
+    for(int j = 0; j<=4;j++){
+        if(n[j]%2==0){
+            printf("&n[%d] = |%d|\n",j,&n[j]);
+        }
+    }
+
+
+
+    return 0;
+}
+
+
+
+
+/*MAIN E10
 int main(){
 
     int n[5],*pn;
@@ -24,9 +47,7 @@ int main(){
 
     return 0;
 }
-
-
-
+*/
 
 
 /*MAIN E09
