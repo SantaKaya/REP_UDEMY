@@ -10,8 +10,18 @@
 /*MAIN E16
 int main(){
 
+    int a,*b,**c,***d;
 
+    printf("valor a:\t");
+    scanf("%d",&a);
 
+    b = &a;
+    c = &b;
+    d = &c;
+
+    printf("ponteiro b = |%d|\n",(*b)*2);
+    printf("ponteiro c = |%d|\n",(**c)*3);
+    printf("ponteiro d = |%d|\n",(***d)*4);
 
     return 0;
 }
