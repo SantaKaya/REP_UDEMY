@@ -6,7 +6,35 @@
 
 //////////////////////////////////////QUESTOES//////////////////////////////////////////
 
-//MAIN E18
+
+/*MAIN E19
+int main(){
+
+    int n;
+    printf("Digite o tamanho do array:\t");
+    scanf("%d",&n);
+
+    int array[n+1];
+
+    array[0]=n;
+
+    for(int i = 1; i<n+1;i++){
+        printf("Digite o array:\n");
+        scanf("%d",&array[i]);
+    }
+    maior_array(array,&n);
+
+    printf("MAIOR NUMERO = |%d|\tQTD = |%d|\n",array[0],n);
+
+    return 0;
+}
+*/
+
+
+
+
+
+/*MAIN E18
 int main(){
 
     float r,area,volume;
@@ -14,15 +42,13 @@ int main(){
     printf("digite o raio:\t");
     scanf("%f",&r);
 
-  
     calc_esfera(r,&area,&volume);
 
     printf("AREA = |%.2f|\tVOLUME = |%.2f|\n",area,volume);
     
     return 0;
 }
-
-
+*/
 
 /*MAIN E17
 int main(){
@@ -68,10 +94,9 @@ int main(){
 	scanf("%d", &n);
 
 	int vet[n+1];
-    //printf("vet[n+1] = |%d|\n",vet[n+1]);
 	
 	vet[0]=n;
-    //printf("vet[0] = |%d|\n",vet[0]);
+    
 
 	for(int i=1 ; i<n+1 ;i++){
         printf("DIGITE O VETOR:\n");

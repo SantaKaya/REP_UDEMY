@@ -8,13 +8,39 @@
 
 ////////////////////////////FUNÇÕES///////////////////////////
 
+//MAIOR NUMERO E QUANTAS VEZES APARECE EM UM ARRAY
+void maior_array(int *array,int *n){
+    int maior = 1,soma = 0;
+    for(int i = 1; i<*n+1;i++){
+        if(array[i]>maior){
+            printf("1array[%d] = |%d|>|%d|\n",i,array[i],maior);
+            maior = array[i];
+            printf("MAIOR = |%d|\n",maior);
+        }
+    }
+
+    for(int j = 0; j<*n+1;j++){
+        if(array[j]==maior){
+            printf("2array[%d] = |%d|>|%d|\n",j,array[j],maior);
+            soma++;
+            printf("SOMA = |%d|\n",soma);
+        }
+    }
+    array[0]=maior;
+    *n = soma;
+    printf("arra[0] = |%d|\n",array[0]);
+    printf("&n = |%d|\n",*n);
+}
+
+
+
+
+// AREA E VOLUME DE UMA ESFERA
 void calc_esfera(float r, float *area, float *volume){
 
     *area = 4*pi*(pow(r,2));
     *volume = 1.33*pi*(pow(r,3));
 }
-
-
 
 //PARTE INTEIRA E FRACIONARIA DE UM NUMERO
 void frac(float num, int *inteiro, float *frac){
