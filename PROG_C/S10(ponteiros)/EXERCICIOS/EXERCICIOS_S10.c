@@ -6,6 +6,32 @@
 
 //////////////////////////////////////QUESTOES//////////////////////////////////////////
 
+//MAIN E18
+int main(){
+
+
+
+
+    return 0;
+}
+
+
+
+
+/*MAIN E17
+int main(){
+
+    float num,fac;
+    int inteiro;
+
+    printf("DIGITE O VALOR REAL:\t");
+    scanf("%f",&num);
+    frac(num,&inteiro,&fac);
+
+    printf("INTEIRO = |%d|\tFRACAO = |%.2f|\n",inteiro,fac);
+    return 0;
+}
+*/
 
 /*MAIN E16
 int main(){
@@ -26,9 +52,6 @@ int main(){
     return 0;
 }
 */
-
-
-
 
 /*MAIN E15
 int main(){
