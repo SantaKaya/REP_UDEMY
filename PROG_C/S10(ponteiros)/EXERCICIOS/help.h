@@ -7,6 +7,16 @@
 
 ////////////////////////////FUNÇÕES///////////////////////////
 
+//IMPRINDO UM ARRAY
+int print_array(int *array,int a){
+
+    for (int i = 0; i<=(*(array+a)); i++){
+        printf("array[%d] = |%d|\n",i,*(array+i));
+        
+    }
+}
+
+
 //PREENCHENDO ELEMENTOS DO ARRAY
 int preenc_array(int *array, int val){
     

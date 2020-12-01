@@ -6,8 +6,10 @@
 
 //////////////////////////////////////QUESTOES//////////////////////////////////////////
 
-//MAIN E15
+
+//MAIN E16
 int main(){
+
 
 
 
@@ -16,6 +18,26 @@ int main(){
 
 
 
+
+
+/*MAIN E15
+int main(){
+
+    int array[10];
+
+    for(int i = 0; i<=9;i++){
+        printf("DIGITE O %d VALOR DO ARRAY :\t",i);
+        scanf("%d",&array[i]);
+    }
+
+    int a = sizeof(array)/sizeof(array[0]);
+
+    print_array(array,a);
+
+
+    return 0;
+}
+*/
 
 /*MAIN E14
 int main(){
