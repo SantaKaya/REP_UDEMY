@@ -3,9 +3,18 @@
 #include <string.h>
 #include <math.h>
 
+#define pi 3.141592
 
 
 ////////////////////////////FUNÇÕES///////////////////////////
+
+void calc_esfera(float r, float *area, float *volume){
+
+    *area = 4*pi*(pow(r,2));
+    *volume = 1.33*pi*(pow(r,3));
+}
+
+
 
 //PARTE INTEIRA E FRACIONARIA DE UM NUMERO
 void frac(float num, int *inteiro, float *frac){

@@ -9,12 +9,18 @@
 //MAIN E18
 int main(){
 
+    float r,area,volume;
 
+    printf("digite o raio:\t");
+    scanf("%f",&r);
 
+  
+    calc_esfera(r,&area,&volume);
 
+    printf("AREA = |%.2f|\tVOLUME = |%.2f|\n",area,volume);
+    
     return 0;
 }
-
 
 
 
