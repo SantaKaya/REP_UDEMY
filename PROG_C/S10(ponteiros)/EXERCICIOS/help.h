@@ -7,6 +7,19 @@
 
 ////////////////////////////FUNÇÕES///////////////////////////
 
+//PREENCHENDO ELEMENTOS DO ARRAY
+int preenc_array(int *array, int val){
+    
+    int a = val;
+
+    printf("DIGITE A VARIAVEL:\t");
+    scanf("%d",&val);
+
+    for(int i = 0; (*(array+a))!=val;i++){
+        array[i] = val;
+    }
+}
+
 //FUNÇÃO INTERCEÇÃO
 int verifica(char *string1, char *string2){
     int aux = 0;

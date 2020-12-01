@@ -6,6 +6,40 @@
 
 //////////////////////////////////////QUESTOES//////////////////////////////////////////
 
+//MAIN E15
+int main(){
+
+
+
+    return 0;
+}
+
+
+
+
+/*MAIN E14
+int main(){
+
+
+    int array[5],val=0;
+
+    for(int i = 0;i<=4;i++){
+        printf("DIGITE O %d VALOR DO ARRAY:\t",i);
+        scanf("%d",&array[i]);
+        val++;
+    }
+
+    preenc_array(array,val);
+
+    for(int j = 0;j<=4;j++){
+        printf("\narray[%d] = |%d|\n",j,array[j]);
+    }
+    
+
+    return 0;
+}
+*/
+
 /*MAIN E13
 int main(){
     char string1[100],string2[100];
