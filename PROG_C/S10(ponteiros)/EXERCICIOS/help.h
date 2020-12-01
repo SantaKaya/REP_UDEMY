@@ -7,6 +7,24 @@
 
 ////////////////////////////FUNÇÕES///////////////////////////
 
+//FUNÇÃO INTERCEÇÃO
+int verifica(char *string1, char *string2){
+    int aux = 0;
+    for(int i = 0,j=0;(*(string1+i))!='\0';i++){
+
+        while(*(string1+i)==(*(string2+j))){
+            i++;
+            j++;
+
+            if((*(string2+j))=='\n' || (*(string2 +j))=='\0'){
+                return 1;
+            }else if((*(string1+i))!=(*(string2+j))){
+                aux = 0;
+            }
+        }
+    }
+    return aux;
+}
 
 //ORDENAÇÃO 3 VALORES
 int ord_3val(int a,int b,int c){

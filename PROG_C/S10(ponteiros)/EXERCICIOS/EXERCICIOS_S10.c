@@ -6,8 +6,27 @@
 
 //////////////////////////////////////QUESTOES//////////////////////////////////////////
 
+/*MAIN E13
+int main(){
+    char string1[100],string2[100];
+    printf("DIGITE A PRIMEIRA STRING:\n");
+    fgets(string1,100,stdin);
+    printf("DIGITE A SEGUNDA STRING:\n");
+    fgets(string2,100,stdin);
 
-//MAIN E12
+    int retorno = verifica(string1,string2);
+    if(retorno == 1){
+        printf("A segunda string esta contida  na primeira string!\n");
+    }else{
+        printf("A segunda string NAO esta contida na primeira string!\n");
+    }
+
+    return 0;
+}
+*/
+
+
+/*MAIN E12
 int main(){
 
     int a, b, c;
@@ -21,7 +40,7 @@ int main(){
 
     return 0;
 }
-
+*/
 
 /*MAIN E11
 int main(){
