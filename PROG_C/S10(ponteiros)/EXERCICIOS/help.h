@@ -8,14 +8,14 @@
 ////////////////////////////FUNÇÕES///////////////////////////
 
 //IMPRINDO UM ARRAY
-int print_array(int *array,int a){
-
-    for (int i = 0; i<=(*(array+a)); i++){
-        printf("array[%d] = |%d|\n",i,*(array+i));
-        
-    }
+void printArray(int vet[]){
+	int i,tot=vet[0];
+    printf("tot = |%d|\n",tot);
+	for(i=0;i<tot;i++){
+		printf("|%d|\n", *(vet+1));
+		vet++;
+	}
 }
-
 
 //PREENCHENDO ELEMENTOS DO ARRAY
 int preenc_array(int *array, int val){

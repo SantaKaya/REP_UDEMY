@@ -7,7 +7,7 @@
 //////////////////////////////////////QUESTOES//////////////////////////////////////////
 
 
-//MAIN E16
+/*MAIN E16
 int main(){
 
 
@@ -15,7 +15,7 @@ int main(){
 
     return 0;
 }
-
+*/
 
 
 
@@ -23,21 +23,25 @@ int main(){
 /*MAIN E15
 int main(){
 
-    int array[10];
+	int n;
 
-    for(int i = 0; i<=9;i++){
-        printf("DIGITE O %d VALOR DO ARRAY :\t",i);
-        scanf("%d",&array[i]);
-    }
+	printf("Digite o tamanho do vetor: ");
+	scanf("%d", &n);
 
-    int a = sizeof(array)/sizeof(array[0]);
+	int vet[n+1];
+    //printf("vet[n+1] = |%d|\n",vet[n+1]);
+	
+	vet[0]=n;
+    //printf("vet[0] = |%d|\n",vet[0]);
 
-    print_array(array,a);
-
-
-    return 0;
+	for(int i=1 ; i<n+1 ;i++){
+        printf("DIGITE O VETOR:\n");
+		scanf("%d", &vet[i]);
+	}
+	printArray(vet);
 }
 */
+
 
 /*MAIN E14
 int main(){
