@@ -8,38 +8,48 @@
 
 ////////////////////////////FUNÇÕES///////////////////////////
 
-//MAIOR NUMERO E QUANTAS VEZES APARECE EM UM ARRAY
-void maior_array(int *array,int *n){
-    int maior = 1,soma = 0;
-    for(int i = 1; i<*n+1;i++){
-        if(array[i]>maior){
-            printf("1array[%d] = |%d|>|%d|\n",i,array[i],maior);
-            maior = array[i];
-            printf("MAIOR = |%d|\n",maior);
-        }
-    }
-
-    for(int j = 0; j<*n+1;j++){
-        if(array[j]==maior){
-            printf("2array[%d] = |%d|>|%d|\n",j,array[j],maior);
+int negativos(float *vet, int n){
+    float soma = 0;
+    for(int i = 0; i<n+1; i++){
+        if(vet[i]>0.0){
             soma++;
-            printf("SOMA = |%d|\n",soma);
+            printf("SOMA = |%.0f|\n",soma);
         }
     }
-    array[0]=maior;
-    *n = soma;
-    printf("arra[0] = |%d|\n",array[0]);
-    printf("&n = |%d|\n",*n);
+    soma = soma -1;
+    vet[0] = n - soma;
+    printf("vet[0] = |%.0f|\n",vet[0]);
+    return vet[0];
 }
 
 
 
 
+
+
+//MAIOR NUMERO E QUANTAS VEZES APARECE EM UM ARRAY
+void maior_array(int *array,int *n){
+    int maior = 1,soma = 0;
+    for(int i = 1; i<*n+1;i++){
+        if(array[i]>maior){
+            maior = array[i];
+        }
+    }
+
+    for(int j = 0; j<*n+1;j++){
+        if(array[j]==maior){
+            soma++;
+        }
+    }
+    array[0]=maior;
+    *n = soma;
+}
+
 // AREA E VOLUME DE UMA ESFERA
 void calc_esfera(float r, float *area, float *volume){
 
     *area = 4*pi*(pow(r,2));
-    *volume = 1.33*pi*(pow(r,3));
+    *volume = 4.0/3.0*pi*(pow(r,3));
 }
 
 //PARTE INTEIRA E FRACIONARIA DE UM NUMERO

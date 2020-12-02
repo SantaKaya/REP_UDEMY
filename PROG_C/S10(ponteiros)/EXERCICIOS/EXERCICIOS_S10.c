@@ -6,6 +6,34 @@
 
 //////////////////////////////////////QUESTOES//////////////////////////////////////////
 
+//MAIN E20
+int main(){
+
+    int n;
+
+    printf("Digite o tamanho do array:\t");
+    scanf("%d",&n);
+
+    float array[n+1];
+
+    array[0] = n;
+
+    for(int i = 0; i<n;i++){
+        printf("DIGITE O ARRAY:\t");
+        scanf("%d",&array[i]);
+        printf("\n");
+    }
+    
+    negativos(array,n);
+    
+    printf("NEGATIVOS = %.0f",array[0]);
+
+    return 0;
+}
+
+
+
+
 
 /*MAIN E19
 int main(){
