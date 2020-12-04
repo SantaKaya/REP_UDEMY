@@ -9,12 +9,34 @@
 ////////////////////////////FUNÇÕES///////////////////////////
 
 
-//
 
 
 
+//// FUNÇÃO SOMA DE 2 ARRAYS
+int soma_2a(int array[],int array2[]){
+    int tot = array[0];
+    int tot2 = array2[0];
+
+    if(tot == tot2){
+        int array3[tot];
+        for(int i = 0; i<tot;i++){
+            array3[i]=*(array+1)+*(array+1);
+            printf("array[i+1] = |%d|\t array2[i+1] = |%d|\n",*(array+1),*(array+1));
+            printf("array3 [%d] = |%d|\n",i,array3[i]);
+            array++;
+            array2++;
+            printf("\n");
+        }
+    }else if(tot!=tot2){
+        return 0;
+    }
+
+    return 1;
+
+}
 
 
+//NUMEROS NEGATIVOS NUM ARRAY
 int negativos(float *vet, int n){
     float soma = 0;
     for(int i = 0; i<n+1; i++){
@@ -28,9 +50,6 @@ int negativos(float *vet, int n){
     printf("vet[0] = |%.0f|\n",vet[0]);
     return vet[0];
 }
-
-
-
 
 
 

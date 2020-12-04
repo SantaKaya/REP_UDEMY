@@ -6,17 +6,39 @@
 
 //////////////////////////////////////QUESTOES//////////////////////////////////////////
 
-//MAIN E22
+/*MAIN E22
 int main(){
 
+    int n1,n2;
 
-    
+    printf("DIGITE O TAMANHO DO 1 ARRAY :\t");
+    scanf("%d",&n1);
+    printf("DIGITE O TAMANHO DO 2 ARRAY :\t");
+    scanf("%d",&n2);
 
+    int array[n1+1];//5=6
+
+    array[0] = n1;//5
+
+    for(int i = 1; i<n1+1;i++){
+        printf("DIGITE O 1 ARRAY:\n");
+        scanf("%d",&array[i]);
+    }
+
+    int array2[n2+1];
+    array2[0] = n2;
+
+    for(int t = 1; t<n2+1;t++){
+        printf("DIGITE O 2 ARRAY:\n");
+        scanf("%d",&array2[t]);
+    }
+
+    soma_2a(array,array2);
 
 
     return 0;
 }
-
+*/
 
 
 
