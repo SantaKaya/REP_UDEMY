@@ -8,6 +8,13 @@
 
 ////////////////////////////FUNÇÕES///////////////////////////
 
+
+//
+
+
+
+
+
 int negativos(float *vet, int n){
     float soma = 0;
     for(int i = 0; i<n+1; i++){

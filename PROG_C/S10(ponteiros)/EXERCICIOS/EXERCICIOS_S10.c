@@ -6,7 +6,43 @@
 
 //////////////////////////////////////QUESTOES//////////////////////////////////////////
 
-//MAIN E20
+//MAIN E22
+int main(){
+
+
+    
+
+
+
+    return 0;
+}
+
+
+
+
+/*MAIN E21
+int main(){
+
+    int array[5],*p;
+    p = &array;
+    
+    for(int i = 0; i<=4;i++){
+        array[i]= i+1;
+    }
+    for(int j = 0; j<=4;j++){
+        *p = *p +1;
+        p++;
+    }
+    for(int k = 0; k<=4;k++){
+        printf("array [%d] = |%d|\n",k,array[k]);
+    }
+    return 0;
+}
+*/
+
+
+
+/*MAIN E20
 int main(){
 
     int n;
@@ -25,11 +61,12 @@ int main(){
     }
     
     negativos(array,n);
-    
+
     printf("NEGATIVOS = %.0f",array[0]);
 
     return 0;
 }
+*/
 
 
 
