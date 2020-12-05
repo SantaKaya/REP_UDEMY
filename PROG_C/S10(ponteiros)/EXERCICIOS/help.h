@@ -8,6 +8,16 @@
 
 ////////////////////////////FUNÇÕES///////////////////////////
 
+//MAIOR DE UM ARRAY
+int maior1_array(int array[]){
+    int tot = array[0],maior = 1;
+    for(int i = 1;i<=tot;i++){
+        if(array[i]>maior){
+            maior = array[i];
+        }
+    }
+    array[0]=maior;
+}
 
 
 

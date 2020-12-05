@@ -6,6 +6,65 @@
 
 //////////////////////////////////////QUESTOES//////////////////////////////////////////
 
+
+
+/*MAIN E23
+int main(){
+
+    int n;
+    printf("Digite o tamanho do array:\t");
+    scanf("%d",&n);
+
+    int array[n+1];
+    array[0] = n;
+
+    for(int i = 1; i<n+1;i++){
+        printf("ARRAY VALOR |%d|\nDIGITE:\t",i);
+        scanf("%d",&array[i]);
+        printf("\n");
+    }
+
+    int k;
+
+    printf("DIGITE O VALOR DE K:\t");
+    scanf("%d",&k);
+
+    int aux = n;
+    int u = 1;
+
+    while(aux>0){
+        //printf("aux = |%d|\tu = |%d|\n",aux,u);
+        for(int r = 1; r<=n;r++){
+            for(int p = 0; p<k;p++){
+
+                printf("array[%d] = |%d|\t",u,array[u]);
+                u++;
+                aux--;
+                if(u%2==0 && u==n){
+                    aux = 0;
+                    r = n;
+                }
+            }
+            if(u%2!=0 && u==n){
+                    printf("\narray[%d] = |%d|\t",u,array[u]);
+                    aux = 0;
+                    r=n;
+            }
+            
+            printf("\n");
+        }
+    }
+
+    maior1_array(array);
+
+    printf("MAIOR VALOR DO ARRAY = |%d|\n",array[0]);
+
+    return 0;
+}
+*/
+
+
+
 /*MAIN E22
 int main(){
 
