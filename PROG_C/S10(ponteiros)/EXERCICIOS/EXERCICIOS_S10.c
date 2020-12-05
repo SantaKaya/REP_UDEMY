@@ -7,6 +7,41 @@
 //////////////////////////////////////QUESTOES//////////////////////////////////////////
 
 
+//MAIN E25
+int main(){
+
+
+
+
+    return 0;
+}
+
+
+
+
+/*MAIN E24
+int main(){
+
+    int v,min = 999999, max = 1;
+    printf("digite o tamanho do array:\t");
+    scanf("%d",&v);
+
+    int array[v+1];
+    array[0] = v;
+
+
+    for(int i = 1; i<v+1;i++ ){
+        printf("ARRAY VALOR |%d|\nDIGITE:\t ",i);
+        scanf("%d",&array[i]);
+    }
+
+    min_max(array,&min,&max);
+    
+    printf("VALOR MINIMO = |%d|\tVALOR MAXIMO = |%d|\n",min,max);
+
+    return 0;
+}
+*/
 
 /*MAIN E23
 int main(){

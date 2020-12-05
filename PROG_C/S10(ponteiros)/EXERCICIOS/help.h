@@ -8,6 +8,22 @@
 
 ////////////////////////////FUNÇÕES///////////////////////////
 
+//VALORES MIN E MAX
+int min_max(int array[],int *min,int*max){
+    int tot = array[0];
+    for(int i = 1; i<=tot;i++){
+        if(array[i]>*max){
+            *max = array[i];
+        }else if(array[i]<*min){
+            *min = array[i];
+        }
+    }
+}
+
+
+
+
+
 //MAIOR DE UM ARRAY
 int maior1_array(int array[]){
     int tot = array[0],maior = 1;
@@ -18,8 +34,6 @@ int maior1_array(int array[]){
     }
     array[0]=maior;
 }
-
-
 
 
 //// FUNÇÃO SOMA DE 2 ARRAYS
