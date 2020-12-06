@@ -6,8 +6,21 @@
 
 //////////////////////////  FUNÇÕES //////////////////
 
-//n-esimo fiboo
 
+//MULTIPLICAÇÃO 2NUMEROS SOMA RECURSIVA
+int multip_rec(n1,n2){
+    if(n1==0 || n2==0){
+        return 0;
+    }else if(n2 == 1){
+        return 1;
+    }else{
+        return n2 + multip_rec(n1-1,n2);
+    }
+}
+
+
+
+//n-esimo fiboo
 int fibbo(int n){
     if(n==0){
         return 0;

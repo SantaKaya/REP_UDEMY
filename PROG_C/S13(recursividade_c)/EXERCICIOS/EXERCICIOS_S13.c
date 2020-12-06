@@ -7,8 +7,7 @@
 
 ////// QUESTOES//////////////
 
-
-//MAIN E06
+//MAIN E07
 int main(){
 
 
@@ -20,6 +19,24 @@ int main(){
     return 0;
 }
 
+
+
+
+/*MAIN E06
+int main(){
+
+    int n1,n2;
+
+    printf("DIGITE 2 NUMEROS[N1XN2]:\t");
+    scanf("%d %d",&n1,&n2);
+
+    int r = multip_rec(n1,n2);
+
+    printf("SOMA MULT [ %d x %d] = |%d|\n",n1,n2,r);
+
+    return 0;
+}
+*/
 
 
 /*MAIN E05
