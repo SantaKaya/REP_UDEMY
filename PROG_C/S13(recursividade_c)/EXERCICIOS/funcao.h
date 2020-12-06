@@ -7,6 +7,16 @@
 //////////////////////////  FUNÇÕES //////////////////
 
 
+int ord_cres(int n){
+    if(n==0){
+        return 0;
+    }else{
+        return 1 + ord_cres(n-1);
+    }
+}
+
+
+
 //MULTIPLICAÇÃO 2NUMEROS SOMA RECURSIVA
 int multip_rec(n1,n2){
     if(n1==0 || n2==0){
@@ -17,8 +27,6 @@ int multip_rec(n1,n2){
         return n2 + multip_rec(n1-1,n2);
     }
 }
-
-
 
 //n-esimo fiboo
 int fibbo(int n){

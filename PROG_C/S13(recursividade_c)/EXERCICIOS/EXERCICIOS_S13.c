@@ -7,18 +7,19 @@
 
 ////// QUESTOES//////////////
 
-//MAIN E07
+/*MAIN E07
 int main(){
 
 
+    int n = 6,r;
 
-
-
-
-
+    for(int i = 0; i<=n;i++){
+        r = ord_cres(i);
+        printf("|%d|\n",r);
+    }
     return 0;
 }
-
+*/
 
 
 
