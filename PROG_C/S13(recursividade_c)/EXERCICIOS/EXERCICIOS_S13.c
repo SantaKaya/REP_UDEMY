@@ -7,17 +7,23 @@
 
 ////// QUESTOES//////////////
 
-//MAIN E03
+/*MAIN E03
 int main(){
 
+    int n, r;
 
+    printf("DIGITE UM NUMERO:\t");
+    scanf("%d",&n);
 
+    for(int i = 1; i<=n;i++){
+        r = soma_n(i);
+    }
 
+    printf("SOMA |%d| = |%d|\n",n,r);
 
     return 0;
 }
-
-
+*/
 
 
 /*MAIN E02
