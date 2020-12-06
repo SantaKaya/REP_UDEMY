@@ -3,19 +3,86 @@
 #include <string.h>
 #include <math.h>
 #include "STRUCT.h"
+#include "funcoes.h"
 
 
 
 
 ////////////////////////////////////////QUESTOES///////////////////////////////////////
 
-//MAIN E09
+//MAIN E11
 int main(){
+
+
+    
 
 
 
     return 0;
 }
+
+
+
+/*MAIN E10
+int main(){
+
+
+    tps_dados pessoas[3];
+
+    for(int i = 0; i<=2;i++){
+        printf("NOME\nDIGITE : \t");
+        fflush(stdin);
+        fgets(pessoas[i].nome,100,stdin);
+
+        printf("ENDERECO\nDIGITE :\t");
+        fflush(stdin);
+        fgets(pessoas[i].end,500,stdin);
+
+        printf("TELEFONE\nDIGITE :\t");
+        fflush(stdin);
+        fgets(pessoas[i].tel,15,stdin);
+
+    }
+    printf("\n=================== AGENDA ============\n");
+
+    for(int j = 0; j<=2;j++){
+        printf("NOME = |%s|\n",strtok(pessoas[j].nome,"\n"));
+        printf("TELEFONE = |%s|\n",strtok(pessoas[j].tel,"\n"));
+        printf("ENDEREÇO = |%s|\n",strtok(pessoas[j].end,"\n"));
+        printf("|****************************************|\n");
+    }
+    return 0;
+}
+*/
+
+/*MAIN E09
+int main(){
+
+    num_complex z,w;
+
+    printf("1 NUMERO COMPLEXO[A+BI]\nDIGITE A :\t");
+    scanf("%f",&z.real);
+    printf("DIGITE B :\t");
+    scanf("%f",&z.imag);
+    printf("\n");
+    printf("2 NUMERO COMPLEXO[C+DI]\nDIGITE C:\t");
+    scanf("%f",&w.real);
+    printf("DIGITE d :\t");
+    scanf("%f",&w.imag);
+
+    printf("\n====================================\n");
+    soma_struct(&z,&w);
+    printf("\n====================================\n");
+    sub_struct(&z,&w);
+    printf("\n====================================\n");
+    prod_struct(&z,&w);
+    printf("\n====================================\n");
+    mod_struct(&z,&w);
+    printf("\n====================================\n");
+
+    return 0;
+}
+*/
 
 
 

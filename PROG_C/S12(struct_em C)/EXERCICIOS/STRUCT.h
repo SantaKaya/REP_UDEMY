@@ -8,6 +8,20 @@
 ////////////////// STRUCTS////////////////
 
 
+
+typedef struct{
+    char nome[100];
+    char end [500];
+    char tel[15];
+}tps_dados;
+
+
+typedef struct{
+    float real;
+    float imag;
+}num_complex;
+
+/*
 struct cod_cart{
     float x,y;
 };
@@ -28,7 +42,6 @@ struct vetor{
     float x,y,z;
 };
 
-
 struct alunos_curso{
     int num_mat;
     char nome[100];
@@ -37,15 +50,11 @@ struct alunos_curso{
     int status;
 };
 
-
-
 struct aluno{
     char nome[100];
     int num_mat;
     char curso[70];
 };
-
-
 struct dados_pessoa{
     char nome[100];
     int idade;
@@ -65,7 +74,7 @@ struct compromisso{
     struct horario hora_compromisso;
     char texto[500];
 };
-struct agenda {
+struct agenda{
     struct horario hora_atual;
     struct data data_atual;
     struct compromisso comp;
@@ -83,3 +92,4 @@ struct func_empresa{
     char cargo[30];
     float salario;
 };
+*/
