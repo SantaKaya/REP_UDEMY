@@ -10,6 +10,89 @@
 ////////////////////////////////////////QUESTOES///////////////////////////////////////
 
 
+//MAIN E07
+int main(){
+
+
+
+
+
+    return 0;
+}
+
+
+
+/*MAIN E06
+int main(){
+
+    float soma = 0;
+    struct dados_alunos gp1[5];
+
+    for(int i = 0; i<=4;i++){
+        printf("NUMERO DE MATRICULA\nDIGITE :\t");
+        scanf("%d",&gp1[i].num_mat);
+
+        printf("NOME\nDIGITE :\t");
+        fflush(stdin);
+        fgets(gp1[i].nome,100,stdin);
+
+        printf("CODIGO DA DISCIPLINA\nDIGITE :\t");
+        scanf("%d",&gp1[i].cod_disp);
+
+        printf("NOTA 1\nDIGITE :\t");
+        scanf("%f",&gp1[i].n1);
+
+        printf("NOTA 2\nDIGITE :\t");
+        scanf("%f",&gp1[i].n2);
+
+        soma = ((gp1[i].n1)*1) + ((gp1[i].n2)*2);
+        gp1[i].media = soma/3;
+    }
+
+    for(int j = 0; j<=4; j++){
+        printf("NUMERO DE MATRICULA : |%d|\n",gp1[j].num_mat);
+        printf("CODIGO DA DISCIPLINA : |%d|\n",gp1[j].cod_disp);
+        printf("NOME = |%s|\n",strtok(gp1[j].nome,"\n"));
+        printf("MEDIA  = |%.2f|\n",gp1[j].media);
+    }
+
+    return 0;
+}
+*/
+
+
+
+/*MAIN E05
+
+void soma_2vet(struct vetor v3[2]){
+    struct vetor soma_vet;
+    for(int i = 0; i<2;i++){
+        printf("VALOR DE |X| VETOR |%d|\nDIGITE :\t",i+1);
+        scanf("%f",&v3[i].x);
+        printf("VALOR DE |Y| VETOR |%d|\nDIGITE :\t",i+1);
+        scanf("%f",&v3[i].y);
+        printf("VALOR DE |Z| VETOR |%d|\nDIGITE :\t",i+1);
+        scanf("%f",&v3[i].z);
+    }
+
+    soma_vet.x = v3[0].x + v3[1].x;
+    soma_vet.y = v3[0].y + v3[1].y;
+    soma_vet.z = v3[0].z + v3[1].z;
+
+    printf("\nVETOR R^3 = ( %.0f | %.0f | %.0f )",soma_vet.x,soma_vet.y,soma_vet.z);
+
+}
+
+int main(){
+
+    struct vetor v3[2];
+
+    soma_2vet(v3);
+
+    return 0;
+}
+*/
+
 /*MAIN E04
 int main(){
 

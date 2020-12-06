@@ -8,6 +8,18 @@
 ////////////////// STRUCTS////////////////
 
 
+struct dados_alunos{
+    int num_mat, cod_disp;
+    char nome[100];
+    float n1,n2;
+    float media;
+};
+
+struct vetor{
+    float x,y,z;
+};
+
+
 struct alunos_curso{
     int num_mat;
     char nome[100];
