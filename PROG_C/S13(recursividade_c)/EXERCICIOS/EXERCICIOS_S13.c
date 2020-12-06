@@ -8,6 +8,33 @@
 ////// QUESTOES//////////////
 
 
+
+/*MAIN E10
+int main(){
+
+    int n,r;
+    printf("digite n:\t");
+    scanf("%d",&n);
+
+    if(n%2!=0){
+        printf("digite um numero par:\t");
+        scanf("%d",&n);
+        
+    }
+
+
+    for(int i = n; i>=0;i--){
+        r = par_ord_d(i);
+        if(r!=0){
+            printf("|%d|\n",r);
+        }
+        
+    }
+    return 0;
+}
+*/
+
+
 /*MAIN E09
 int main(){
 

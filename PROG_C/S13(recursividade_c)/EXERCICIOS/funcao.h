@@ -6,6 +6,23 @@
 
 //////////////////////////  FUNÇÕES //////////////////
 
+
+int par_ord_d(int n){
+    //printf("n = |%d|\n",n);
+    int a = n%2;
+    //printf("a = |%d|\n",a);
+    if(n==0){
+        return 0;
+    }else if(a!=0){
+        return 0; 
+    }else{
+        return n + par_ord_d(n-1);
+    }
+}
+
+
+
+
 //
 int par_ord_c(int n){
     //printf("n = |%d|\n",n);
@@ -16,7 +33,7 @@ int par_ord_c(int n){
     }else if(a!=0){
         return 0; 
     }else{
-        return n + par_ord_d(n-1);
+        return n + par_ord_c(n-1);
     }
 }
 
