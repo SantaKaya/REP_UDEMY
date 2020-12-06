@@ -7,6 +7,19 @@
 
 ////// QUESTOES//////////////
 
+
+//MAIN E08
+int main(){
+
+
+    
+
+
+    return 0;
+}
+
+
+
 /*MAIN E07
 int main(){
 
@@ -20,8 +33,6 @@ int main(){
     return 0;
 }
 */
-
-
 
 /*MAIN E06
 int main(){

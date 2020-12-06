@@ -6,7 +6,11 @@
 
 //////////////////////////  FUNÇÕES //////////////////
 
+//
 
+
+
+/// imprmindo crescente
 int ord_cres(int n){
     if(n==0){
         return 0;
@@ -14,8 +18,6 @@ int ord_cres(int n){
         return 1 + ord_cres(n-1);
     }
 }
-
-
 
 //MULTIPLICAÇÃO 2NUMEROS SOMA RECURSIVA
 int multip_rec(n1,n2){
