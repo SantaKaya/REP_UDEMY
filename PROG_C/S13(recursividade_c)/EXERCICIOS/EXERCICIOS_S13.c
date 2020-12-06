@@ -8,16 +8,19 @@
 ////// QUESTOES//////////////
 
 
-//MAIN E08
+/*MAIN E08
 int main(){
 
 
-    
+    int n = 6,r;
 
-
+    for(int i = n; i>=0;i--){
+        r = ord_decres(i);
+        printf("|%d|\n",r);
+    }
     return 0;
 }
-
+*/
 
 
 /*MAIN E07
