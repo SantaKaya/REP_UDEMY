@@ -10,7 +10,7 @@
 //MAIN E02
 int main(){
 
-
+s
 
 
 
