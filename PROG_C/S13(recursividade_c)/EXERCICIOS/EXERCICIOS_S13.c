@@ -5,7 +5,12 @@
 #include "funcao.h"
 
 
-////// QUESTOES//////////////
+///////////////////////// QUESTOES//////////////////////////////////////
+
+
+
+
+
 
 
 
@@ -34,7 +39,6 @@ int main(){
 }
 */
 
-
 /*MAIN E09
 int main(){
 
@@ -48,7 +52,6 @@ int main(){
         
     }
 
-
     for(int i = 0; i<=n;i++){
         r = par_ord_d(i);
         if(r!=0){
@@ -59,8 +62,6 @@ int main(){
     return 0;
 }
 */
-
-
 
 /*MAIN E08
 int main(){

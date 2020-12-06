@@ -7,6 +7,14 @@
 //////////////////////////  FUNÇÕES //////////////////
 
 
+
+
+
+
+
+
+
+//// par ordem descrecente
 int par_ord_d(int n){
     //printf("n = |%d|\n",n);
     int a = n%2;
@@ -20,10 +28,7 @@ int par_ord_d(int n){
     }
 }
 
-
-
-
-//
+///// par ordem crescente
 int par_ord_c(int n){
     //printf("n = |%d|\n",n);
     int a = n%2;

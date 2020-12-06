@@ -9,10 +9,10 @@ QUESTAO 9
 n = 6 i = 0
 
 par_ord_d(0) - 0
-par_ord_d(1) - > 1 + par_ord_d(0); -> 1
-par_ord_d(2) - > 1 + par_ord_d(1); -> 2 x
-par_ord_d(3) - > 1 + par_ord_d(2); -> 3
-par_ord_d(4) - > 1 + par_ord_d(3); -> 4 x
+par_ord_d(1) - > 1 + par_ord_d(0); -> 0
+par_ord_d(2) - > 1 + par_ord_d(1); -> 1 x
+par_ord_d(3) - > 1 + par_ord_d(2); -> 0
+par_ord_d(4) - > 1 + par_ord_d(3); -> 1 x
 
 
 
