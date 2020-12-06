@@ -7,6 +7,24 @@
 
 ////////////////// STRUCTS////////////////
 
+
+struct alunos_curso{
+    int num_mat;
+    char nome[100];
+    float nt1,nt2,nt3;
+    float media;
+    int status;
+};
+
+
+
+struct aluno{
+    char nome[100];
+    int num_mat;
+    char curso[70];
+};
+
+
 struct dados_pessoa{
     char nome[100];
     int idade;
