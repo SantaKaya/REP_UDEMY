@@ -7,8 +7,20 @@
 //////////////////////////  FUNÇÕES //////////////////
 
 
-//SOMA N CUBOS
+//K^N
+int exponencial_kn(int k, int n){
+    if(k==0){
+        return 0;
+    }else if(n == 0){
+        return 1;
+    }else{
+        return k * exponencial_kn(k,n-1);
+    }
+}
 
+
+
+//SOMA N CUBOS
 int soma_n(int n){
     if(n==0){
         return 0;

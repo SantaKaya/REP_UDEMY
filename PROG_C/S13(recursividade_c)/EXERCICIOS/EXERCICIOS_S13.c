@@ -7,6 +7,19 @@
 
 ////// QUESTOES//////////////
 
+/*MAIN E04
+int main(){
+
+    int k = 3,n = 4;
+
+    int r = exponencial_kn(k,n);
+
+    printf("|%d|^|%d| = |%d|\n",k,n,r);
+    return 0;
+}
+*/
+
+
 /*MAIN E03
 int main(){
 
@@ -24,7 +37,6 @@ int main(){
     return 0;
 }
 */
-
 
 /*MAIN E02
 int main(){
