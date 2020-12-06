@@ -9,11 +9,8 @@
 
 ////////////////////////////////////////QUESTOES///////////////////////////////////////
 
-
-//MAIN E07
+//MAIN E09
 int main(){
-
-
 
 
 
@@ -21,6 +18,86 @@ int main(){
 }
 
 
+
+
+
+/*MAIN E08
+int main(){
+
+    struct func_empresa gp;
+
+    printf("NOME\nDIGITE:\t");
+    fflush(stdin);
+    fgets(gp.nome,100,stdin);
+
+    printf("IDADE\nDIGITE :\t");
+    scanf("%d",&gp.idade);
+
+    printf("SEXO\nDIGITE :\t");
+    fflush(stdin);
+    scanf("%c",&gp.sexo);
+
+    printf("CPF\nDIGITE :\t");
+    fflush(stdin);
+    fgets(gp.cpf,15,stdin);
+
+    printf("DATA DE NASCIMENTO\nDIGITE :\t");
+    scanf("%d %d %d",&gp.dat_n.dia,&gp.dat_n.mes,&gp.dat_n.ano);
+
+    printf("CODIGO DO SETOR\nDIGITE :\t");
+    scanf("%d",&gp.cod);
+
+    printf("CARGO\nDIGITE :\t");
+    fflush(stdin);
+    fgets(gp.cargo,30,stdin);
+
+    printf("SALARIO\nDIGITE :\t");
+    scanf("%f",&gp.salario);
+
+
+    printf("\n************** DADOS DO FUNCIONARIO ***************\n");
+
+    printf("NOME =  |%s|\n",strtok(gp.nome,"\n"));
+    printf("IDADE = |%d|\n",gp.idade);
+    printf("SEXO = |%c|\n",gp.sexo);
+    printf("CPF = |%s|\n",strtok(gp.cpf,"\n"));
+    printf("DATA DE NASCIMENTO = [%d|%d|%d]\n",gp.dat_n.dia,gp.dat_n.mes,gp.dat_n.ano);
+    printf("CODIGO DO SETOR = |%d|\n",gp.cod);
+    printf("CARGO = |%s|\n",strtok(gp.cargo,"\n"));
+    printf("SALARIO = |%.2f|\n",gp.salario);
+
+
+
+    return 0;
+}
+*/
+
+
+
+
+/*MAIN E07
+void conv_pola_cart(struct cod_polar cod){
+    struct cod_cart codf;
+    codf.x = (cod.raio * cos(cod.arg));
+    codf.y = (cod.raio * sin(cod.arg));
+
+    printf("CORDENADA POLA = [ %.2f |%.2f |\n",cod.raio,cod.arg);
+    printf("COORDENADA CARTESIANA = [ %.2f | %.2f ]\n",codf.x,codf.y);
+}
+
+
+int main(){
+
+    struct cod_polar cod;
+
+    printf("DIGITE A COORDENADA POLAR[raio,arg]: \n");
+    scanf("%f %f",&cod.raio,&cod.arg);
+
+    conv_pola_cart(cod);
+
+    return 0;
+}
+*/
 
 /*MAIN E06
 int main(){

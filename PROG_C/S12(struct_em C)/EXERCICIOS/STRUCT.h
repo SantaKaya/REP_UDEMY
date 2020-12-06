@@ -8,6 +8,15 @@
 ////////////////// STRUCTS////////////////
 
 
+struct cod_cart{
+    float x,y;
+};
+
+
+struct cod_polar{
+    float raio,arg;
+};
+
 struct dados_alunos{
     int num_mat, cod_disp;
     char nome[100];
@@ -44,7 +53,7 @@ struct dados_pessoa{
 };
 
 struct horario{
-    int hora,minuto,segundos
+    int hora,minuto,segundos;
 };
 
 struct data{
@@ -60,4 +69,17 @@ struct agenda {
     struct horario hora_atual;
     struct data data_atual;
     struct compromisso comp;
+};
+
+struct func_empresa{
+    char nome[100];
+    int idade;
+    char sexo;
+    char cpf[15];
+
+    struct data dat_n;
+
+    int cod;
+    char cargo[30];
+    float salario;
 };
