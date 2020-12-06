@@ -6,6 +6,20 @@
 
 //////////////////////////  FUNÇÕES //////////////////
 
+//
+int par_ord_c(int n){
+    //printf("n = |%d|\n",n);
+    int a = n%2;
+    //printf("a = |%d|\n",a);
+    if(n==0){
+        return 0;
+    }else if(a!=0){
+        return 0; 
+    }else{
+        return n + par_ord_d(n-1);
+    }
+}
+
 //imprimindo descrecebte
 int ord_decres(int n){
     if(n==0){
@@ -14,8 +28,6 @@ int ord_decres(int n){
         return 1 + ord_decres(n-1);
     }
 }
-
-
 
 /// imprmindo crescente
 int ord_cres(int n){

@@ -1,3 +1,54 @@
+
+
+
+
+
+
+QUESTAO 9
+
+n = 6 i = 0
+
+par_ord_d(0) - 0
+par_ord_d(1) - > 1 + par_ord_d(0); -> 1
+par_ord_d(2) - > 1 + par_ord_d(1); -> 2 x
+par_ord_d(3) - > 1 + par_ord_d(2); -> 3
+par_ord_d(4) - > 1 + par_ord_d(3); -> 4 x
+
+
+
+
+QUESTAO 8
+
+N = 6 i = 1
+
+ord_decres(6) -> 1 - ord_decres(7)
+1 - ord_decres(7) -> 1 - 1 - ord_decres(6)
+
+QUESTAO 7
+
+N = 6 i = 1
+
+ord_cres(0) -> 0
+ord_cres(1) -> (1) + ord_cres(0); -> 1
+ord_cres(2) -> (1) + ord_cres(1); -> 2
+ord_cres(3) -> (1) + ord_cres(2); -> 3
+ord_cres(4) -> (1) + ord_cres(3); -> 4
+ord_cres(5) -> (1) + ord_cres(4); -> 5
+ord_cres(6) -> (1) + ord_cres(5); -> 6
+
+QUESTÃO 6
+
+N1 = 3 | N2 = 4  
+
+multip_rec(3,4) -> (4) + multip_rec(2,4)
+(4) + multip_rec(2,4) -> (4) + (4) + multip_rec(1,4)
+(4) + (4) + multip_rec(1,4) -> (4) + (4) + (4)+ multip_rec(0,4);
+(4) + (4) + (4)+ multip_rec(0,4) ->(4) + (4) + (4)+ 0 -> 12
+
+
+
+QUESTÃO 5
+
 |k = 3 | n = 4|
 
 exp(3,4) -> (3) * exp(3,3);
