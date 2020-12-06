@@ -7,6 +7,35 @@
 
 ////// QUESTOES//////////////
 
+
+//MAIN E06
+int main(){
+
+
+
+
+
+
+
+    return 0;
+}
+
+
+
+/*MAIN E05
+int main(){
+
+    int n = 12;
+
+    for(int i = 0; i<=n;i++){
+        printf("|%d|\n",fibbo(i));
+        
+    }
+    return 0;
+}
+*/
+
+
 /*MAIN E04
 int main(){
 
@@ -18,7 +47,6 @@ int main(){
     return 0;
 }
 */
-
 
 /*MAIN E03
 int main(){

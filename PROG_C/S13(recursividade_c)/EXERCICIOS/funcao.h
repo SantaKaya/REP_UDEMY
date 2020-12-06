@@ -6,6 +6,18 @@
 
 //////////////////////////  FUNÇÕES //////////////////
 
+//n-esimo fiboo
+
+int fibbo(int n){
+    if(n==0){
+        return 0;
+    }else if(n==1){
+        return 1;
+    }else{
+        return fibbo(n-1) + fibbo(n-2);
+    }
+}
+
 
 //K^N
 int exponencial_kn(int k, int n){
@@ -17,7 +29,6 @@ int exponencial_kn(int k, int n){
         return k * exponencial_kn(k,n-1);
     }
 }
-
 
 
 //SOMA N CUBOS
