@@ -8,6 +8,103 @@
 
 ///////////////////// QUESTOES /////////////////
 
+
+
+/*MAIN E10
+int main(){
+
+    int qtd;
+    double *p,a;
+
+    printf("QUATIDADE DE ELEMENTOS DO VETOR\nDIGITE :\t");
+    scanf("%d",&qtd);
+    if(qtd<10){
+        printf("TAMANHO VETOR MAIOR OU IGUAL A 10!\t REPITA!");
+        
+        printf("QUATIDADE DE ELEMENTOS DO VETOR\nDIGITE :\t");
+        scanf("%d",&qtd);
+    }
+
+    p = malloc(qtd*sizeof(double));
+
+    srand( (unsigned)time(NULL) );
+
+    for(int i = 0; i<10;i++){
+        a = rand() % 101 ;
+        
+        p[i] = a;
+        printf("p[%d] = |%.4lf|\n",i,p[i]);
+    }
+
+
+
+
+
+
+    free(p);
+    p = NULL;
+    return 0;
+}
+*/
+
+
+
+
+
+/*MAIN E09
+int main(){
+
+    int qtd = 0, *p,num;
+
+    printf("NUMEROS\nDIGITE :\t");
+    scanf("%d",&num);
+    qtd++;
+    
+    p = malloc(qtd*sizeof(int));
+
+    if(p){
+        do{
+
+        p[qtd-1]=num;
+
+        printf("NUMEROS\nDIGITE :\t");
+        scanf("%d",&num);
+        qtd++;
+
+        p = realloc(p,qtd * sizeof(int));
+
+        if(p){
+            do{
+                p[qtd-1]=num;
+
+                printf("NUMEROS\nDIGITE :\t");
+                scanf("%d",&num);
+                qtd++;
+
+                p = realloc(p,qtd * sizeof(int));
+            }while(num>0);
+        }
+
+        }while(num>0);
+
+    }else{
+        printf("\nErro: Memoria insuficiente!!!\n");
+    }
+
+    for(int j = 0; j<qtd-1;j++){
+        printf("p[%d] = |%d|\n",j,p[j]);
+    }
+
+    free(p);
+    p = NULL;
+    return 0;
+}
+*/
+
+
+
+
+
 /*MAIN E 08
 int main(){
 
@@ -36,6 +133,8 @@ int main(){
         printf("n[%d] = |%d|\n",v,n[v]);
     }
 
+    free(n);
+    n = NULL;
     return 0;
 }
 */
