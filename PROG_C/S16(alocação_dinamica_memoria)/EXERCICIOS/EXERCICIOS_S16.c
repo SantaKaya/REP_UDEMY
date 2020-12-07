@@ -8,6 +8,40 @@
 
 ///////////////////// QUESTOES /////////////////
 
+/*MAIN E 08
+int main(){
+
+    int num = 1500,cont = 0;
+    int *n;
+
+    n = calloc(num,sizeof(int));
+
+    for(int i = 0; i<num;i++){
+        if(n[i]==0){
+            cont++;
+        }
+    }
+    printf("CONT = |%d|\n",cont);
+
+    for (int j = 0; j < num; j++){
+        n[j]=j;
+    }
+    
+    for (int t = 0; t < 10; t++)
+    {
+        printf("n[%d] = |%d|\n",t,n[t]);
+    }
+    for (int v = num-10; v <num; v++)
+    {
+        printf("n[%d] = |%d|\n",v,n[v]);
+    }
+
+    return 0;
+}
+*/
+
+
+
 
 /*MAIN E07
 int main(){
