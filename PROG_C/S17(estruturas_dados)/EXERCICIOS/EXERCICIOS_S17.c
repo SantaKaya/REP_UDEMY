@@ -6,6 +6,27 @@
 
 /////// QUESTOES ///////////////
 
+//MAIN E04
+int main(){
+
+
+
+    return 0;
+}
+
+
+
+
+//MAIN 03
+/**
+ * Na alocação sequencial temos dificuldade na inserção e remoção de elementos quando
+ * comparada com a alocação encadeada onde os elementos possuem campos com informações
+ * referentes ao seu antecessor e sucessor, assim não seria preciso percorrer todos os 
+ * dados atras do local/ valor requerido, o espaço alocado não eh necessariamente adjacente
+ * na memoria.
+ */
+
+
 //MAIN E02
 /**
  * O espaço de memoria que será utilizado para todos os elementos do conjunto
