@@ -10,6 +10,10 @@
 
 
 
+
+
+
+
 /*MAIN E10
 int main(){
 
@@ -36,19 +40,11 @@ int main(){
         printf("p[%d] = |%.4lf|\n",i,p[i]);
     }
 
-
-
-
-
-
     free(p);
     p = NULL;
     return 0;
 }
 */
-
-
-
 
 
 /*MAIN E09
