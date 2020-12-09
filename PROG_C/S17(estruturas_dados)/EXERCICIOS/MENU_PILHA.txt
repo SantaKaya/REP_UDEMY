@@ -1,0 +1,59 @@
+int main(){
+
+    tp_pilha pilha;
+    tp_item aux;
+    int cnt_add=0,cnt_rmv = 0;
+    
+
+    int op=0;
+
+    inicializa_pilha(&pilha);
+    
+
+    do{
+        printf("\n\n");
+        printf("SELECIONE A OPCAO:\n");
+        printf("\n\n[========== |MENU| ==========]\n\n");
+        printf("[1] - PUSH (INSERIR):\n");
+        printf("[2] - POP (REMOVER):\n");
+        printf("[3] - TOP (TOPO):\n");
+        printf("[4] - LEIGHT (ALTURA):\n");
+        printf("[5] - CLEAR (LIMPAR):\n");
+        printf("[-1] - SAIR:\n");
+        printf("OPCAO : \t");
+        scanf("%d",&op);
+        printf("\n\n");
+
+
+        switch (op){
+            case 1:
+                printf("\nVALOR :\t");
+                scanf("%d",&aux);
+                push(&pilha,aux);
+                //printf("VALOR TOPO = |%d|\n",pilha.item[pilha.topo]);
+                cnt_add++;
+                break;
+            case 2:
+                pop(&pilha,&aux);
+                cnt_rmv++;
+                break;
+            case 3:
+                top(&pilha,&aux);
+                break;
+            case 4:
+                printf("LEIGHT = |%d|\n",altura_pilha(&pilha));
+                break;
+            case 5:
+                clear(&pilha);
+                break;
+            case -1:
+                break;
+            default:
+                printf("OPCAO INVALIDA!");
+        }
+
+    }while(op!=-1);
+
+    printf("\n[===============| FIM PILHA |==============]\n");
+    return 0;
+}
