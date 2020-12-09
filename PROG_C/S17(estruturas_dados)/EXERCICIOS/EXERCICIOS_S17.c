@@ -12,7 +12,7 @@
 
 /////////////////////// P3//////////////////////////////////////////////////////
 
-//MAIN E05
+/*MAIN E05
 int main(){
 
 
@@ -34,18 +34,19 @@ int main(){
     
     for(int i = 1; i<=tam;i++){
         printf("DIGITE A STRING :\n");
-        scanf("%c",string[i]);
+        fflush(stdin);
+        scanf("%c",&string[i]);
     }
+    
+
     inicializa_pilha(&pilha);
     
     forma_xy(&pilha,string);
 
-    
-
     printf("\n[===============| FIM PILHA |==============]\n");
     return 0;
 }
-
+*/
 
 
 

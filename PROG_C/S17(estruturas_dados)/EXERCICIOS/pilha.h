@@ -27,7 +27,7 @@ typedef char
 //ESTRUTURA DA PILHA
 typedef struct{
     int topo;
-    int item[MAX];
+    char item[MAX];
 }tp_pilha;
 
 //INICIALIZAÇÃO DA PILHA
