@@ -20,7 +20,7 @@
 #define FALSE 0
 
 //ESTRUTURA PARA FACILITAR A ALTERAÇÃO DO TIPO DE DADO DA PILHA
-typedef int 
+typedef char 
     tp_item;
 
 
@@ -91,7 +91,7 @@ int top(tp_pilha *p, tp_item *e){
         return FALSE;
     }else{
         *e = p->item[p->topo];
-        printf("VALOR TOPO = |%d|\n",p->item[p->topo]);
+        printf("VALOR TOPO = |%c|\n",p->item[p->topo]);
         return TRUE;
     }
 }
@@ -110,8 +110,6 @@ void clear(tp_pilha *p){
     p->topo=0;
     printf("\n|STACK ERASED|\n");
 }
-
-
 
 #endif
 

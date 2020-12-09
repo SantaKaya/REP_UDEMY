@@ -3,25 +3,58 @@
 #include <math.h>
 #include <string.h>
 #include "pilha.h"
+#include "funcoes.c"
 
 
 
-/////// QUESTOES ///////////////
+//////////////////////////////////// QUESTOES ///////////////////////////////////
 
 
 /////////////////////// P3//////////////////////////////////////////////////////
 
-//MAIN E04
+//MAIN E05
 int main(){
 
 
+    tp_pilha pilha;
+    tp_item aux;
+    int tam;
+    
+    printf("DIGITE O TAMANHO DA STRING:\n");
+    scanf("%d",&tam);
+    if(tam%2!=0){
+        printf("\nSTRING PRECISA SER PAR!\tREPITA!\n");
+        printf("DIGITE O TAMANHO DA STRING:\n");
+        scanf("%d",&tam);
+    }
 
+    char string[tam+1];
+    string[0] = tam;
 
+    
+    for(int i = 1; i<=tam;i++){
+        printf("DIGITE A STRING :\n");
+        scanf("%c",string[i]);
+    }
+    inicializa_pilha(&pilha);
+    
+    forma_xy(&pilha,string);
+
+    
+
+    printf("\n[===============| FIM PILHA |==============]\n");
     return 0;
 }
 
 
 
+
+
+//MAIN E04
+/**
+ * @brief    ja na biblioteca, verificação se a pilha esta vazia o
+ * ou nao.
+ */
 
 
 /*MAIN E03
