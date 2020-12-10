@@ -65,7 +65,7 @@ int push(tp_pilha *p, tp_item e){
     }else{
         p->topo++;
         p->item[p->topo]=e;//em p.item na posição p.topo colocar o (e).
-        printf("\n|VALUE ADDED|\n");
+        printf("\n|VALUE ADDED %c|\n",e);
         return TRUE;
     }
 

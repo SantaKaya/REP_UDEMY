@@ -7,6 +7,47 @@
 
 /////////////////////// FUNÇÕES EXERCICIO//////////////////
 
+//EMBARALHANDO PALAVRAS
+void embaralha(tp_pilha *p, char string[]){
+    int a = strlen(string);
+    int aux = 0;
+    int a2=0;
+    a = a -1;
+    printf("a = |%d|\n",a);
+    int cont = 0;
+    for(int i = 0; i<a;i++){
+        printf("i = |%d|\n",i);
+        if(string[i]!= '.'){
+            printf("cont = |%d|\n",cont);
+            if(string[i] == 32){
+
+                for(int j = 0; j<=cont;j++){
+                    printf("2cont = |%d|\n",cont);
+                    pop(p,&string[a2]);
+                    printf("string[%d] = |%c|\n",a2,string[a2]);
+                    a2++;
+                }
+                aux = cont;
+                cont = 0;
+            }else{
+                push(p,string[i]);
+                cont++;
+            }
+        }else{
+            for(int u = 0; u<=cont;u++){
+                printf("3cont = |%d|\n",cont);
+                pop(p,&string[a2]);
+                printf("1string[%d] = |%c|\n",a2,string[a2]);
+                a2++;
+            }
+        }
+        
+    }
+}
+
+
+
+//VERIFICAÇÃO SE STRING ESTA NA FORMA XY
 void forma_xy(tp_pilha *p,char n[]){
     int tot = n[0];
     int a = tot/2;

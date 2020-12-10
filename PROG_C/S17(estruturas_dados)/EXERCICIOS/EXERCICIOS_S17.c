@@ -12,6 +12,45 @@
 
 /////////////////////// P3//////////////////////////////////////////////////////
 
+
+
+//MAIN E07
+int main(){
+
+
+
+
+    return 0;
+}
+
+
+
+/*MAIN E06
+int main(){
+
+    tp_pilha pilha;
+
+    char texto[200];
+
+    printf("DIGITE O TEXTO:\n");
+    fflush(stdin);
+    fgets(texto,200,stdin);
+
+    inicializa_pilha(&pilha);
+
+    
+    embaralha(&pilha,texto);
+
+    printf("\n|%s|",texto);
+
+
+    return 0;
+}
+*/
+
+
+
+
 /*MAIN E05
 int main(){
 
