@@ -17,6 +17,16 @@
 //MAIN E07
 int main(){
 
+    tp_pilha pilha;
+
+    char palavra[100];
+
+    printf("DIGITE UMA PALAVRA:\n");
+    fflush(stdin);
+    fgets(palavra,100,stdin);
+
+    inicializa_pilha(&pilha);
+
 
 
 

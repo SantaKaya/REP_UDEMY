@@ -7,6 +7,25 @@
 
 /////////////////////// FUNÇÕES EXERCICIO//////////////////
 
+void palindromo(tp_pilha *p,char string[]){
+    int a = strlen(string) - 1;
+    printf("a = |%d|\n",a);
+    int cont = 0;
+
+    for(int i = 0; i<a;i++){
+        push(p,string[i]);
+        cont++; 
+        
+    }
+    for(int )
+
+    
+}
+
+
+
+
+
 //EMBARALHANDO PALAVRAS
 void embaralha(tp_pilha *p, char string[]){
     int a = strlen(string);
