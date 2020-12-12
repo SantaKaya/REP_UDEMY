@@ -12,6 +12,24 @@
 
 /////////////////////// P3//////////////////////////////////////////////////////
 
+/*MAIN E08
+int main(){
+
+    char string[100];
+    tp_pilha pilha;
+
+    printf("DIGITE A EXPRESSAO:\n");;
+    fflush(stdin);
+    fgets(string,100,stdin);
+
+    inicializa_pilha(&pilha);
+
+    cont_paranteses(&pilha,string);
+
+
+    return 0;
+}
+*/
 
 
 /*MAIN E07

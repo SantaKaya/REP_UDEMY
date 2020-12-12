@@ -7,6 +7,38 @@
 
 /////////////////////// FUNÇÕES EXERCICIO//////////////////
 
+void cont_paranteses(tp_pilha *p, char string[]){
+    int a = strlen(string)-1;
+    tp_item aux;
+    int cont = 0;
+
+    for(int i = 0; i<a;i++){
+       push(p,string[i]);
+    }
+
+    for(int j = 0;j<a;j++){
+        pop(p,&aux);
+        if(aux == '('){
+            cont++;
+            printf("\ncont- = |%d|\n",cont);
+        }else if(aux == ')'){
+            cont--;
+            printf("\ncont- = |%d|\n",cont);
+        }
+    }
+
+    if(cont == 0){
+        printf("\nPARENTISACAO CORRETA!\n");
+    }else{
+        printf("\nPARENTISACAO INCORRETA!\n");
+    }
+
+
+}
+
+
+
+
 void palindromo(tp_pilha *p,char string[]){
     int a = strlen(string);
     a = a -1;
