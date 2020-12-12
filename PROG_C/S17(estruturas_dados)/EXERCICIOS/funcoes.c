@@ -7,6 +7,36 @@
 
 /////////////////////// FUNÇÕES EXERCICIO//////////////////
 
+void M_m_med(tp_pilha *p, int tam){
+    int array[tam];
+    int Max = 1, Min = 999;
+    float soma = 0;
+
+    for(int i = 1; i<=tam;i++){
+        pop(p,&array[i]);
+        soma = soma + array[i];
+        //printf("array[%d] = |%d|\n",i,array[i]);
+    }
+
+    for(int j = 1; j<=tam;j++){
+        if(array[j]>Max){
+            Max = array[j];
+        }else if(array[j]<Min){
+            Min = array[j];
+        }
+    }
+    
+
+    float med = soma/tam;
+    
+    printf("MAIOR = |%d|\tMENOR = |%d|\t MEDIA = |%.2f|\n",Max,Min,med);
+
+
+}
+
+
+
+
 void ordem_pilha(tp_pilha *p, int array[]){
     int tot = array[0];
     printf("tot = |%d|\n",tot);

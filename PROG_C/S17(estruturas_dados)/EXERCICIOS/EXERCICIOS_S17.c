@@ -13,7 +13,33 @@
 /////////////////////// P3//////////////////////////////////////////////////////
 
 
-//MAIN E09
+/*MAIN E10
+int main(){
+
+    srand(time(NULL));
+
+    tp_pilha pilha;
+
+    inicializa_pilha(&pilha);
+
+    int tam;
+    
+    printf("DIGITE O TAMANHO DA PILHA:\t");
+    scanf("%d",&tam);
+
+    for(int i = 0; i<=tam; i++){
+        push(&pilha,1+rand()/10);
+    }
+
+    M_m_med(&pilha,tam);
+
+    return 0;
+}
+*/
+
+
+
+/*MAIN E09
 int main(){
 
     int tam,aux;
@@ -40,11 +66,9 @@ int main(){
         pop(&pilha,&aux);
     }
 
-
-    
-
     return 0;
 }
+*/
 
 
 
