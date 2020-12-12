@@ -14,7 +14,7 @@
 
 
 
-//MAIN E07
+/*MAIN E07
 int main(){
 
     tp_pilha pilha;
@@ -27,11 +27,11 @@ int main(){
 
     inicializa_pilha(&pilha);
 
-
-
+    palindromo(&pilha,palavra);
 
     return 0;
 }
+*/
 
 
 

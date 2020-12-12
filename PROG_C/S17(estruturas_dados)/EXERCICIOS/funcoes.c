@@ -8,18 +8,32 @@
 /////////////////////// FUNÇÕES EXERCICIO//////////////////
 
 void palindromo(tp_pilha *p,char string[]){
-    int a = strlen(string) - 1;
+    int a = strlen(string);
+    a = a -1;
     printf("a = |%d|\n",a);
     int cont = 0;
+    int b = 0;
+    tp_item aux;
 
     for(int i = 0; i<a;i++){
         push(p,string[i]);
         cont++; 
         
     }
-    for(int )
-
-    
+    for(int j = 0; j<a;j++){
+        pop(p,&aux);
+        
+        
+        if(aux == string[j]){
+            b++;
+            
+        }
+    }
+    if(b==a){
+        printf("\n|%s|EH UM PALINDROMO!\n",string);
+    }else{
+        printf("\n|%s|NAO EH UM PALINDROMO!\n",string);
+    }
 }
 
 
