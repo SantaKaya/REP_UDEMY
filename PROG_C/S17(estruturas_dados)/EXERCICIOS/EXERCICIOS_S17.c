@@ -12,6 +12,45 @@
 
 /////////////////////// P3//////////////////////////////////////////////////////
 
+
+//MAIN E09
+int main(){
+
+    int tam,aux;
+    tp_pilha pilha;
+    inicializa_pilha(&pilha);
+    
+    printf("DIGITE O TAMANHO DO ARRAY:\t");
+    scanf("%d",&tam);
+    
+    int array[tam+1];
+    array[0]=tam;
+    
+    for(int i =1; i<tam+1;i++){
+        printf("ARRAY[%d] :\t",i);
+        scanf("%d",&array[i]);
+        push(&pilha,array[i]);
+    }
+
+    ordem_pilha(&pilha,array);
+    
+
+    int j = tam;
+    for(j = 0; j<tam;j++){
+        pop(&pilha,&aux);
+    }
+
+
+    
+
+    return 0;
+}
+
+
+
+
+
+
 /*MAIN E08
 int main(){
 
@@ -30,6 +69,7 @@ int main(){
     return 0;
 }
 */
+
 
 
 /*MAIN E07

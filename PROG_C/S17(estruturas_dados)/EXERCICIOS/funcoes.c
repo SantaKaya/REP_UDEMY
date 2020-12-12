@@ -7,8 +7,33 @@
 
 /////////////////////// FUNÇÕES EXERCICIO//////////////////
 
+void ordem_pilha(tp_pilha *p, int array[]){
+    int tot = array[0];
+    printf("tot = |%d|\n",tot);
+    tp_item aux;
+
+    int j;
+
+    
+    for(int i = 0; i<=tot;i++){
+        for(j = 1;j<tot;j++){
+            if(array[j]>array[j+1]){
+                aux = array[j+1];
+                array[j+1] = array[j];
+                array[j]=aux;
+            }
+        }
+        
+    }
+    
+    for(int k = tot; k>=1;k--){
+        push(p,array[k]);
+    }
+}
+    
+//CONTANDO PARENTESES
 void cont_paranteses(tp_pilha *p, char string[]){
-    int a = strlen(string)-1;
+    int a = (strlen(string)-1 );
     tp_item aux;
     int cont = 0;
 

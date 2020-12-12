@@ -20,14 +20,14 @@
 #define FALSE 0
 
 //ESTRUTURA PARA FACILITAR A ALTERAÇÃO DO TIPO DE DADO DA PILHA
-typedef char 
+typedef int 
     tp_item;
 
 
 //ESTRUTURA DA PILHA
 typedef struct{
     int topo;
-    char item[MAX];
+    int item[MAX];
 }tp_pilha;
 
 //INICIALIZAÇÃO DA PILHA
@@ -65,7 +65,7 @@ int push(tp_pilha *p, tp_item e){
     }else{
         p->topo++;
         p->item[p->topo]=e;//em p.item na posição p.topo colocar o (e).
-        printf("\n|VALUE ADDED %c|\n",e);
+        printf("\n|VALUE ADDED |%d||\n",e);
         return TRUE;
     }
 
@@ -78,7 +78,7 @@ int pop(tp_pilha *p,tp_item *e){
     }else{
         *e = p->item[p->topo];
         p->topo--;
-        printf("\n|VALUE REMOVED|\n");
+        printf("\n|VALUE REMOVED |%d||\n",*e);
         return TRUE;
 
     }
@@ -91,7 +91,7 @@ int top(tp_pilha *p, tp_item *e){
         return FALSE;
     }else{
         *e = p->item[p->topo];
-        printf("VALOR TOPO = |%c|\n",p->item[p->topo]);
+        printf("VALOR TOPO = |%d|\n",p->item[p->topo]);
         return TRUE;
     }
 }
