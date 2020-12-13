@@ -3,12 +3,12 @@
 #include <math.h>
 #include <string.h>
 #include "pilha.h"
-#include "funcoes.c"
-
+#include "funcoes_p3.c"
+#include "FILA1.h"
+#include "funcoes_p2.c"
 
 
 //////////////////////////////////// QUESTOES ///////////////////////////////////
-
 
 /////////////////////// P3//////////////////////////////////////////////////////
 
@@ -281,12 +281,61 @@ int main(){
 //////////////////////// P2 ////////////////////////////////////////////////////
 
 
+/*MAIN E03
+int main(){
+
+    int tam;
+    tp_fila fila;
+    tp_item e;
+
+    inicializa_fila(&fila);
+    
+    srand(time(NULL));
+
+    printf("TAMANHO DE ELEMENTOS DA FILA:\t");
+    scanf("%d",&tam);
+
+    while(tam>=0){
+        int e = 1 + rand()/10;
+        insere_fila(&fila,e);
+        tam--;
+    }
+    imprime_fila(fila);
+
+    reverso_fila(&fila);
+
+    imprime_fila(fila);
+
+    return 0;
+}
+*/
 
 
 
 
+/*MAIN TESTE BIBLIOTECA
 
+int main(){
 
+    tp_fila fila;
+    tp_item e;
+
+    inicializa_fila(&fila);
+
+    insere_fila(&fila,10);
+    insere_fila(&fila,20);
+    insere_fila(&fila,30);
+
+    imprime_fila(fila);
+
+    remove_fila(&fila,&e);
+    remove_fila(&fila,&e);
+
+    imprime_fila(fila);
+    
+    return 0;
+}
+*/
 
 
 //MAIN E02
@@ -295,8 +344,6 @@ int main(){
  * de dados, etc...
  * 
  */
-
-
 
 
 //MAIN 01

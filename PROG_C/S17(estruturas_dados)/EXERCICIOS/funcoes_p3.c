@@ -35,8 +35,6 @@ void M_m_med(tp_pilha *p, int tam){
 }
 
 
-
-
 void ordem_pilha(tp_pilha *p, int array[]){
     int tot = array[0];
     printf("tot = |%d|\n",tot);
@@ -127,24 +125,24 @@ void palindromo(tp_pilha *p,char string[]){
 
 
 
-//EMBARALHANDO PALAVRAS
+/*EMBARALHANDO PALAVRAS
 void embaralha(tp_pilha *p, char string[]){
-    int a = strlen(string);
+    int a = strlen(string)-1;
     int aux = 0;
     int a2=0;
-    a = a -1;
-    printf("a = |%d|\n",a);
+    
+    
     int cont = 0;
     for(int i = 0; i<a;i++){
-        printf("i = |%d|\n",i);
+        
         if(string[i]!= '.'){
-            printf("cont = |%d|\n",cont);
+            
             if(string[i] == 32){
 
                 for(int j = 0; j<=cont;j++){
-                    printf("2cont = |%d|\n",cont);
+                    
                     pop(p,&string[a2]);
-                    printf("string[%d] = |%c|\n",a2,string[a2]);
+                    
                     a2++;
                 }
                 aux = cont;
@@ -155,16 +153,16 @@ void embaralha(tp_pilha *p, char string[]){
             }
         }else{
             for(int u = 0; u<=cont;u++){
-                printf("3cont = |%d|\n",cont);
+               
                 pop(p,&string[a2]);
-                printf("1string[%d] = |%c|\n",a2,string[a2]);
+                
                 a2++;
             }
         }
         
     }
 }
-
+*/
 
 
 //VERIFICAÇÃO SE STRING ESTA NA FORMA XY
