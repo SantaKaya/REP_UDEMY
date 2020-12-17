@@ -7,6 +7,19 @@
 
 /////////////////////// FUNÇÕES EXERCICIO//////////////////
 
+void valores_par(tp_fila *f){
+    tp_item e;
+    int a = tamanho_fila1(*f);
+    for(int i = 0; i<a;i++){
+        remove_fila(f,&e);
+        if(e%2==0){
+            printf("\nVALOR PAR |%d|\n",e);
+            insere_fila(f,e);
+        }else{
+            insere_fila(f,e);
+        }
+    }
+}
 
 
 void valores_impar(tp_fila *f){

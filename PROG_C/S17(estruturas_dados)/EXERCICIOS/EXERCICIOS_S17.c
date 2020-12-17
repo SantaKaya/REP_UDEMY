@@ -280,9 +280,7 @@ int main(){
 
 //////////////////////// P2 ////////////////////////////////////////////////////
 
-
-
-//MAIN E11
+//MAIN E12
 int main(){
 
 
@@ -291,6 +289,33 @@ int main(){
     return 0;
 }
 
+
+/*MAIN E11
+int main(){
+
+    tp_fila fila;
+    tp_item tam=1, op;
+
+    inicializa_fila(&fila);
+
+
+    do{
+        printf("FILA |%d| \nDIGITE(-1 SAIR) :\t",tam);
+        scanf("%d",&op);
+        if(op == -1){
+            break;
+        }
+
+        insere_fila(&fila,op);
+        tam++;
+
+    }while(op!=-1);
+
+    valores_par(&fila);
+
+    return 0;
+}
+*/
 
 
 
