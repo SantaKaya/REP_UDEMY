@@ -7,6 +7,17 @@
 
 /////////////////////// FUNÇÕES EXERCICIO//////////////////
 
+void maior_fila(tp_fila *f1, tp_fila *f2){
+    if(tamanho_fila1(*f1)>tamanho_fila1(*f2)){
+        printf("\n\nFILA 1 > FILA 2\n\n");
+    }else{
+        printf("\n\nFILA 2 > FILA 1\n\n");
+    }
+}
+
+
+
+
 void M_m_med_fila(tp_fila *f){
     int a = tamanho_fila1(*f);
     printf("a = |%d|\n",a);
@@ -27,7 +38,6 @@ void M_m_med_fila(tp_fila *f){
     float med = (float)soma/(float)a;
 
     printf("MAIOR = |%d|\tMENOR = |%d|\t MEDIA = |%.2f|\n",max,min,med);
-
 
 }
 

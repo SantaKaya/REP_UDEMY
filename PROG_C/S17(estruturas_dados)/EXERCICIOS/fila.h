@@ -37,7 +37,7 @@ void inicializa_fila(tp_fila *f){
 //FILA VAZIA
 int fila_vazia(tp_fila *f){
     if(f->ini == f->fim){
-        printf("\n| EMPTY QUEUE |\n");
+        //printf("\n| EMPTY QUEUE |\n");
         return 1;
     }
     return 0;
@@ -56,7 +56,7 @@ int proximo ( int pos){//se não, (4) - > (5)
 int fila_cheia(tp_fila *f){
 
     if(proximo(f->fim) == f->ini){
-        printf("\n| FULL QUEUE |\n");
+        //printf("\n| FULL QUEUE |\n");
         return 1;
     }
 
