@@ -282,15 +282,45 @@ int main(){
 
 
 
-//MAIN E10
+//MAIN E11
 int main(){
-
 
 
 
 
     return 0;
 }
+
+
+
+
+/*MAIN E10
+int main(){
+
+    tp_fila fila;
+    tp_item tam=1, op;
+
+    inicializa_fila(&fila);
+
+
+    do{
+        printf("FILA |%d| \nDIGITE(-1 SAIR) :\t",tam);
+        scanf("%d",&op);
+        if(op == -1){
+            break;
+        }
+
+        insere_fila(&fila,op);
+        tam++;
+
+    }while(op!=-1);
+
+    valores_impar(&fila);
+
+
+    return 0;
+}
+*/
 
 
 /*MAIN E09

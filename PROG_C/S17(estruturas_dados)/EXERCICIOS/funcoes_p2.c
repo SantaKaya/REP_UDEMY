@@ -7,6 +7,24 @@
 
 /////////////////////// FUNÇÕES EXERCICIO//////////////////
 
+
+
+void valores_impar(tp_fila *f){
+    tp_item e;
+    int a = tamanho_fila1(*f);
+    for(int i = 0; i<a;i++){
+        remove_fila(f,&e);
+        if(e%2!=0){
+            printf("\nVALOR IMPAR |%d|\n",e);
+            insere_fila(f,e);
+        }else{
+            insere_fila(f,e);
+        }
+    }
+}
+
+
+
 void f3_f2f1_cres(tp_fila *f1,tp_fila *f2, tp_fila *f3){
     int a = tamanho_fila1(*f1);
     int b = tamanho_fila1(*f2);

@@ -101,6 +101,7 @@ void imprime_fila(tp_fila f){
         printf("|%d|",e);
     }
     printf("\n[=======================]\n\n");
+    return e;
 }
 
 //3 OPÇÕES PARA O TAMANHO DA FILA
