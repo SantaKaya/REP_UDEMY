@@ -7,6 +7,24 @@
 
 /////////////////////// FUNÇÕES EXERCICIO//////////////////
 
+
+void rem_neg(tp_fila *f){
+    int a = tamanho_fila1(*f);
+    tp_item e;
+
+    for(int i = 0; i<a;i++){
+        remove_fila(f,&e);
+        if(e>0){
+            insere_fila(f,e);
+        }else{
+            insere_fila(f,0);
+        }
+    }
+}
+
+
+
+
 void maior_fila(tp_fila *f1, tp_fila *f2){
     if(tamanho_fila1(*f1)>tamanho_fila1(*f2)){
         printf("\n\nFILA 1 > FILA 2\n\n");
@@ -14,8 +32,6 @@ void maior_fila(tp_fila *f1, tp_fila *f2){
         printf("\n\nFILA 2 > FILA 1\n\n");
     }
 }
-
-
 
 
 void M_m_med_fila(tp_fila *f){
