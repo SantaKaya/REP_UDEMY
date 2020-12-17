@@ -281,8 +281,7 @@ int main(){
 //////////////////////// P2 ////////////////////////////////////////////////////
 
 
-
-//MAIN E08
+//MAIN E09
 int main(){
 
 
@@ -291,6 +290,52 @@ int main(){
     return 0;
 }
 
+
+
+
+
+/*MAIN E08
+int main(){
+
+    tp_fila f1,f2,f3;
+    tp_item op1;
+
+    inicializa_fila(&f1);
+    inicializa_fila(&f2);
+    inicializa_fila(&f3);
+
+    printf("\n[==============|FILA 1|==============]\n");
+
+    do{
+        printf("FILA 1\nDIGITE(-1 SAIR) :\t");
+        scanf("%d",&op1);
+        if(op1 == -1){
+            break;
+        }
+
+        insere_fila(&f1,op1);
+    }while (op1!=-1);
+
+    printf("\n[==============|FILA 2|==============]\n");
+
+    do{
+        printf("FILA 2\nDIGITE(-1 SAIR) :\t");
+        scanf("%d",&op1);
+        if(op1 == -1){
+            break;
+        }
+
+        insere_fila(&f2,op1);
+    }while (op1!=-1);
+
+
+    f3_f2f1_cres(&f1,&f2,&f3);
+
+    imprime_fila(f3);
+
+    return 0;
+}
+*/
 
 
 

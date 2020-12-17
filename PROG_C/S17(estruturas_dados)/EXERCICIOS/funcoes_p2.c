@@ -7,6 +7,48 @@
 
 /////////////////////// FUNÇÕES EXERCICIO//////////////////
 
+void f3_f2f1_cres(tp_fila *f1,tp_fila *f2, tp_fila *f3){
+    int a = tamanho_fila1(*f1);
+    int b = tamanho_fila1(*f2);
+    tp_item aux;
+    int array[a+b];
+
+    int c = 0;
+
+    while(!fila_vazia(f1)){
+        remove_fila(f1,&array[c]);
+        c++;
+    }
+    while(!fila_vazia(f2)){
+        remove_fila(f2,&array[c]);
+        c++;
+    }
+
+    printf("ARRAY :\t");
+    for(int t = 0; t<a+b; t++){
+        printf("|%d|",array[t]);
+    }
+
+    for(int i = 0; i<a+b;i++){
+        for(int j = 0;j<(a+b)-1;j++){
+            if(array[j]>array[j+1]){
+                aux = array[j+1];
+                array[j+1] = array[j];
+                array[j]=aux;
+            }
+        }
+        
+    }
+
+    for(int v = 0; v<a+b; v++){
+        insere_fila(f3,array[v]);
+    }
+
+}
+
+
+
+
 
 void rem_neg(tp_fila *f){
     int a = tamanho_fila1(*f);
