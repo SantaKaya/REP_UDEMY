@@ -4,7 +4,7 @@
 #include <string.h>
 #include "pilha.h"
 #include "funcoes_p3.c"
-#include "FILA1.h"
+#include "FILA.h"
 #include "funcoes_p2.c"
 
 
@@ -279,6 +279,52 @@ int main(){
 
 
 //////////////////////// P2 ////////////////////////////////////////////////////
+
+
+
+//MAIN E05
+int main(){
+
+
+
+    return 0;
+}
+
+
+
+
+
+
+/*MAIN E 04
+int main(){
+
+    tp_fila fila;
+    int op,tam=1;;
+
+    inicializa_fila(&fila);
+
+    do{
+        printf("FILA |%d| \nDIGITE(-1 SAIR) :\t",tam);
+        scanf("%d",&op);
+        if(op== -1){
+            break;
+        }
+
+        insere_fila(&fila,op);
+        tam++;
+    }while (op!=-1);
+
+
+    ordem_fila(&fila);
+
+    imprime_fila(fila);
+
+
+    return 0;
+}
+*/
+
+
 
 
 /*MAIN E03

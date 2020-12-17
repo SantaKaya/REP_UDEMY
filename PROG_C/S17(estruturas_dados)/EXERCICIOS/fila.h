@@ -73,7 +73,8 @@ int insere_fila(tp_fila *f, tp_item e){
     f->fim = proximo(f->fim);
     f->item[f->fim]=e;
     //f->tam++;
-    printf("| ADDED TO QUEUE |%d| |\n",e);
+    //printf("| ADDED TO QUEUE |%d| |\n",e);
+    return 1;
 }
 
 //REMOVENDO DA FILA
@@ -87,17 +88,19 @@ int remove_fila(tp_fila *f,tp_item *e){
     *e = f->item[f->ini];
     //f->tam--;
     //printf("\n| REMOVED OF QUEUE |\n");
+    return 1;
 
 }
 
 //IMPRIMINDO FILA
 void imprime_fila(tp_fila f){
     tp_item e;
-    printf("\n[=== |IMPRIMINDO FILA| ====]\n");
+    printf("\n\n[=== |IMPRIMINDO FILA| ====]\n\n");
     while(!fila_vazia(&f)){
         remove_fila(&f,&e);
         printf("|%d|",e);
     }
+    printf("\n[=======================]\n\n");
 }
 
 //3 OPÇÕES PARA O TAMANHO DA FILA
@@ -123,6 +126,7 @@ int tamanho_fila1(tp_fila f){
         cont++;
     }
     printf("TAMANHO FILA = |%d|\n",cont);
+    return cont;
 }
 
 /*
