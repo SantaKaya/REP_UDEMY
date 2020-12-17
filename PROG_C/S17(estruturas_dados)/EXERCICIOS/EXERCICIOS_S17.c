@@ -281,8 +281,10 @@ int main(){
 //////////////////////// P2 ////////////////////////////////////////////////////
 
 
-//MAIN E09
+
+//MAIN E10
 int main(){
+
 
 
 
@@ -291,8 +293,25 @@ int main(){
 }
 
 
+/*MAIN E09
+int main(){
 
+    int a;
+    tp_fila fila;
+    inicializa_fila(&fila);
 
+    srand(time(NULL));
+
+    a = 1 + rand()/10;
+
+    for(int i = 0; i<=9; i++){
+        a = 1 + rand()%10;
+        insere_fila(&fila, a);
+    }
+    imprime_fila(fila);
+
+}
+*/
 
 /*MAIN E08
 int main(){
