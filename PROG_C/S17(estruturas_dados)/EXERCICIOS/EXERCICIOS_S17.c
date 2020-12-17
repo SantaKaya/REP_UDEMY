@@ -281,8 +281,7 @@ int main(){
 //////////////////////// P2 ////////////////////////////////////////////////////
 
 
-
-//MAIN E05
+//MAIN E06
 int main(){
 
 
@@ -294,6 +293,31 @@ int main(){
 
 
 
+/*MAIN E05
+int main(){
+
+
+    tp_fila fila;
+    int op,tam=1;
+
+    inicializa_fila(&fila);
+
+    do{
+        printf("FILA |%d| \nDIGITE(-1 SAIR) :\t",tam);
+        scanf("%d",&op);
+        if(op == -1){
+            break;
+        }
+
+        insere_fila(&fila,op);
+        tam++;
+    }while (op!=-1);
+
+    M_m_med_fila(&fila);
+
+    return 0;
+}
+*/
 
 /*MAIN E 04
 int main(){

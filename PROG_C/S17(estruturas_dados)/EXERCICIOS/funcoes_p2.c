@@ -7,6 +7,31 @@
 
 /////////////////////// FUNÇÕES EXERCICIO//////////////////
 
+void M_m_med_fila(tp_fila *f){
+    int a = tamanho_fila1(*f);
+    printf("a = |%d|\n",a);
+    int soma = 0,max=1,min=99999;
+    tp_item aux;
+
+    for(int i = 0; i<a;i++){
+        remove_fila(f,&aux);
+        if(aux>max){
+            max = aux;
+        }else if(aux<min){
+            min = aux;
+        }
+
+        soma = soma + aux;
+    }
+
+    float med = (float)soma/(float)a;
+
+    printf("MAIOR = |%d|\tMENOR = |%d|\t MEDIA = |%.2f|\n",max,min,med);
+
+
+}
+
+
 
 void ordem_fila(tp_fila *f){
     int a = tamanho_fila1(*f) - 1;
@@ -40,7 +65,7 @@ void ordem_fila(tp_fila *f){
     }
 
 }
-*/
+
 
 
 
